@@ -1,4 +1,4 @@
-name: Build and publish LaTeX PDF
+name: Build and publish LaTeX PDFs
 
 on:
   push:
@@ -17,6 +17,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        root_file:
+          - main.tex
+          - chapters/ch10_opioids.tex
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -24,14 +30,27 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v4
         with:
-          root_file: main.tex
+          root_file: ${{ matrix.root_file }}
           texlive_version: 2024
 
-      - name: Prepare docs folder
+      - name: Copy PDF into docs/
         run: |
           mkdir -p docs
-          cp main.pdf docs/book_edaic_notes.pdf
+          root="${{ matrix.root_file }}"
+          base=$(basename "$root" .tex)
+          dir=$(dirname "$root")
 
+          if [ "$root" = "main.tex" ]; then
+            # Full book
+            cp main.pdf docs/book_edaic_notes.pdf
+          else
+            # Chapter PDFs live alongside their .tex: e.g. chapters/ch10_opioids.pdf
+            cp "$dir/$base.pdf" "docs/${base}.pdf"
+          fi
+
+      - name: Create index page
+        if: matrix.root_file == 'main.tex'
+        run: |
           cat > docs/index.html << 'EOF'
           <!DOCTYPE html>
           <html>
@@ -42,7 +61,8 @@ jobs:
           <body>
             <h1>EDAIC Notes – PDFs</h1>
             <ul>
-              <li><a href="book_edaic_notes.pdf">Download full book PDF</a></li>
+              <li><a href="book_edaic_notes.pdf">Full book – EDAIC Notes</a></li>
+              <li><a href="ch10_opioids.pdf">Chapter 10 – Opioid Analgesic Drugs</a></li>
             </ul>
           </body>
           </html>
