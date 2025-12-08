@@ -22,6 +22,7 @@ jobs:
         root_file:
           - main.tex
           - chapters/Opioids.tex
+          - chapters/General_Anesthetics.tex
 
     steps:
       - name: Check out repository
@@ -62,6 +63,7 @@ jobs:
               <ul>
                 <li><a href="book_edaic_notes.pdf">Full Book – EDAIC Notes</a></li>
                 <li><a href="Opioids.pdf">Chapter 10 – Opioid Analgesic Drugs</a></li>
+                <li><a href="General_Anesthetics">Chapter 9 – Genera Anesthetics</a></li>
               </ul>
             </body>
           </html>
