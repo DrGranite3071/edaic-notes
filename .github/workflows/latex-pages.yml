@@ -40,12 +40,10 @@ jobs:
           base=$(basename "$root" .tex)
 
           if [ "$root" = "main.tex" ]; then
-            # Full book (main.pdf lives in repo root)
+            # Full book PDF
             cp main.pdf docs/book_edaic_notes.pdf
           else
-            # For chapters like chapters/Opioids.tex,
-            # latex-action writes Opioids.pdf in the *repo root*,
-            # so we copy from there.
+            # latex-action outputs Opioids.pdf in repo root
             cp "$base.pdf" "docs/${base}.pdf"
           fi
 
@@ -55,21 +53,22 @@ jobs:
           cat > docs/index.html << 'EOF'
           <!DOCTYPE html>
           <html>
-          <head>
-            <meta charset="UTF-8">
-            <title>EDAIC Notes PDFs</title>
-          </head>
-          <body>
-            <h1>EDAIC Notes – PDFs</h1>
-            <ul>
-              <li><a href="book_edaic_notes.pdf">Full book – EDAIC Notes</a></li>
-              <li><a href="Opioids.pdf">Chapter 10 – Opioid Analgesic Drugs</a></li>
-            </ul>
-          </body>
+            <head>
+              <meta charset="UTF-8">
+              <title>EDAIC Notes PDFs</title>
+            </head>
+            <body>
+              <h1>EDAIC Notes – PDFs</h1>
+              <ul>
+                <li><a href="book_edaic_notes.pdf">Full Book – EDAIC Notes</a></li>
+                <li><a href="Opioids.pdf">Chapter 10 – Opioid Analgesic Drugs</a></li>
+              </ul>
+            </body>
           </html>
           EOF
 
       - name: Upload artifact for GitHub Pages
+        if: matrix.root_file == 'main.tex'
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs
