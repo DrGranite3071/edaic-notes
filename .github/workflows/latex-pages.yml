@@ -33,22 +33,21 @@ jobs:
           root_file: ${{ matrix.root_file }}
           texlive_version: 2024
 
-     - name: Copy PDF into docs/
-  run: |
-    mkdir -p docs
-    root="${{ matrix.root_file }}"
-    base=$(basename "$root" .tex)
+      - name: Copy PDF into docs/
+        run: |
+          mkdir -p docs
+          root="${{ matrix.root_file }}"
+          base=$(basename "$root" .tex)
 
-    if [ "$root" = "main.tex" ]; then
-      # Full book (main.pdf lives in repo root)
-      cp main.pdf docs/book_edaic_notes.pdf
-    else
-      # For chapters like chapters/Opioids.tex,
-      # latex-action writes Opioids.pdf in the *repo root*,
-      # so we copy from there.
-      cp "$base.pdf" "docs/${base}.pdf"
-    fi
-
+          if [ "$root" = "main.tex" ]; then
+            # Full book (main.pdf lives in repo root)
+            cp main.pdf docs/book_edaic_notes.pdf
+          else
+            # For chapters like chapters/Opioids.tex,
+            # latex-action writes Opioids.pdf in the *repo root*,
+            # so we copy from there.
+            cp "$base.pdf" "docs/${base}.pdf"
+          fi
 
       - name: Create index page
         if: matrix.root_file == 'main.tex'
