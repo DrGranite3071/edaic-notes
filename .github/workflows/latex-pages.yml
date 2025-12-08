@@ -17,60 +17,74 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        root_file:
-          - main.tex
-          - chapters/Opioids.tex
-          - chapters/General_Anesthetics.tex
-
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Compile LaTeX document
+      # ---- Compile all TeX roots ----
+      - name: Compile main.tex (book)
         uses: xu-cheng/latex-action@v4
         with:
-          root_file: ${{ matrix.root_file }}
+          root_file: main.tex
           texlive_version: 2024
 
-      - name: Copy PDF into docs/
+      - name: Compile Opioids chapter
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: chapters/Opioids.tex
+          texlive_version: 2024
+
+      - name: Compile General_Anesthetics chapter
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: chapters/General_Anesthetics.tex
+          texlive_version: 2024
+
+      # ---- Collect PDFs into docs/ ----
+      - name: Prepare docs folder
         run: |
+          set -e
           mkdir -p docs
-          root="${{ matrix.root_file }}"
-          base=$(basename "$root" .tex)
 
-          if [ "$root" = "main.tex" ]; then
-            # Full book PDF
-            cp main.pdf docs/book_edaic_notes.pdf
-          else
-            # latex-action outputs Opioids.pdf in repo root
-            cp "$base.pdf" "docs/${base}.pdf"
-          fi
+          # Book PDF
+          cp main.pdf docs/book_edaic_notes.pdf
 
-      - name: Create index page
-        if: matrix.root_file == 'main.tex'
-        run: |
+          # Helper to copy chapter PDFs from either repo root or chapters/
+          copy_pdf() {
+            texbase="$1"
+            if [ -f "chapters/${texbase}.pdf" ]; then
+              cp "chapters/${texbase}.pdf" "docs/${texbase}.pdf"
+            elif [ -f "${texbase}.pdf" ]; then
+              cp "${texbase}.pdf" "docs/${texbase}.pdf"
+            else
+              echo "Warning: PDF for ${texbase}.tex not found, skipping."
+            fi
+          }
+
+          copy_pdf "Opioids"
+          copy_pdf "General_Anesthetics"
+
+
+          # Simple index page (you can swap this for your aesthetic one)
           cat > docs/index.html << 'EOF'
           <!DOCTYPE html>
-          <html>
-            <head>
-              <meta charset="UTF-8">
-              <title>EDAIC Notes PDFs</title>
-            </head>
-            <body>
-              <h1>EDAIC Notes – PDFs</h1>
-              <ul>
-                <li><a href="book_edaic_notes.pdf">Full Book – EDAIC Notes</a></li>
-                <li><a href="Opioids.pdf">Chapter 10 – Opioid Analgesic Drugs</a></li>
-                <li><a href="General_Anesthetics">Chapter 9 – Genera Anesthetics</a></li>
-              </ul>
-            </body>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <title>EDAIC Notes – PDFs</title>
+          </head>
+          <body>
+            <h1>EDAIC Notes – PDFs</h1>
+            <ul>
+              <li><a href="book_edaic_notes.pdf">Full Book – EDAIC Notes</a></li>
+              <li><a href="Opioids.pdf">Opioid Analgesic Drugs</a></li>
+              <li><a href="General_Anesthetics.pdf">General Anaesthetics</a></li>
+            </ul>
+          </body>
           </html>
           EOF
 
       - name: Upload artifact for GitHub Pages
-        if: matrix.root_file == 'main.tex'
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs
