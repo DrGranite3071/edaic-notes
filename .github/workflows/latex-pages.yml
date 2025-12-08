@@ -65,24 +65,9 @@ jobs:
           copy_pdf "General_Anesthetics"
 
 
-          # Simple index page (you can swap this for your aesthetic one)
-          cat > docs/index.html << 'EOF'
-          <!DOCTYPE html>
-          <html lang="en">
-          <head>
-            <meta charset="UTF-8">
-            <title>EDAIC Notes – PDFs</title>
-          </head>
-          <body>
-            <h1>EDAIC Notes – PDFs</h1>
-            <ul>
-              <li><a href="book_edaic_notes.pdf">Full Book – EDAIC Notes</a></li>
-              <li><a href="Opioids.pdf">Opioid Analgesic Drugs</a></li>
-              <li><a href="General_Anesthetics.pdf">General Anaesthetics</a></li>
-            </ul>
-          </body>
-          </html>
-          EOF
+          # Use the prettier landing page from the repo
+          cp landing.html docs/index.html
+
 
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v3
