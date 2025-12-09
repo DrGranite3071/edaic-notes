@@ -51,6 +51,12 @@ jobs:
         with:
           root_file: chapters/Local_Anaesthetics.tex
           texlive_version: 2024
+
+      - name: Compile Local_Anaesthetics chapter
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: chapters/Cardiac_Phisiology.tex
+          texlive_version: 2024
           
 
       # ---- Collect PDFs into docs/ ----
@@ -78,6 +84,7 @@ jobs:
           copy_pdf "General_Anesthetics"
           copy_pdf "NSAIDs"
           copy_pdf "Local_Anaesthetics"
+          copy_pdf "Cardiac_Phisiology"
 
 
           # Use the prettier landing page from the repo
