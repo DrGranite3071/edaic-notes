@@ -39,7 +39,7 @@ jobs:
         with:
           root_file: chapters/General_Anesthetics.tex
           texlive_version: 2024
-
+          
       - name: Compile NSAIDs chapter
         uses: xu-cheng/latex-action@v4
         with:
