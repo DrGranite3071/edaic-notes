@@ -1,22 +1,597 @@
 \documentclass[11pt,a4paper]{article}
 
-\input{preamble.tex}
+% ---------- ENCODING & LANGUAGE ----------
 \usepackage[T1]{fontenc}
-\usepackage{setspace}
-\usepackage{geometry}
-\usepackage{titlesec}
-\usepackage{enumitem}
-\usepackage{hyperref}
-\usepackage{booktabs}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
 
-\title{new proj}
-\author{Robert-Thomas Barbulescu}
-\date{December 2025}
+% ---------- MATH & LAYOUT ----------
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=2cm}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
 
 \begin{document}
 
-\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter 23 – Function of the Cardiovascular System
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Introduction}
+\section{Chapter 23 – Function of the Cardiovascular System}
+
+\subsection{Introduction}
+
+The cardiovascular system ensures that every tissue receives an adequate supply of blood in order to meet its constantly changing metabolic requirements. This involves delivering oxygen and nutrients, removing metabolic waste, redistributing flow between organs and maintaining a stable internal environment.
+
+The heart, vasculature and regulatory systems must cooperate to generate sufficient pressure, produce appropriate flow and distribute blood according to local needs. Kam \& Powers emphasise that the circulation must simultaneously provide both \emph{adequate arterial pressure} and \emph{appropriate flow distribution}.
+
+%----------------------------------------------
+\subsection{Core Functions of the Cardiovascular System}
+
+\subsubsection{Transport Functions}
+
+The circulation is the body's main transport network:
+\begin{itemize}
+  \item Delivery of oxygen, glucose, fatty acids and other nutrients to support cellular metabolism.
+  \item Removal of carbon dioxide, lactate and other metabolic by-products.
+  \item Distribution of hormones and signalling molecules to distant targets.
+  \item Transport of heat from metabolically active tissues to the skin for thermal regulation.
+  \item Facilitation of immune surveillance by circulating leukocytes and antibodies.
+\end{itemize}
+
+\subsubsection{Pressure Generation}
+
+\begin{itemize}
+  \item The heart generates arterial pressure, the driving force for blood flow through systemic and pulmonary circulations.
+  \item Pressure gradients between arteries and veins are required for organ perfusion.
+  \item Adequate arterial pressure is also necessary for capillary filtration and reabsorption and for maintaining coronary perfusion.
+\end{itemize}
+
+\subsubsection{Homeostatic Roles}
+
+In addition to transport and pressure generation, the cardiovascular system contributes to homeostasis:
+\begin{itemize}
+  \item Regulation of extracellular fluid composition by ensuring appropriate renal perfusion.
+  \item Maintenance of body temperature via controlled changes in skin blood flow.
+  \item Stabilisation of arterial pressure despite changes in posture, activity and environment.
+\end{itemize}
+
+%----------------------------------------------
+\subsection{Pressure, Flow and Resistance}
+
+\subsubsection{Fundamental Relationship}
+
+Flow in the circulation follows an Ohm-like relationship:
+\[
+Q = \frac{\Delta P}{R},
+\]
+where $Q$ is flow, $\Delta P$ is the pressure difference between arterial and venous ends, and $R$ is vascular resistance (dominated by arterioles).
+
+\subsubsection{Systemic vs. Pulmonary Circulation}
+
+\begin{itemize}
+  \item \textbf{Systemic circulation:} high pressure, high resistance; designed to perfuse tissues at varying distances and heights from the heart.
+  \item \textbf{Pulmonary circulation:} low pressure, low resistance; allows efficient gas exchange without damaging the delicate alveolar--capillary interface.
+\end{itemize}
+
+\subsubsection{Importance of Maintaining Arterial Pressure}
+
+Adequate mean arterial pressure (MAP) is essential to:
+\begin{itemize}
+  \item Perfuse organs at or above heart level, especially the brain.
+  \item Maintain appropriate Starling forces for controlled capillary fluid exchange.
+  \item Preserve coronary perfusion, which largely depends on aortic diastolic pressure.
+\end{itemize}
+
+%----------------------------------------------
+\subsection{Heart Anatomy and Coronary Circulation}
+
+\subsubsection{Basic Anatomical Organisation}
+
+\begin{itemize}
+  \item The heart consists of four chambers: two atria and two ventricles.
+  \item The right heart receives systemic venous blood and pumps it into the low-pressure pulmonary circulation.
+  \item The left heart receives oxygenated pulmonary venous blood and pumps it into the high-pressure systemic circulation.
+  \item Unidirectional flow is maintained by the tricuspid, pulmonary, mitral and aortic valves.
+  \item The interventricular septum is largely muscular and contributes importantly to the mechanical function of both ventricles.
+\end{itemize}
+
+\subsubsection{Myocardial Blood Supply}
+
+\begin{itemize}
+  \item The myocardium has a high metabolic rate and extracts a large fraction of the delivered oxygen at rest; increases in demand must therefore be met mainly by increased coronary flow.
+  \item The coronary arteries arise from the aortic root just above the aortic valve.
+  \item The left coronary artery (LCA) divides into the left anterior descending (LAD) and circumflex (Cx) branches:
+    \begin{itemize}
+      \item The LAD runs in the anterior interventricular groove and supplies the anterior LV wall, anterior septum and frequently the apex.
+      \item The circumflex artery travels in the left atrioventricular groove and supplies the lateral LV wall; in left-dominant coronary anatomy it also gives rise to the posterior descending artery.
+    \end{itemize}
+  \item The right coronary artery (RCA) runs in the right atrioventricular groove and supplies the right ventricle, the inferior LV, parts of the interventricular septum and important components of the conduction system. In right-dominant anatomy it gives rise to the posterior descending artery.
+\end{itemize}
+
+\subsubsection{Phasic Nature of Coronary Flow}
+
+\begin{itemize}
+  \item Coronary perfusion, particularly in the LV, is strongly phasic due to the large intramural pressures generated during systole.
+  \item During LV systole intramyocardial pressure may exceed aortic pressure, compressing intramural vessels and reducing or reversing forward flow, especially in subendocardial layers.
+  \item Most LV perfusion therefore occurs during diastole, when myocardial relaxation lowers intramural pressures below aortic diastolic pressure.
+  \item RV perfusion is more continuous, as RV systolic pressures are lower and extravascular compression is less.
+  \item Subendocardial regions are most vulnerable to ischaemia due to higher wall stress and shorter perfusion time, particularly during tachycardia, hypotension or elevated LV end-diastolic pressure (LVEDP).
+\end{itemize}
+
+\subsubsection{Determinants of Coronary Blood Flow}
+
+Coronary flow is determined by:
+\begin{itemize}
+  \item Coronary perfusion pressure (CPP), approximated by
+        \[
+        \text{CPP} \approx P_{\text{aortic, diastolic}} - \text{LVEDP}.
+        \]
+  \item Coronary vascular resistance, influenced by metabolic demand, autonomic tone, endothelial factors and mechanical compression.
+  \item Myocardial oxygen demand, which depends mainly on heart rate, wall tension and contractility.
+\end{itemize}
+
+\subsubsection{Neural Supply of the Heart}
+
+\paragraph{Sympathetic innervation}
+\begin{itemize}
+  \item Preganglionic fibres arise from T1--T5 segments of the spinal cord and synapse in cervical and upper thoracic ganglia.
+  \item Postganglionic fibres innervate atria, ventricles and coronary vessels.
+  \item Effects: increased heart rate (positive chronotropy), increased conduction velocity (dromotropy), increased contractility (inotropy) and enhanced relaxation (lusitropy).
+\end{itemize}
+
+\paragraph{Parasympathetic innervation}
+\begin{itemize}
+  \item Supplied primarily by the vagus nerve.
+  \item Mainly innervates the SA node, AV node and atria; ventricular parasympathetic innervation is sparse.
+  \item Effects: reduced heart rate, slowed AV nodal conduction and modest reduction in atrial contractility.
+\end{itemize}
+
+\paragraph{Reflex control}
+Baroreceptor, Bainbridge and Bezold--Jarisch reflexes modulate autonomic outflow, adjusting heart rate, contractility and vascular tone in response to changes in venous return and arterial pressure.
+
+%----------------------------------------------
+\subsection{Cardiac Output and Venous Return}
+
+Cardiac output (CO) is given by
+\[
+\text{CO} = \text{HR} \times \text{SV},
+\]
+where HR is heart rate and SV is stroke volume.
+
+\begin{itemize}
+  \item Stroke volume is influenced by preload, afterload and contractility.
+  \item In the steady state, CO must equal venous return.
+  \item The venous system, as a high-capacitance reservoir, is central in regulating venous return and hence preload.
+\end{itemize}
+
+%----------------------------------------------
+\subsection{Distribution of Blood Flow}
+
+\subsubsection{Resting Distribution}
+
+At rest:
+\begin{itemize}
+  \item Heart, brain and kidneys receive high blood flow relative to their mass.
+  \item Skeletal muscle and skin receive more modest flow but can undergo large increases during exercise or thermal stress.
+\end{itemize}
+
+\subsubsection{Control of Regional Flow}
+
+Regional flow is governed by changes in arteriolar resistance:
+\begin{itemize}
+  \item Local metabolic control is the dominant mechanism matching flow to tissue metabolic demand (e.g. adenosine, CO$_2$, H$^+$, K$^+$).
+  \item The autonomic nervous system provides global adjustments and redistribution during stress, exercise or haemorrhage.
+  \item Endothelial factors such as nitric oxide, prostacyclin and endothelin modulate tone.
+  \item Hormones (angiotensin II, vasopressin, adrenaline) influence systemic vascular resistance and volume regulation.
+\end{itemize}
+
+%----------------------------------------------
+\subsection{Regulation of Arterial Pressure}
+
+Mean arterial pressure (MAP) can be approximated by:
+\[
+\text{MAP} \approx \text{CO} \times \text{TPR},
+\]
+where TPR is total peripheral resistance.
+
+\subsubsection{Short-Term Regulation}
+
+\begin{itemize}
+  \item The arterial baroreceptor reflex provides rapid feedback control via changes in sympathetic and parasympathetic tone, adjusting heart rate, contractility, arteriolar resistance and venous tone.
+\end{itemize}
+
+\subsubsection{Intermediate and Long-Term Regulation}
+
+\begin{itemize}
+  \item Hormonal systems (renin--angiotensin--aldosterone, catecholamines, vasopressin) adjust vascular tone and circulating volume.
+  \item The kidneys provide long-term control of arterial pressure by regulating extracellular fluid volume and sodium balance.
+\end{itemize}
+
+%----------------------------------------------
+\subsection{Microcirculation and Capillary Exchange}
+
+\begin{itemize}
+  \item Capillaries, with thin walls and large surface area, are the primary site for diffusion of gases, nutrients and waste products.
+  \item Fluid movement across capillary walls is governed by Starling forces:
+    \begin{itemize}
+      \item Capillary hydrostatic pressure.
+      \item Interstitial hydrostatic pressure.
+      \item Capillary oncotic pressure.
+      \item Interstitial oncotic pressure.
+    \end{itemize}
+  \item The lymphatic system returns filtered fluid and proteins to the circulation, preventing oedema.
+\end{itemize}
+
+%----------------------------------------------
+\subsection{Autoregulation and Integrated Control}
+
+\subsubsection{Local Autoregulation}
+
+Many organs (e.g. brain, heart, kidneys) exhibit autoregulation, maintaining relatively constant flow despite changes in perfusion pressure through:
+\begin{itemize}
+  \item Myogenic responses of vascular smooth muscle.
+  \item Metabolic vasodilation in response to local changes in metabolites.
+\end{itemize}
+
+\subsubsection{Integrated Control}
+
+Effective cardiovascular function requires coordinated interaction between:
+\begin{itemize}
+  \item The heart as a pressure and flow generator.
+  \item The vasculature as a resistance and capacitance network.
+  \item Neural and hormonal systems that adjust cardiac performance, vascular tone and volume status.
+\end{itemize}
+
+%----------------------------------------------
+\subsection{Summary of Chapter 23}
+
+Chapter 23 sets out the foundational concepts of cardiovascular function: generation of pressure, production and distribution of flow, regulation of arterial pressure, microcirculatory exchange and coronary perfusion. These principles underpin the more detailed cardiac and vascular physiology discussed in later chapters.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter 24 – Electrical Properties of the Heart
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Chapter 24 – Electrical Properties of the Heart}
+
+\subsection{Introduction}
+
+The heart's ability to function as an effective pump depends fundamentally on its electrical properties. Cardiac tissue generates its own rhythmic impulses, conducts them rapidly and in a coordinated manner, and links electrical activation directly to mechanical contraction. Kam \& Powers emphasise that cardiac electrical behaviour is heterogeneous, with distinct cell types and regions specialised for impulse generation, conduction or contraction.
+
+This chapter explores the ionic basis of cardiac action potentials, mechanisms of automaticity, the structure and function of the conduction system, excitation--contraction coupling and the principles underlying the electrocardiogram (ECG).
+
+%----------------------------------------------
+\subsection{Types of Cardiac Cells}
+
+Cardiac electrical responses depend on two major categories of cells: fast-response (non-pacemaker) cells and slow-response (pacemaker) cells.
+
+\subsubsection{Fast-Response Cells (Atrial, Ventricular, Purkinje)}
+
+Fast-response cells generate action potentials with a rapid upstroke and a stable resting potential.
+
+\paragraph{Key characteristics}
+\begin{itemize}
+  \item Resting membrane potential around $-90\,\text{mV}$, strongly negative due to high K$^+$ conductance.
+  \item Phase 0 depolarisation mediated by rapid opening of voltage-gated Na$^+$ channels.
+  \item High conduction velocity, particularly in Purkinje fibres (2--4 m/s).
+  \item Long refractory period due to the plateau phase, preventing tetanus.
+\end{itemize}
+
+\paragraph{Functional role} Synchronous activation of large regions of myocardium to produce coordinated contraction.
+
+\subsubsection{Slow-Response Cells (SA and AV Nodal Cells)}
+
+Slow-response cells are specialised for automaticity and rate regulation.
+
+\paragraph{Key characteristics}
+\begin{itemize}
+  \item No true resting membrane potential; instead, spontaneous Phase 4 depolarisation.
+  \item Phase 0 upstroke mediated predominantly by Ca$^{2+}$ influx through L-type channels.
+  \item Very low conduction velocity, especially in the AV node ($\sim 0.02$--$0.05$ m/s).
+  \item Higher intrinsic rhythmicity than fast-response tissue.
+\end{itemize}
+
+\paragraph{Functional role} Generation of rhythmic impulses, control of heart rate and provision of a physiological delay at the AV node.
+
+%----------------------------------------------
+\subsection{Cardiac Action Potentials}
+
+\subsubsection{Fast-Response Action Potential (Myocytes, Purkinje)}
+
+\begin{description}
+  \item[Phase 0 -- Rapid depolarisation:] opening of fast Na$^+$ channels produces a steep upstroke; the rate of rise determines conduction velocity.
+  \item[Phase 1 -- Early repolarisation:] transient outward K$^+$ current ($I_{\text{to}}$).
+  \item[Phase 2 -- Plateau phase:] inward Ca$^{2+}$ current (L-type channels) balanced by outward K$^+$ currents; critical for Ca$^{2+}$-induced Ca$^{2+}$ release.
+  \item[Phase 3 -- Repolarisation:] increased K$^+$ efflux through delayed rectifier channels.
+  \item[Phase 4 -- Resting membrane potential:] stable, maintained by inward rectifier K$^+$ current.
+\end{description}
+
+The prolonged plateau prevents tetanus, ensures uniform contraction and couples electrical activity to mechanical systole.
+
+\subsubsection{Slow-Response Action Potential (Nodal Tissue)}
+
+\begin{description}
+  \item[Phase 4 -- Pacemaker depolarisation:] driven by the funny current ($I_f$; mixed Na$^+$/K$^+$), T-type Ca$^{2+}$ channels and declining K$^+$ efflux.
+  \item[Phase 0 -- Upstroke:] Ca$^{2+}$-mediated depolarisation via L-type Ca$^{2+}$ channels.
+  \item[Phase 3 -- Repolarisation:] K$^+$ efflux through delayed rectifier channels.
+\end{description}
+
+This pattern underlies intrinsic rhythmicity and allows modulation of heart rate via changes in the slope of Phase 4.
+
+%----------------------------------------------
+\subsection{Refractory Periods}
+
+\subsubsection{Effective (Absolute) Refractory Period}
+
+\begin{itemize}
+  \item During the effective refractory period (ERP), no new propagated action potential can be generated.
+  \item Ensures unidirectional propagation and prevents sustained tetanic contraction.
+\end{itemize}
+
+\subsubsection{Relative Refractory Period}
+
+\begin{itemize}
+  \item During the relative refractory period (RRP), a stronger-than-normal stimulus can elicit an action potential.
+  \item Conduction during this period may be slowed or abnormal, predisposing to re-entry.
+\end{itemize}
+
+\subsubsection{Functional Consequences}
+
+\begin{itemize}
+  \item Prevention of tetanus.
+  \item Assurance of adequate filling time between beats.
+  \item Determination of vulnerability to re-entrant arrhythmias.
+\end{itemize}
+
+%----------------------------------------------
+\subsection{Automaticity and Pacemaker Activity}
+
+\subsubsection{Hierarchy of Pacemakers}
+
+\begin{itemize}
+  \item SA node: primary pacemaker (intrinsic rate $\sim 60$--$100$ beats/min).
+  \item AV node: intrinsic rate $40$--$60$ beats/min.
+  \item His--Purkinje system: intrinsic rate $20$--$40$ beats/min.
+\end{itemize}
+
+\subsubsection{Determinants of Pacemaker Rate}
+
+Pacemaker rate is determined chiefly by the slope of Phase 4 depolarisation:
+\begin{itemize}
+  \item Increased Phase 4 slope $\rightarrow$ increased heart rate.
+  \item Decreased Phase 4 slope $\rightarrow$ bradycardia.
+\end{itemize}
+
+\subsubsection{Autonomic Effects}
+
+\paragraph{Sympathetic stimulation}
+\begin{itemize}
+  \item Noradrenaline acting on $\beta_1$ receptors increases cAMP.
+  \item Enhanced $I_f$ and Ca$^{2+}$ currents steepen Phase 4 and increase heart rate.
+\end{itemize}
+
+\paragraph{Parasympathetic stimulation}
+\begin{itemize}
+  \item Acetylcholine acting on M$_2$ receptors decreases cAMP and increases K$^+$ conductance.
+  \item Membrane hyperpolarisation and reduced Phase 4 slope slow the heart rate.
+\end{itemize}
+
+%----------------------------------------------
+\subsection{Conduction Pathways}
+
+\subsubsection{Sequence of Activation}
+
+\begin{enumerate}
+  \item SA node initiates the impulse.
+  \item Impulse spreads through the right atrium and via Bachmann's bundle to the left atrium.
+  \item AV node delays conduction by about $0.1$\,s.
+  \item His bundle conducts impulses to the interventricular septum.
+  \item Right and left bundle branches distribute the signal to their respective ventricles.
+  \item Purkinje fibres rapidly activate the ventricular myocardium.
+\end{enumerate}
+
+\subsubsection{Conduction Velocities}
+
+\begin{itemize}
+  \item SA node: slow.
+  \item Atrial muscle: $0.5$--$1$\,m/s.
+  \item AV node: $0.02$--$0.05$\,m/s.
+  \item His--Purkinje system: $2$--$4$\,m/s (fastest).
+  \item Ventricular muscle: $0.3$--$0.5$\,m/s.
+\end{itemize}
+
+\subsubsection{AV Nodal Delay}
+
+The AV nodal delay:
+\begin{itemize}
+  \item Allows completion of atrial contraction before ventricular systole, augmenting ventricular filling.
+  \item Acts as a filter, preventing excessively rapid atrial rhythms from being transmitted one-to-one to the ventricles.
+\end{itemize}
+
+%----------------------------------------------
+\subsection{Excitation--Contraction Coupling in Cardiac Muscle}
+
+Excitation--contraction (EC) coupling describes how an electrical impulse is converted into mechanical shortening.
+
+\subsubsection{Initiation and Calcium-Induced Calcium Release}
+
+\begin{itemize}
+  \item The plateau phase of the action potential opens L-type Ca$^{2+}$ channels in the sarcolemma and T-tubules.
+  \item Ca$^{2+}$ influx triggers Ca$^{2+}$ release from the sarcoplasmic reticulum (SR) via ryanodine receptors (Ca$^{2+}$-induced Ca$^{2+}$ release).
+  \item The amount of Ca$^{2+}$ released is proportional to the trigger Ca$^{2+}$ current, so contraction strength is graded.
+\end{itemize}
+
+\subsubsection{Role of Intracellular Ca$^{2+}$ and Relaxation}
+
+\begin{itemize}
+  \item Cytosolic Ca$^{2+}$ binds to troponin C to initiate cross-bridge cycling and force generation.
+  \item Relaxation (lusitropy) requires efficient removal of Ca$^{2+}$:
+    \begin{itemize}
+      \item SR uptake via SERCA2a (regulated by phospholamban).
+      \item Extrusion via the Na$^+$--Ca$^{2+}$ exchanger.
+      \item Minor contributions from sarcolemmal Ca$^{2+}$-ATPase and mitochondrial buffering.
+    \end{itemize}
+  \item Impaired lusitropy contributes to diastolic dysfunction and elevated filling pressures.
+\end{itemize}
+
+%----------------------------------------------
+\subsection{Autonomic Regulation of Electrical Properties}
+
+\subsubsection{Sympathetic Effects ($\beta_1$ Receptors)}
+
+\begin{itemize}
+  \item Increase heart rate (SA node).
+  \item Increase conduction velocity (AV node).
+  \item Enhance Ca$^{2+}$ influx and SR Ca$^{2+}$ uptake, increasing contractility and speeding relaxation.
+\end{itemize}
+
+\subsubsection{Parasympathetic Effects (M$_2$ Receptors)}
+
+\begin{itemize}
+  \item Decrease heart rate.
+  \item Slow AV nodal conduction.
+  \item Increase ACh-sensitive K$^+$ conductance, hyperpolarising nodal cells.
+\end{itemize}
+
+%----------------------------------------------
+\subsection{Abnormal Electrical Activity}
+
+Kam \& Powers describe three major mechanisms of arrhythmogenesis.
+
+\subsubsection{Enhanced Automaticity}
+
+\begin{itemize}
+  \item Increased slope of pacemaker depolarisation in normal pacemaker tissue.
+  \item Abnormal automaticity in non-pacemaker cells (e.g. ischaemic myocardium).
+\end{itemize}
+
+\subsubsection{Triggered Activity}
+
+\begin{itemize}
+  \item Early afterdepolarisations (EADs) arising during Phases 2 or 3, often when action potentials are prolonged (e.g. long QT states).
+  \item Delayed afterdepolarisations (DADs) occurring after repolarisation, usually due to intracellular Ca$^{2+}$ overload (e.g. digoxin toxicity).
+\end{itemize}
+
+\subsubsection{Re-Entry Circuits}
+
+\begin{itemize}
+  \item Require an anatomical or functional circuit, a unidirectional block and slowed conduction.
+  \item Represent the mechanism underlying many tachyarrhythmias, both supraventricular and ventricular.
+\end{itemize}
+
+%----------------------------------------------
+\subsection{Electrocardiography (ECG)}
+
+The ECG is a surface recording of the summed electrical activity of the heart. It reflects coordinated depolarisation and repolarisation of large numbers of myocardial cells and provides essential information about rhythm, conduction, chamber enlargement and metabolic or pharmacological disturbances.
+
+\subsubsection{Basic Components of the ECG}
+
+\begin{itemize}
+  \item P wave: atrial depolarisation.
+  \item PR interval: atrial conduction plus AV nodal delay.
+  \item QRS complex: rapid ventricular depolarisation.
+  \item ST segment: period during which the ventricles are fully depolarised (plateau phase).
+  \item T wave: ventricular repolarisation.
+  \item QT interval: total duration of ventricular depolarisation and repolarisation.
+\end{itemize}
+
+\subsubsection{Physiological Basis of ECG Deflections}
+
+\begin{itemize}
+  \item A wave of depolarisation moving towards a positive electrode produces an upward deflection; moving away produces a downward deflection.
+  \item Repolarisation produces deflections of opposite polarity because it restores negativity.
+  \item QRS amplitude and morphology depend on ventricular mass, activation sequence and conduction velocity.
+\end{itemize}
+
+\subsubsection{Cardiac Vectors and Mean Electrical Axis}
+
+\paragraph{Instantaneous and mean vectors}
+\begin{itemize}
+  \item At any instant, the heart's electrical activity can be represented as a vector with magnitude and direction.
+  \item Summation over time yields the mean electrical axis of depolarisation in the frontal plane (typically around $+30^\circ$ to $+90^\circ$ in adults).
+\end{itemize}
+
+\paragraph{Factors affecting axis}
+\begin{itemize}
+  \item Left axis deviation: LV hypertrophy, left anterior fascicular block, inferior myocardial infarction.
+  \item Right axis deviation: RV hypertrophy, pulmonary hypertension, left posterior fascicular block.
+  \item Extreme axis deviation: some ventricular rhythms and severe conduction disturbances.
+\end{itemize}
+
+\paragraph{Clinical usefulness}
+Axis analysis helps identify chamber enlargement, conduction block and some tachyarrhythmias, and is influenced by anatomical orientation of the heart in the thorax.
+
+\subsubsection{Effects of Electrolyte Disturbances}
+
+Electrolyte abnormalities alter action potential shape and conduction and produce characteristic ECG changes.
+
+\paragraph{Hyperkalaemia}
+\begin{itemize}
+  \item Tall, peaked T waves with narrow base.
+  \item Flattened or absent P waves.
+  \item Widened QRS complexes, which may progress to a sine-wave pattern.
+  \item Mechanism: depolarisation of resting membrane potential, Na$^+$ channel inactivation and slowed conduction.
+\end{itemize}
+
+\paragraph{Hypokalaemia}
+\begin{itemize}
+  \item Flattened T waves.
+  \item ST segment depression.
+  \item Prominent U waves.
+  \item Mechanism: hyperpolarisation and prolonged repolarisation, increasing arrhythmia risk.
+\end{itemize}
+
+\paragraph{Hypercalcaemia}
+\begin{itemize}
+  \item Shortened QT interval due to abbreviated plateau phase.
+\end{itemize}
+
+\paragraph{Hypocalcaemia}
+\begin{itemize}
+  \item Prolonged QT interval with risk of torsades de pointes.
+\end{itemize}
+
+\paragraph{Magnesium disturbances}
+\begin{itemize}
+  \item Low Mg$^{2+}$ predisposes to torsades de pointes and may mimic hypokalaemic/hypocalcaemic repolarisation changes.
+  \item High Mg$^{2+}$ can prolong PR and QRS intervals and reduce myocardial excitability.
+\end{itemize}
+
+\subsubsection{Effects of Temperature and Drugs}
+
+\paragraph{Hypothermia}
+\begin{itemize}
+  \item Osborn (J) waves at the junction of QRS and ST.
+  \item Bradycardia with prolonged PR, QRS and QT intervals.
+  \item Increased susceptibility to atrial and ventricular arrhythmias due to slowed ion channel kinetics and heterogeneous repolarisation.
+\end{itemize}
+
+\paragraph{Drug effects}
+\begin{itemize}
+  \item Digoxin: ``scooped'' ST depression, shortened QT and a range of arrhythmias mediated by delayed afterdepolarisations.
+  \item Class I Na$^+$ channel blockers: QRS widening (especially Class Ic) and possible AV block.
+  \item Class III K$^+$ channel blockers: QT prolongation with torsades risk.
+  \item $\beta$-blockers: PR prolongation and reduced heart rate.
+  \item Non-dihydropyridine Ca$^{2+}$ channel blockers (verapamil, diltiazem): PR prolongation and slowed nodal conduction.
+  \item Volatile anaesthetics: dose-dependent QT prolongation, suppression of SA/AV nodal automaticity and increased arrhythmogenic risk in susceptible patients.
+\end{itemize}
+
+\subsubsection{Clinical Relevance}
+
+\begin{itemize}
+  \item ECG changes often reflect alterations in conduction velocity, action potential duration or tissue heterogeneity.
+  \item Electrolyte- and drug-induced modification of ionic currents map directly onto characteristic ECG patterns.
+  \item Understanding vector orientation and repolarisation dynamics is essential for recognising ischaemia, hypertrophy and conduction disorders.
+\end{itemize}
+
+The ECG provides a non-invasive window into cardiac electrical behaviour, integrating depolarisation and repolarisation patterns across the myocardium.
+
+%----------------------------------------------
+\subsection{Summary of Chapter 24}
+
+Chapter 24 provides the electrophysiological foundation for cardiac function, describing ionic mechanisms of action potentials, regional specialisation of cardiac tissue, pacemaker activity, conduction pathways, excitation--contraction coupling and the principles underlying the ECG. These concepts explain how the heart generates rhythmic impulses, conducts them rapidly and directionally, and coordinates mechanical contraction under a wide range of physiological and pathological conditions.
 
 \end{document}
