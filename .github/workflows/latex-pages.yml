@@ -46,10 +46,10 @@ jobs:
           root_file: chapters/NSAIDs.tex
           texlive_version: 2024
 
-        - name: Compile Local_Anaesthetics chapter
+      - name: Compile Local_Anaesthetics chapter
         uses: xu-cheng/latex-action@v4
         with:
-          root_file: chapters/Local_Anaesthetics.tex.tex
+          root_file: chapters/Local_Anaesthetics.tex
           texlive_version: 2024
           
 
