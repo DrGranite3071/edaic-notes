@@ -40,6 +40,13 @@ jobs:
           root_file: chapters/General_Anesthetics.tex
           texlive_version: 2024
 
+      - name: Compile NSAIDs chapter
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: chapters/NSAIDs.tex
+          texlive_version: 2024
+          
+
       # ---- Collect PDFs into docs/ ----
       - name: Prepare docs folder
         run: |
@@ -63,6 +70,7 @@ jobs:
 
           copy_pdf "Opioids"
           copy_pdf "General_Anesthetics"
+          copy_pdf "NSAIDs"
 
 
           # Use the prettier landing page from the repo
