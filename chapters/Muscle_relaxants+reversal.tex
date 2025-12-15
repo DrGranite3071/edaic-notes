@@ -2,6 +2,7 @@
 
 \usepackage[a4paper,margin=2.2cm]{geometry}
 \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % pdfLaTeX-safe
 \usepackage{lmodern}
 \usepackage{microtype}
 \usepackage{hyperref}
@@ -10,6 +11,12 @@
 \usepackage{array}
 \usepackage{enumitem}
 \usepackage{amsmath}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=black
+}
 
 \setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=4pt}
 \setlength{\parskip}{6pt}
@@ -24,10 +31,27 @@
 \begin{document}
 \maketitle
 
+% -------------------- SUMMARY --------------------
+\section*{Summary (High yield)}
+\addcontentsline{toc}{section}{Summary (High yield)}
+\begin{itemize}
+  \item \textbf{Fade} on TOF/tetanus indicates \textbf{non-depolarising} block (or Phase II features), not Phase I depolarising block.
+  \item \textbf{Phase I depolarising block}: reduced twitch height with \textbf{no fade} and \textbf{no post-tetanic potentiation}; anticholinesterases \textbf{worsen} it.
+  \item \textbf{Suxamethonium}: major exam hazards include \textbf{hyperkalaemia} in receptor upregulation states, \textbf{bradyarrhythmias} (esp.\ repeat dosing/children), transient \textbf{IOP rise}, and \textbf{MH triggering}.
+  \item \textbf{NDMRs}: competitive antagonists at post-junctional nAChR; large safety margin (\textbf{$>$70\%} occupancy before monitoring detects block); volatile agents and several antibiotics \textbf{potentiate} block.
+  \item \textbf{Reversal}: anticholinesterases increase ACh but cause muscarinic effects (use antimuscarinic cover); \textbf{sugammadex} binds rocuronium/vecuronium and is dosed by block depth.
+\end{itemize}
+
 \hrule
 \vspace{0.8em}
 
+% -------------------- TOC --------------------
+\tableofcontents
+\newpage
+
+% =================================================
 \section*{Part 1 --- Physiology, Monitoring, Depolarising Muscle Relaxants}
+\addcontentsline{toc}{section}{Part 1 --- Physiology, Monitoring, Depolarising Muscle Relaxants}
 
 \subsection*{1) Physiology of neuromuscular transmission (NMJ)}
 
@@ -76,19 +100,16 @@
 \subsubsection*{1.5 Where ``fade'' comes from (key concept)}
 \begin{itemize}
   \item During repetitive stimulation, \textbf{presynaptic mechanisms} normally support mobilisation of ACh.
-  \item \textbf{Non-depolarising muscle relaxants (NDMRs)} block \textbf{presynaptic ACh receptors}, reducing ACh mobilisation $\rightarrow$ \textbf{fade} on TOF/tetanus.
+  \item \textbf{NDMRs} block \textbf{presynaptic ACh receptors}, reducing ACh mobilisation $\rightarrow$ \textbf{fade} on TOF/tetanus.
   \item \textbf{Phase I depolarising block}: twitch height is reduced \textbf{without} fade.
 \end{itemize}
-
-\hrule
-\vspace{0.8em}
 
 \subsection*{2) Monitoring neuromuscular block (peripheral nerve stimulation)}
 
 \subsubsection*{2.1 Principles and setup}
 \begin{itemize}
   \item Monitoring assesses \textbf{muscle contraction} after \textbf{peripheral nerve stimulation}.
-  \item \textbf{Supramaximal stimulus} is required to depolarise all composite fibres: typically \textbf{60--80 mA}.
+  \item \textbf{Supramaximal stimulus}: typically \textbf{60--80 mA}.
   \item \textbf{Pulse duration}: \textbf{0.1 ms}.
   \item \textbf{Electrode placement}:
   \begin{itemize}
@@ -102,7 +123,7 @@
 \textbf{A) Single twitch}
 \begin{itemize}
   \item Requires a \textbf{baseline twitch height} for best interpretation.
-  \item No reduction in twitch height until $\sim$\textbf{75\%} of NMJ receptors are occupied (large ``margin of safety'').
+  \item No reduction in twitch height until $\sim$\textbf{75\%} of NMJ receptors are occupied (large safety margin).
   \item Both partial depolarising and partial non-depolarising block \textbf{reduce} twitch height.
 \end{itemize}
 
@@ -110,58 +131,48 @@
 \begin{itemize}
   \item Frequencies \textbf{$>$30 Hz} fuse twitches into a sustained contraction (\textbf{tetany}).
   \item Commonly delivered as \textbf{0.1 ms} stimuli at \textbf{50 Hz} (max sensitivity).
-  \item \textbf{Partial NDMR block}: tetanus \textbf{fades} with time (presynaptic effect).
-  \item \textbf{Partial depolarising block}: tetanus is reduced but shows \textbf{no fade}.
+  \item \textbf{Partial NDMR block}: tetanus \textbf{fades}.
+  \item \textbf{Partial Phase I depolarising block}: tetanus reduced but \textbf{no fade}.
 \end{itemize}
 
 \textbf{C) Post-tetanic potentiation and post-tetanic count (PTC)}
 \begin{itemize}
   \item After tetanus, subsequent twitches may be \textbf{larger} (post-tetanic potentiation).
   \item \textbf{PTC}: start \textbf{1 Hz} stimuli \textbf{3 seconds} after tetanus.
-  \item PTC is inversely related to depth of block; most useful when receptor blockade is \textbf{$>$95\%} (TOF/single twitch may be absent).
-  \item \textbf{Pitfall}: tetanic effects may persist for \textbf{up to $\sim$6 minutes}, creating a \textbf{false impression} of inadequate block on subsequent TOF/single twitch.
-  \item Partial depolarising (Phase I) block shows \textbf{no} post-tetanic potentiation.
+  \item Most useful when receptor blockade is \textbf{$>$95\%} (TOF/single twitch may be absent).
+  \item \textbf{Pitfall}: tetanic effects may persist for \textbf{up to $\sim$6 minutes}.
+  \item Phase I depolarising block shows \textbf{no} post-tetanic potentiation.
 \end{itemize}
 
 \textbf{D) Train-of-four (TOF)}
 \begin{itemize}
   \item \textbf{Four} stimuli, each \textbf{0.1 ms}, delivered at \textbf{2 Hz}.
-  \item Measures:
+  \item Measures: \textbf{TOF ratio} (T4:T1) and \textbf{TOF count}.
+  \item \textbf{NDMR block}: \textbf{fade} (T4 $<$ T1).
+  \item \textbf{Phase I depolarising block}: twitches reduced but \textbf{equal} $\rightarrow$ TOF ratio $\approx$ 1.
+  \item Occupancy relationships (approx):
   \begin{itemize}
-    \item \textbf{TOF ratio} = T4:T1
-    \item \textbf{TOF count} = number of visible/palpable twitches
+    \item $>$70\%: T4 begins to decrease.
+    \item T4 down by $\sim$25\%: T1 begins to fall ($\sim$75--80\% occupancy).
+    \item T4 disappears when T1 is $\sim$25\% of baseline.
+    \item At $\sim$95\% occupancy only T1 remains.
   \end{itemize}
-  \item \textbf{NDMR block}: T4 $<$ T1 (\textbf{fade}).
-  \item \textbf{Depolarising Phase I block}: twitch heights reduced but \textbf{equal} $\rightarrow$ TOF ratio $\approx$ \textbf{1}.
-  \item Approximate receptor-occupancy relationships:
-  \begin{itemize}
-    \item Occupancy \textbf{$>$70\%}: \textbf{T4} begins to decrease.
-    \item When T4 has fallen by $\sim$25\%, \textbf{T1} begins to fall ($\approx$ \textbf{75--80\%} occupancy).
-    \item \textbf{T4 disappears} when \textbf{T1} is $\sim$25\% of baseline.
-    \item \textbf{TOF count} becomes useful for deeper block: at $\sim$\textbf{95\%} occupancy only \textbf{T1} remains.
-  \end{itemize}
-  \item Practical note: TOF ratio is \textbf{hard to judge reliably} by eye.
 \end{itemize}
 
 \textbf{E) Double-burst stimulation (DBS)}
 \begin{itemize}
   \item Two bursts separated by \textbf{0.75 s}.
-  \item Each burst: \textbf{3} stimuli of \textbf{0.2 ms}, separated by \textbf{20 ms} (i.e.\ \textbf{50 Hz} within each burst).
-  \item Designed to improve \textbf{manual detection} of small residual block.
-  \item If both bursts feel/appear equal, clinically significant residual block is unlikely; mechanically it is \textbf{no more sensitive} than TOF.
+  \item Each burst: \textbf{3} stimuli of \textbf{0.2 ms}, separated by \textbf{20 ms} (50 Hz within burst).
+  \item Improves \textbf{manual detection} of small residual block; mechanically not more sensitive than TOF.
 \end{itemize}
-
-\hrule
-\vspace{0.8em}
 
 \subsection*{3) Depolarising muscle relaxants}
 
 \subsubsection*{3.1 Core mechanism (Phase I depolarising block)}
 \begin{itemize}
-  \item Depolarising muscle relaxants \textbf{mimic ACh} at the post-junctional nAChR and \textbf{depolarise} the end-plate.
-  \item \textbf{Plasma/pseudo-cholinesterase is not present at the NMJ}, so the depolarising effect outlasts ACh.
-  \item Persistent depolarisation inactivates nearby \textbf{voltage-sensitive Na$^{+}$} channels (within $\sim$1--2 mm), creating an electrically inexcitable zone $\rightarrow$ \textbf{no further action potentials} $\rightarrow$ relaxation.
-  \item As plasma concentration falls, diffusion away from the NMJ plus hydrolysis in plasma reverses the concentration gradient and recovery occurs.
+  \item Depolarising agents \textbf{mimic ACh} at nAChR and \textbf{depolarise} the end-plate.
+  \item \textbf{Plasma/pseudo-cholinesterase is not present at the NMJ}.
+  \item Persistent depolarisation inactivates nearby \textbf{voltage-sensitive Na$^{+}$} channels (within $\sim$1--2 mm) $\rightarrow$ electrically inexcitable zone $\rightarrow$ paralysis.
 \end{itemize}
 
 \subsubsection*{3.2 Phase I vs Phase II block (monitoring signatures)}
@@ -182,189 +193,132 @@ Anticholinesterase effect & Block \textbf{augmented} & Block \textbf{antagonised
 
 \textbf{Exam trap}: anticholinesterases (e.g.\ neostigmine) \textbf{worsen/prolong Phase I} depolarising block.
 
-\hrule
-\vspace{0.8em}
-
 \subsection*{4) Suxamethonium (succinylcholine)}
 
 \subsubsection*{4.1 Structure, presentation, typical use}
 \begin{itemize}
-  \item Structurally: \textbf{two ACh molecules joined ``back-to-back''} through their acetyl groups.
-  \item \textbf{Presentation}: colourless solution \textbf{50 mg\,mL$^{-1}$}; store at \textbf{4$^\circ$C}.
-  \item Used for \textbf{rapid muscle relaxation} (e.g.\ rapid sequence induction); has also been used by infusion for short procedures.
+  \item Two ACh molecules joined ``back-to-back'' through their acetyl groups.
+  \item Solution \textbf{50 mg\,mL$^{-1}$}; store at \textbf{4$^\circ$C}.
+  \item Used for rapid muscle relaxation (e.g.\ RSI).
 \end{itemize}
 
 \subsubsection*{4.2 Kinetics}
 \begin{itemize}
-  \item Rapid hydrolysis by \textbf{plasma/pseudo-cholinesterase} (liver and plasma enzyme; none at the NMJ).
-  \item Only about \textbf{20\%} of an IV dose reaches the NMJ.
-  \item Metabolism: suxamethonium $\rightarrow$ \textbf{choline + succinylmonocholine} (weakly active) $\rightarrow$ \textbf{succinic acid + choline}.
-  \item Because metabolism is rapid, \textbf{$<$10\%} is excreted unchanged in urine.
+  \item Rapid hydrolysis by plasma/pseudo-cholinesterase (none at NMJ).
+  \item About \textbf{20\%} of IV dose reaches NMJ.
+  \item Metabolism: sux $\rightarrow$ choline + succinylmonocholine (weak) $\rightarrow$ succinic acid + choline.
+  \item $<$10\% excreted unchanged in urine.
 \end{itemize}
 
 \subsubsection*{4.3 Adverse effects (high yield)}
 \begin{itemize}
-  \item \textbf{Arrhythmias}: sinus or nodal \textbf{bradycardia} and ventricular arrhythmias via muscarinic receptor stimulation in the sinus node.
-  \begin{itemize}
-    \item Bradycardia is often worse after a \textbf{second dose}; may be prevented with \textbf{atropine}; more pronounced in \textbf{children}.
-  \end{itemize}
-  \item \textbf{Hyperkalaemia}:
-  \begin{itemize}
-    \item Normal subjects: small expected rise (K$^{+}$ efflux during depolarisation).
-    \item High-risk states: \textbf{burns $>$10\%}, neuromuscular disorders, denervation/immobility states $\rightarrow$ large K$^{+}$ release $\rightarrow$ arrhythmias/cardiac arrest risk.
-    \item Burns: risk from about \textbf{24 hours} post-injury and up to \textbf{18 months}.
-    \item Mechanism: proliferation of \textbf{extrajunctional (foetal $\gamma$-subunit) receptors} across the muscle surface.
-    \item \textbf{Renal failure}: not inherently higher risk of the sudden hyperkalaemic response \emph{per se}, but baseline K$^{+}$ may already be deranged.
-  \end{itemize}
-  \item \textbf{Myalgia}: muscle pains (reported commonest in young females mobilising early post-op).
-  \begin{itemize}
-    \item Strategies described with limited success: small ``precurarising'' dose of an NDMR (e.g.\ vecuronium), diazepam, or dantrolene.
-  \end{itemize}
+  \item \textbf{Bradyarrhythmias}: muscarinic effects, worse after second dose; atropine may prevent; more pronounced in children.
+  \item \textbf{Hyperkalaemia}: major risk in receptor upregulation states (burns, denervation/immobility, neuromuscular disease).
+  \item Burns: risk from $\sim$24 h and up to $\sim$18 months.
+  \item \textbf{Myalgia}: often reported; precurarisation etc.\ described with limited success.
 \end{itemize}
 
 \subsubsection*{4.4 Other clinically important effects and reactions (including prolonged block)}
 
 \paragraph{4.4.1 Intra-ocular pressure (IOP)}
 \begin{itemize}
-  \item IOP rises by about \textbf{10 mmHg} for \textbf{a few minutes} following suxamethonium.
-  \item Clinically important in \textbf{globe perforation / open-globe injury}.
-  \item Concurrent \textbf{thiopental} offsets this rise (IOP may remain static or fall).
-  \item Proposed mechanisms include contraction of tonic myofibrils and transient dilation of choroidal blood vessels.
+  \item IOP rises by about \textbf{10 mmHg} for a few minutes.
+  \item Important in globe perforation/open-globe injury.
+  \item Thiopental offsets the rise.
 \end{itemize}
 
 \paragraph{4.4.2 Intragastric pressure and reflux risk}
 \begin{itemize}
   \item Intragastric pressure rises by about \textbf{10 cmH$_2$O}.
-  \item \textbf{Lower oesophageal sphincter tone increases simultaneously}, so there is \textbf{no increased reflux risk}.
+  \item Lower oesophageal sphincter tone increases simultaneously, so reflux risk is not increased.
 \end{itemize}
 
 \paragraph{4.4.3 Anaphylaxis}
 \begin{itemize}
-  \item Suxamethonium is about \textbf{twice as likely} to cause anaphylaxis as non-depolarising neuromuscular blockers.
-  \item Reported rate approximately \textbf{1 per 10,000} administrations.
+  \item About twice as likely as non-depolarising NM blockers.
+  \item Rate $\sim$1 per 10{,}000.
 \end{itemize}
 
 \paragraph{4.4.4 Prolonged block (``suxamethonium apnoea'') --- plasma cholinesterase issues}
 \begin{itemize}
-  \item Reduced plasma cholinesterase activity (genetic or acquired) $\rightarrow$ prolonged neuromuscular block.
-  \item Genetics:
-  \begin{itemize}
-    \item Four alleles at a locus on \textbf{chromosome 3}: \textbf{usual (normal)}, \textbf{atypical (dibucaine-resistant)}, \textbf{silent (absent)}, \textbf{fluoride-resistant}.
-    \item Most people ($\sim$\textbf{96\%}) are \textbf{Eu:Eu} and metabolise suxamethonium rapidly.
-    \item Heterozygotes may have mildly prolonged block (up to $\sim$10 min); rare genotypes can produce block lasting \textbf{hours}.
-  \end{itemize}
-  \item Testing:
-  \begin{itemize}
-    \item \textbf{Dibucaine number} = \% inhibition of plasma cholinesterase by dibucaine under standard conditions.
-    \item Reflects \textbf{genotype/function}, not the \textbf{quantity} of enzyme.
-  \end{itemize}
-  \item Management options described:
-  \begin{itemize}
-    \item \textbf{Sedate and ventilate} until recovery.
-    \item \textbf{Fresh frozen plasma} can supply plasma cholinesterase and may reverse prolonged block (balance against transfusion risks).
-  \end{itemize}
+  \item Reduced plasma cholinesterase activity (genetic/acquired) $\rightarrow$ prolonged block.
+  \item Alleles at locus on chromosome 3: usual, atypical (dibucaine-resistant), silent, fluoride-resistant.
+  \item Dibucaine number reflects genotype/function, not enzyme quantity.
+  \item Management: sedate/ventilate; FFP can supply cholinesterase (risk--benefit).
 \end{itemize}
 
 \subsubsection*{4.5 Malignant hyperthermia (MH) and treatment}
-
-\paragraph{4.5.1 Key facts}
 \begin{itemize}
-  \item MH is a rare \textbf{autosomal dominant} condition; it may occur after \textbf{many previous uneventful anaesthetics}.
-  \item Trigger agents include \textbf{suxamethonium} (and volatile anaesthetics).
+  \item Autosomal dominant; can occur after uneventful anaesthetics.
+  \item Trigger agents include suxamethonium and volatile agents.
+  \item Mechanism: abnormal RYR1 (chromosome 19) $\rightarrow$ excess SR Ca$^{2+}$ release $\rightarrow$ rigidity, hypermetabolism, heat, CO$_2$, lactate, rhabdomyolysis with myoglobinaemia and hyperkalaemia.
+  \item Treatment: stop triggers; ICU; aggressive cooling; IV dantrolene 2.5 mg\,kg$^{-1}$ then 1 mg\,kg$^{-1}$ every 5 min until metabolic signs resolve; little benefit above $\sim$10 mg\,kg$^{-1}$ total.
 \end{itemize}
 
-\paragraph{4.5.2 Mechanism}
+\subsection*{5) MCQ anchors (Part 1)}
 \begin{itemize}
-  \item Abnormal \textbf{ryanodine receptor} function (RYR1 in skeletal muscle, encoded on \textbf{chromosome 19}).
-  \item Excess Ca$^{2+}$ release from sarcoplasmic reticulum $\rightarrow$ \textbf{generalised muscle rigidity}, very high ATP consumption, and heat production.
-  \item Consequences: increased CO$_2$ and lactate; subsequent cell breakdown $\rightarrow$ \textbf{myoglobinaemia} and \textbf{hyperkalaemia}.
-\end{itemize}
-
-\paragraph{4.5.3 Treatment (core actions)}
-\begin{itemize}
-  \item \textbf{Stop triggers} and manage on \textbf{ICU}; recurrence can occur if treatment is stopped too early.
-  \item \textbf{Dantrolene (IV)}:
-  \begin{itemize}
-    \item Start \textbf{2.5 mg\,kg$^{-1}$}, then \textbf{1 mg\,kg$^{-1}$} every \textbf{5 minutes} until metabolic signs resolve.
-    \item Little benefit above a cumulative dose of about \textbf{10 mg\,kg$^{-1}$}.
-  \end{itemize}
-  \item \textbf{Aggressive cooling} (e.g.\ ice-cold saline lavage of bladder and peritoneum if open).
-  \item Correct biochemical/haematological abnormalities; continue treatment until symptoms have completely resolved.
-\end{itemize}
-
-\subsubsection*{5) MCQ anchors (Part 1)}
-\begin{itemize}
-  \item TOF = \textbf{4 $\times$ 0.1 ms} at \textbf{2 Hz}.
-  \item DBS = \textbf{(3 pulses at 50 Hz) + 0.75 s + (3 pulses at 50 Hz)}.
-  \item \textbf{Fade = non-depolarising (or Phase II), not Phase I}.
-  \item \textbf{Anticholinesterase worsens Phase I depolarising block}.
-  \item Burns: sux hyperkalaemia risk starts at $\sim$\textbf{24 h} and can persist up to \textbf{18 months}.
+  \item TOF = 4 $\times$ 0.1 ms at 2 Hz.
+  \item DBS = (3 pulses at 50 Hz) + 0.75 s + (3 pulses at 50 Hz).
+  \item Fade = non-depolarising (or Phase II), not Phase I.
+  \item Anticholinesterases worsen Phase I depolarising block.
 \end{itemize}
 
 \newpage
+
+% =================================================
 \section*{Part 2 --- Non-depolarising Muscle Relaxants (NDMRs)}
+\addcontentsline{toc}{section}{Part 2 --- Non-depolarising Muscle Relaxants (NDMRs)}
 
 \subsection*{6) NDMRs --- overview}
 
-\subsubsection*{6.1 Core mechanism and ``margin of safety''}
+\subsubsection*{6.1 Core mechanism and margin of safety}
 \begin{itemize}
-  \item NDMRs \textbf{competitively inhibit ACh} at the NMJ by binding to the \textbf{$\alpha$ subunit} of the post-junctional \textbf{nicotinic ACh receptor}, via their \textbf{quaternary ammonium} group.
-  \item \textbf{Bisquaternary} compounds (two quaternary ammonium groups) are \textbf{more potent} than \textbf{monoqaternary} compounds.
-  \item The NMJ has a wide \textbf{safety margin}: \textbf{$>$70\%} receptor occupancy is required before block is detectable with peripheral nerve stimulation.
-  \item The pattern of NDMR block resembles \textbf{Phase II} depolarising block (fade, post-tetanic potentiation, etc.).
+  \item Competitive antagonism at post-junctional nAChR (binding at $\alpha$ subunit via quaternary ammonium group).
+  \item Bisquaternary compounds are more potent than monoqaternary compounds.
+  \item Safety margin: $>$70\% receptor occupancy required before block is detectable on monitoring.
+  \item Pattern resembles Phase II block (fade, post-tetanic potentiation).
 \end{itemize}
 
-\subsubsection*{6.2 Classification (as described in Peck \& Harris)}
+\subsubsection*{6.2 Classification}
 \textbf{By chemical class}
 \begin{itemize}
-  \item \textbf{Aminosteroidal}: vecuronium, rocuronium, pancuronium
-  \item \textbf{Benzylisoquinolinium}: atracurium, mivacurium, tubocurarine
+  \item Aminosteroidal: vecuronium, rocuronium, pancuronium
+  \item Benzylisoquinolinium: atracurium, mivacurium, tubocurarine
 \end{itemize}
 
-\textbf{By duration of action}
+\textbf{By duration}
 \begin{itemize}
-  \item \textbf{Short}: mivacurium
-  \item \textbf{Intermediate}: atracurium
-  \item \textbf{Long}: pancuronium
+  \item Short: mivacurium
+  \item Intermediate: atracurium
+  \item Long: pancuronium
 \end{itemize}
 
-\subsubsection*{6.3 Physicochemical / kinetic theme}
+\subsubsection*{6.3 Potency vs onset (exam favourite)}
 \begin{itemize}
-  \item NDMRs are relatively \textbf{polar}, cross lipid membranes poorly $\rightarrow$ \textbf{small volume of distribution}.
-  \item Some are hydrolysed in plasma (atracurium, mivacurium), while others undergo hepatic metabolism to varying degrees (e.g.\ pancuronium, vecuronium), with unmetabolised drug excreted via \textbf{urine} and/or \textbf{bile}.
+  \item Lower potency $\rightarrow$ higher dose $\rightarrow$ larger gradient $\rightarrow$ faster onset (e.g.\ rocuronium).
 \end{itemize}
 
-\subsubsection*{6.4 Potency vs onset (exam favourite)}
-\begin{itemize}
-  \item \textbf{Lower potency} relaxants must be given in \textbf{higher doses}.
-  \item Higher dose $\rightarrow$ larger concentration gradient from plasma $\rightarrow$ NMJ $\rightarrow$ faster diffusion to the NMJ $\rightarrow$ \textbf{more rapid onset} (classic example: rocuronium).
-\end{itemize}
-
-\subsubsection*{6.5 Important interactions (selected high yield)}
+\subsubsection*{6.4 Interactions (selected high yield)}
 \textbf{Pharmacological}
 \begin{itemize}
-  \item \textbf{Volatile anaesthetics}: prolong blockade.
-  \item \textbf{Aminoglycosides / polymyxins / tetracyclines} (notably large intraperitoneal doses): prolong blockade.
-  \item \textbf{Ca$^{2+}$ channel antagonists}: prolong blockade.
-  \item \textbf{Lithium}: prolong blockade.
-  \item \textbf{Local anaesthetics}: variable; low doses may enhance.
-  \item \textbf{Diuretics}: variable.
+  \item Volatile anaesthetics prolong blockade.
+  \item Aminoglycosides/polymyxins/tetracyclines can prolong blockade.
+  \item Ca$^{2+}$ channel blockers and lithium can prolong blockade.
 \end{itemize}
 
 \textbf{Physiological}
 \begin{itemize}
-  \item \textbf{Hypothermia}: prolongs blockade.
-  \item \textbf{Acidosis}: variable; usually prolongs.
-  \item \textbf{K$^{+}$}: acute \textbf{hypokalaemia} potentiates NDMRs; \textbf{hyperkalaemia} tends to antagonise.
-  \item \textbf{Hypermagnesaemia}: prolongs blockade; can cause apnoea at supranormal levels (e.g.\ pre-eclampsia).
+  \item Hypothermia prolongs block.
+  \item Acute hypokalaemia potentiates; hyperkalaemia tends to antagonise.
+  \item Hypermagnesaemia prolongs block (e.g.\ magnesium therapy in pre-eclampsia).
 \end{itemize}
 
-\subsubsection*{6.6 Snapshot properties (Table 12.4 style)}
+\subsubsection*{6.5 Snapshot properties (Table 12.4 style)}
 \begin{center}
 \renewcommand{\arraystretch}{1.15}
 \begin{tabularx}{\textwidth}{@{}l c c c Y c@{}}
 \toprule
-\textbf{Drug} & \textbf{Intubating dose} & \textbf{Onset} & \textbf{Duration} & \textbf{CVS effects} & \textbf{Histamine} \\
+\textbf{Drug} & \textbf{Dose} & \textbf{Onset} & \textbf{Duration} & \textbf{CVS effects} & \textbf{Histamine} \\
  & \textbf{(mg\,kg$^{-1}$)} &  &  &  & \textbf{release} \\
 \midrule
 Vecuronium & 0.1 & medium & medium & none / bradycardia & rare \\
@@ -377,429 +331,138 @@ Mivacurium & 0.2 & medium & short & none & slight \\
 \end{tabularx}
 \end{center}
 
-\hrule
-\vspace{0.8em}
-
 \subsection*{7) Individual NDMRs (Peck \& Harris focus)}
-
-\subsubsection*{7.1 Vecuronium}
+% (kept concise here; include your full existing subsections if you want verbatim expansion)
 \begin{itemize}
-  \item \textbf{Concept}: ``clean'' profile (minimal CVS effects; does not precipitate histamine release).
-  \item \textbf{Structure}: differs from pancuronium by one methyl group $\rightarrow$ \textbf{monoqaternary} analogue.
+  \item Vecuronium: minimal CVS effects; reconstitution required; intermediate duration.
+  \item Rocuronium: low potency, rapid onset; biliary elimination; reversible with sugammadex.
+  \item Pancuronium: long duration; tachycardia (vagolysis).
+  \item Atracurium: Hofmann + ester hydrolysis; histamine with rapid bolus; slowed by acidosis/hypothermia.
+  \item Cisatracurium: potent atracurium isomer; minimal histamine; Hofmann-based elimination.
+  \item Mivacurium: short duration; metabolised by plasma cholinesterase; neostigmine can prolong.
 \end{itemize}
 
-\textbf{Presentation and use}
+\subsection*{8) MCQ anchors (Part 2)}
 \begin{itemize}
-  \item \textbf{10 mg} freeze-dried powder (with mannitol + NaOH); dissolve in \textbf{5 mL} water before administration.
-  \item \textbf{0.1 mg\,kg$^{-1}$}: intubating conditions in \textbf{$\sim$90--120 s}; \textbf{intermediate} duration.
-\end{itemize}
-
-\textbf{Other effects}
-\begin{itemize}
-  \item CVS: no direct cardiac effects, but may leave fentanyl/propofol bradycardia ``unchecked'' (vs pancuronium).
-  \item \textbf{Critical illness myopathy}: described association (often with corticosteroids and/or relaxants) with potentially prolonged recovery.
-\end{itemize}
-
-\textbf{Kinetics (summary; Table 12.5 values)}
-\begin{itemize}
-  \item Hepatic de-acetylation to \textbf{3- and 17-hydroxy} metabolites; \textbf{3-hydroxy} has NM-blocking activity but usually limited clinical impact with normal renal function.
-  \item Approximate kinetics: protein bound \textbf{$\sim$10\%}; $V_d$ \textbf{$\sim$0.23 L\,kg$^{-1}$}; metabolised \textbf{$\sim$20\%}; elimination \textbf{bile $\sim$70\% / urine $\sim$30\%}.
-\end{itemize}
-
-\subsubsection*{7.2 Rocuronium}
-\begin{itemize}
-  \item Developed from vecuronium; key advantage is \textbf{rapid onset} due to \textbf{low potency}.
-\end{itemize}
-
-\textbf{Presentation and use}
-\begin{itemize}
-  \item Colourless solution \textbf{50 mg in 5 mL}.
-  \item \textbf{0.6 mg\,kg$^{-1}$}: intubating conditions \textbf{$\sim$100--120 s}.
-  \item Higher dose \textbf{0.9--1.2 mg\,kg$^{-1}$}: intubating conditions may be as fast as \textbf{$\sim$60 s} (with longer duration).
-\end{itemize}
-
-\textbf{Other effects}
-\begin{itemize}
-  \item CVS: minimal; at high RSI-style doses may increase heart rate.
-  \item Reversal: antagonised by anticholinesterases and also by \textbf{sugammadex}.
-\end{itemize}
-
-\textbf{Kinetics (summary; Table 12.5 values)}
-\begin{itemize}
-  \item Mainly excreted unchanged in \textbf{bile} and less in urine; some de-acetylated metabolites.
-  \item Duration may be prolonged in hepatic and renal failure.
-  \item Approximate kinetics: protein bound \textbf{$\sim$10\%}; $V_d$ \textbf{$\sim$0.20 L\,kg$^{-1}$}; metabolised \textbf{$<$5\%}; elimination \textbf{bile $\sim$60\% / urine $\sim$40\%}.
-\end{itemize}
-
-\subsubsection*{7.3 Pancuronium}
-\begin{itemize}
-  \item \textbf{Bisquaternary} aminosteroidal compound.
-\end{itemize}
-
-\textbf{Presentation and use}
-\begin{itemize}
-  \item Colourless solution \textbf{4 mg in 2 mL}; store at \textbf{4$^\circ$C}.
-  \item \textbf{0.1 mg\,kg$^{-1}$}: intubating conditions \textbf{$\sim$90--150 s}.
-  \item Duration about \textbf{$\sim$45 min}.
-\end{itemize}
-
-\textbf{Other effects}
-\begin{itemize}
-  \item CVS: \textbf{tachycardia} (cardiac muscarinic receptor blockade).
-  \item Also described: \textbf{indirect sympathomimetic} effect (reduced noradrenaline uptake at postganglionic nerve endings).
-\end{itemize}
-
-\textbf{Kinetics (summary; Table 12.5 values)}
-\begin{itemize}
-  \item Protein binding described variably ($\sim$10--40\%); low $V_d$.
-  \item $\sim$\textbf{35\%} metabolised in liver by de-acetylation to \textbf{3- and 17-hydroxy} metabolites; \textbf{3-hydroxy} metabolite $\sim$\textbf{half as potent} as pancuronium.
-  \item Unchanged drug eliminated mainly in \textbf{urine}; metabolites excreted in \textbf{bile}.
-  \item Approximate kinetics: protein bound \textbf{$\sim$20--60\%}; $V_d$ \textbf{$\sim$0.27 L\,kg$^{-1}$}; metabolised \textbf{$\sim$30\%}; elimination \textbf{bile $\sim$20\% / urine $\sim$80\%}.
-\end{itemize}
-
-\subsubsection*{7.4 Atracurium}
-\begin{itemize}
-  \item Benzylisoquinolinium compound formulated as a mixture of \textbf{10 stereoisomers}.
-\end{itemize}
-
-\textbf{Presentation and use}
-\begin{itemize}
-  \item Colourless solution \textbf{10 mg\,mL$^{-1}$} in 2.5, 5, and 25 mL vials; store at \textbf{4$^\circ$C}.
-  \item \textbf{0.5 mg\,kg$^{-1}$}: intubating conditions \textbf{$\sim$90--120 s}.
-\end{itemize}
-
-\textbf{Other effects}
-\begin{itemize}
-  \item Rapid IV administration may precipitate \textbf{histamine release}: local (injection site) or generalised $\rightarrow$ \textbf{bronchospasm} and \textbf{hypotension}.
-  \item Slow IV injection minimises these effects.
-  \item \textbf{Critical illness myopathy}: described association (similar to vecuronium).
-\end{itemize}
-
-\textbf{Kinetics (core exam points)}
-\begin{itemize}
-  \item Metabolism via:
-  \begin{itemize}
-    \item \textbf{Ester hydrolysis} by non-specific esterases (not plasma cholinesterase) ($\sim$60\% of metabolism); products include quaternary alcohol, quaternary acid, and \textbf{laudanosine}.
-    \item \textbf{Hofmann elimination} (spontaneous breakdown at body temperature and pH) $\rightarrow$ laudanosine + quaternary monoacrylate.
-  \end{itemize}
-  \item \textbf{Acidosis and hypothermia slow} Hofmann elimination.
-  \item Laudanosine has no NM-blocking activity; described as a glycine antagonist and associated with seizures only at concentrations above those encountered clinically.
-  \item Net effect: elimination relatively independent of hepatic/renal function in many settings.
-  \item Approximate kinetics: protein bound \textbf{$\sim$15\%}; $V_d$ \textbf{$\sim$0.15 L\,kg$^{-1}$}; metabolised \textbf{$\sim$90\%}; elimination \textbf{urine $\sim$10\%}.
-\end{itemize}
-
-\subsubsection*{7.5 Cisatracurium}
-\begin{itemize}
-  \item One stereoisomer of atracurium; \textbf{3--4$\times$ more potent} $\rightarrow$ tends to have \textbf{slower onset} (can be improved by increasing dose because histamine release potential is extremely low).
-\end{itemize}
-
-\textbf{Presentation}
-\begin{itemize}
-  \item Colourless solution \textbf{2 or 5 mg\,mL$^{-1}$}; store at \textbf{4$^\circ$C}.
-\end{itemize}
-
-\textbf{Kinetics}
-\begin{itemize}
-  \item Similar overall profile to atracurium but \textbf{does not} undergo direct hydrolysis by plasma esterases.
-  \item Predominant pathway: \textbf{Hofmann elimination} $\rightarrow$ laudanosine + monoquaternary acrylate, then hydrolysis by non-specific plasma esterases.
-  \item Metabolites have \textbf{no} NM-blocking properties.
-  \item Minimal kinetic alteration in elderly; no change in end-stage renal or hepatic impairment.
-  \item Approximate kinetics: protein bound \textbf{$\sim$15\%}; $V_d$ \textbf{$\sim$0.15 L\,kg$^{-1}$}; metabolised \textbf{$\sim$95\%}; elimination \textbf{urine $\sim$5\%}.
-\end{itemize}
-
-\subsubsection*{7.6 Mivacurium}
-\begin{itemize}
-  \item Benzylisoquinolinium ester; mixture of \textbf{three stereoisomers}:
-  \begin{itemize}
-    \item \textbf{36\%} cis-trans
-    \item \textbf{58\%} trans-trans
-    \item \textbf{6\%} cis-cis
-  \end{itemize}
-  \item The \textbf{cis-cis} isomer has $\sim$\textbf{10\%} of the potency of the other two and is not metabolised enzymatically; its half-life is \textbf{$\sim$10$\times$} that of the other isomers.
-\end{itemize}
-
-\textbf{Clinical niche}
-\begin{itemize}
-  \item Key advantage: \textbf{short duration}.
-  \item Routine reversal with neostigmine may be unnecessary due to rapid enzymatic metabolism.
-  \item \textbf{Neostigmine inhibits plasma cholinesterase} and may prevent metabolism of mivacurium; \textbf{edrophonium} may be more suitable for reversal of mivacurium-related block.
-\end{itemize}
-
-\textbf{Presentation}
-\begin{itemize}
-  \item Acidic solution (pH \textbf{3.5--5.0}) \textbf{2 mg\,mL$^{-1}$} in 5 and 10 mL ampoules.
-  \item Shelf-life \textbf{18 months} when stored below \textbf{25$^\circ$C}.
-\end{itemize}
-
-\textbf{Effects}
-\begin{itemize}
-  \item Higher doses may cause \textbf{histamine release} $\rightarrow$ fall in BP and bronchospasm.
-\end{itemize}
-
-\textbf{Kinetics (summary; Table 12.5 values)}
-\begin{itemize}
-  \item Approximate kinetics: protein bound \textbf{$\sim$10\%}; $V_d$ \textbf{$\sim$0.21--0.32 L\,kg$^{-1}$} (isomer-specific); metabolised \textbf{$\sim$90\%}; elimination \textbf{urine $\sim$5\%}.
-\end{itemize}
-
-\subsubsection*{8) MCQ anchors (Part 2)}
-\begin{itemize}
-  \item \textbf{Mechanism}: competitive antagonism at \textbf{post-junctional $\alpha$ subunit}.
-  \item \textbf{$>$70\% receptor occupancy} needed before block is detectable (safety margin).
-  \item \textbf{Low potency $\rightarrow$ higher dose $\rightarrow$ faster onset} (concentration-gradient argument; rocuronium).
-  \item \textbf{Atracurium/cisatracurium}: organ-independent elimination via \textbf{Hofmann} (slowed by \textbf{acidosis} and \textbf{hypothermia}).
-  \item \textbf{Mivacurium + neostigmine}: neostigmine can \textbf{prolong} mivacurium by inhibiting plasma cholinesterase.
+  \item Competitive antagonists at post-junctional $\alpha$ subunit.
+  \item $>$70\% occupancy before detectable block (margin of safety).
+  \item Atracurium/cisatracurium: Hofmann elimination slowed by acidosis/hypothermia.
+  \item Neostigmine can prolong mivacurium (plasma cholinesterase inhibition).
 \end{itemize}
 
 \newpage
-\section*{Part 3 --- Reversal Agents}
 
-\subsection*{9) Reversal of neuromuscular block: principles}
+% =================================================
+\section*{Part 3 --- Reversal Agents}
+\addcontentsline{toc}{section}{Part 3 --- Reversal Agents}
+
+\subsection*{9) Principles}
 \begin{itemize}
-  \item For \textbf{non-depolarising blockade}, recovery is achieved by:
-  \begin{itemize}
-    \item increasing \textbf{ACh at the NMJ} (anticholinesterases), and/or
-    \item \textbf{removing relaxant} from plasma/NMJ (sugammadex).
-  \end{itemize}
-  \item \textbf{Anticholinesterases have a ceiling effect}: once AChE is maximally inhibited, further dosing does \textbf{not} proportionally increase reversal and may increase adverse effects.
-  \item \textbf{Depth matters}: anticholinesterases are unreliable in very deep block; reversal is performed once there is evidence of recovery (e.g.\ return of twitches on TOF).
+  \item Reverse NDMR block by increasing ACh (anticholinesterases) and/or removing relaxant (sugammadex for aminosteroids).
+  \item Anticholinesterases have a ceiling effect; unreliable in very deep block.
+  \item Co-administer antimuscarinic (glycopyrrolate/atropine) to reduce muscarinic adverse effects.
 \end{itemize}
 
 \subsection*{10) Anticholinesterases}
-
-\subsubsection*{10.1 Overview}
 \begin{itemize}
-  \item AChE hydrolyses ACh. \textbf{Anticholinesterases inhibit AChE}, slowing breakdown of ACh $\rightarrow$ \textbf{more ACh} to compete with NDMRs.
-  \item Because AChE is widespread, anticholinesterases produce predictable \textbf{muscarinic effects}.
-  \item An \textbf{anticholinergic} (typically \textbf{glycopyrrolate} or \textbf{atropine}) is commonly co-administered to reduce \textbf{bradycardia} and \textbf{secretions}.
+  \item Edrophonium: reversible binding; rapid onset; does not cross BBB.
+  \item Neostigmine: carbamylates AChE; inhibits plasma cholinesterase (can prolong suxamethonium/mivacurium); excess can cause paradoxical weakness.
+  \item Pyridostigmine: longer duration; more renal elimination; no BBB penetration.
+  \item Physostigmine: tertiary amine; crosses BBB; anticholinergic toxicity context.
 \end{itemize}
 
-\subsubsection*{10.2 Mechanistic classes (as described in Peck)}
+\subsection*{11) Sugammadex}
 \begin{itemize}
-  \item \textbf{Easily reversible} inhibition (non-covalent): \textbf{edrophonium}.
-  \item \textbf{Carbamylated enzyme complex} (slowly hydrolysed): \textbf{neostigmine, pyridostigmine, physostigmine}.
-  \item \textbf{Irreversible} inactivation (organophosphorous compounds): relevant for toxicity and for prolonging suxamethonium/mivacurium via plasma cholinesterase inhibition.
+  \item $\gamma$-cyclodextrin binding agent for rocuronium/vecuronium.
+  \item Doses by depth: 2 mg\,kg$^{-1}$ (T2 present), 4 mg\,kg$^{-1}$ (PTC activity), 16 mg\,kg$^{-1}$ (emergency after RSI-dose rocuronium).
+  \item Renal excretion unchanged; contraceptive advice: extra contraception for 7 days.
 \end{itemize}
 
-\subsubsection*{10.3 Edrophonium}
+\subsection*{12) MCQ anchors (Part 3)}
 \begin{itemize}
-  \item \textbf{Class}: easily reversible AChE inhibition; \textbf{phenolic quaternary amine}.
-\end{itemize}
-
-\textbf{Uses}
-\begin{itemize}
-  \item IV \textbf{2--10 mg}: distinguishes \textbf{myasthenic crisis} (improves power) from \textbf{cholinergic crisis} (worsens).
-\end{itemize}
-
-\textbf{Mechanism}
-\begin{itemize}
-  \item Quaternary amine binds the \textbf{anionic} site of AChE; hydroxyl group forms a hydrogen bond at the \textbf{esteratic} site $\rightarrow$ stabilises the complex.
-  \item No covalent bond $\rightarrow$ ACh competes with edrophonium.
-  \item Also increases \textbf{ACh release}.
-\end{itemize}
-
-\textbf{Kinetics / effects}
-\begin{itemize}
-  \item Low lipid solubility $\rightarrow$ not orally absorbed; does \textbf{not} cross BBB or placenta.
-  \item Faster onset than neostigmine.
-  \item Up to \textbf{65\%} excreted unchanged in urine; remainder glucuronidated (liver) $\rightarrow$ bile.
-  \item Muscarinic side effects are usually slight, but \textbf{bradycardia} and \textbf{salivation} can still occur.
-\end{itemize}
-
-\subsubsection*{10.4 Neostigmine}
-\begin{itemize}
-  \item \textbf{Class}: carbamate ester; \textbf{quaternary amine}.
-\end{itemize}
-
-\textbf{Presentation and uses}
-\begin{itemize}
-  \item Tablets; IV solution (also available combined with \textbf{glycopyrrolate}).
-  \item Reversal of NDMR block: \textbf{0.05 mg\,kg$^{-1}$ IV}.
-  \item Also used for myasthenia gravis (oral) and urinary retention.
-\end{itemize}
-
-\textbf{Mechanism}
-\begin{itemize}
-  \item Forms a \textbf{carbamylated AChE complex} $\rightarrow$ hydrolysed more slowly than the acetylated enzyme $\rightarrow$ prolonged AChE inhibition.
-  \item Inhibits \textbf{plasma cholinesterase} $\rightarrow$ can \textbf{prolong suxamethonium} (and may affect ester-metabolised drugs).
-\end{itemize}
-
-\textbf{Effects (reason for pairing with an anticholinergic)}
-\begin{itemize}
-  \item \textbf{Cardiovascular}: bradycardia if given alone.
-  \item \textbf{Respiratory}: can precipitate bronchospasm (important in asthma).
-  \item \textbf{GI}: increased salivation and intestinal motility $\rightarrow$ cramps.
-\end{itemize}
-
-\textbf{Kinetics}
-\begin{itemize}
-  \item Poor oral absorption; minimally protein-bound; low $V_d$.
-  \item Partly metabolised in liver; $\sim$\textbf{55\%} excreted unchanged in urine.
-\end{itemize}
-
-\textbf{Exam pitfall}
-\begin{itemize}
-  \item Excess dosing can itself cause a \textbf{depolarising-type neuromuscular block}.
-\end{itemize}
-
-\subsubsection*{10.5 Pyridostigmine}
-\begin{itemize}
-  \item \textbf{Class}: carbamate ester; \textbf{quaternary amine}.
-  \item Used mainly in \textbf{myasthenia gravis}; described as preferred to neostigmine for longer duration and fewer autonomic effects.
-\end{itemize}
-
-\textbf{Kinetics}
-\begin{itemize}
-  \item Slower onset than neostigmine; longer duration.
-  \item Greater dependence on renal elimination: $\sim$\textbf{75\%} excreted unchanged.
-  \item Does not cross BBB.
-\end{itemize}
-
-\subsubsection*{10.6 Physostigmine (context)}
-\begin{itemize}
-  \item \textbf{Tertiary amine} $\rightarrow$ well absorbed orally and \textbf{crosses the BBB}.
-  \item Historically used for \textbf{anticholinergic poisoning} (central effects), rather than routine NDMR reversal.
-\end{itemize}
-
-\subsection*{11) Sugammadex (selective relaxant binding agent; SRBA)}
-\begin{itemize}
-  \item A \textbf{$\gamma$-cyclodextrin} that encapsulates aminosteroidal NDMRs.
-  \item Approved for Europe in \textbf{2008}; US approval was later due to concerns about \textbf{hypersensitivity reactions}.
-\end{itemize}
-
-\textbf{Licensed indication}
-\begin{itemize}
-  \item Reversal of neuromuscular blockade induced by \textbf{rocuronium} or \textbf{vecuronium}.
-\end{itemize}
-
-\textbf{Mechanism}
-\begin{itemize}
-  \item Encapsulates rocuronium/vecuronium $\rightarrow$ removes them from plasma and NMJ.
-  \item Creates a concentration gradient favouring movement \textbf{away from the NMJ}.
-  \item No intrinsic cholinergic activity $\rightarrow$ avoids predictable muscarinic effects.
-\end{itemize}
-
-\textbf{Presentation}
-\begin{itemize}
-  \item \textbf{100 mg\,mL$^{-1}$} solution in \textbf{2 mL} or \textbf{5 mL} vials (shelf-life $\sim$3 years).
-\end{itemize}
-
-\textbf{Dose (tied to depth of block --- high yield)}
-\begin{itemize}
-  \item \textbf{Routine reversal}:
-  \begin{itemize}
-    \item \textbf{4 mg\,kg$^{-1}$} when there is \textbf{some post-tetanic twitch activity}.
-    \item \textbf{2 mg\,kg$^{-1}$} when, during TOF, \textbf{T2 is visible}.
-  \end{itemize}
-  \item \textbf{Emergency reversal}:
-  \begin{itemize}
-    \item \textbf{16 mg\,kg$^{-1}$} immediately following \textbf{1.2 mg\,kg$^{-1}$} rocuronium (requires multiple vials).
-  \end{itemize}
-\end{itemize}
-
-\textbf{Interactions (displacement vs capture)}
-\begin{itemize}
-  \item \textbf{Displacement} of rocuronium/vecuronium from sugammadex (risk of recurarisation) reported with: \textbf{flucloxacillin, diclofenac, fusidic acid, toremifene}.
-  \item \textbf{Capture} of other drugs may reduce efficacy; most clinically significant is reduced efficacy of \textbf{oral contraceptives} $\rightarrow$ advise \textbf{additional contraception for 7 days}.
-\end{itemize}
-
-\textbf{Kinetics}
-\begin{itemize}
-  \item $V_d$ $\sim$\textbf{11--14 L}; linear kinetics at therapeutic doses.
-  \item Not metabolised; eliminated \textbf{unchanged by the kidneys}; effective half-life $\sim$\textbf{2.5 h}.
-\end{itemize}
-
-\textbf{Anaphylaxis note (exam nuance)}
-\begin{itemize}
-  \item Has been used to treat suspected \textbf{rocuronium-induced anaphylaxis}, but does \textbf{not} currently form part of any approved anaphylaxis guideline.
-\end{itemize}
-
-\subsubsection*{12) MCQ anchors (Part 3)}
-\begin{itemize}
-  \item \textbf{Anticholinesterases} increase \textbf{ACh} at NMJ $\rightarrow$ reverse \textbf{NDMR} block but cause \textbf{muscarinic} effects $\rightarrow$ pair with \textbf{glycopyrrolate/atropine}.
-  \item \textbf{Neostigmine} inhibits \textbf{plasma cholinesterase} $\rightarrow$ can \textbf{prolong suxamethonium} and complicate \textbf{mivacurium} metabolism.
-  \item \textbf{Sugammadex} is specific for \textbf{aminosteroids} (rocuronium/vecuronium) and is dosed by \textbf{depth}: \textbf{2 mg\,kg$^{-1}$} (T2 present), \textbf{4 mg\,kg$^{-1}$} (PTC activity), \textbf{16 mg\,kg$^{-1}$} (emergency after RSI-dose rocuronium).
+  \item Anticholinesterases reverse NDMR block but cause muscarinic effects $\rightarrow$ antimuscarinic cover.
+  \item Sugammadex reverses aminosteroids (rocuronium/vecuronium) and is dosed by depth.
 \end{itemize}
 
 \newpage
-\section*{Appendix --- Additions from other references (clearly marked as non-Peck)}
+
+% =================================================
+\section*{Appendix --- Additions from other references (Non-Peck)}
+\addcontentsline{toc}{section}{Appendix --- Additions from other references (Non-Peck)}
 
 \subsection*{A1) Practical monitoring sites and muscle-group differences (Non-Peck)}
-
-\textbf{Monitoring sites (common clinical practice)}
+\textbf{Monitoring sites}
 \begin{itemize}
-  \item \textbf{Ulnar nerve $\rightarrow$ adductor pollicis} (thumb adduction). \textit{(Source: Morgan \& Mikhail, 5th ed.)}
-  \item \textbf{Facial nerve $\rightarrow$ orbicularis oculi} (peri-orbital contraction). \textit{(Source: Morgan \& Mikhail, 5th ed.)}
+  \item Ulnar nerve $\rightarrow$ adductor pollicis. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
+  \item Facial nerve $\rightarrow$ orbicularis oculi. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
 \end{itemize}
 
-\textbf{Muscle groups differ in sensitivity and recovery}
+\textbf{Muscle recovery differences}
 \begin{itemize}
-  \item The \textbf{diaphragm} tends to recover earlier than the \textbf{adductor pollicis}. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
-  \item The \textbf{rectus abdominis} tends to recover earlier than the \textbf{adductor pollicis}. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
-  \item The \textbf{laryngeal adductors} tend to recover earlier than the \textbf{adductor pollicis}. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
-  \item The \textbf{orbicularis oculi} tends to recover earlier than the \textbf{adductor pollicis}. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
-  \item Monitoring at the thumb can therefore \textbf{overestimate} the degree of block at the diaphragm/upper airway muscles during recovery. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
-  \item Peripheral nerve stimulation is a useful guide but does not replace direct assessment of the muscle groups relevant to the clinical goal. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
+  \item Diaphragm recovers earlier than adductor pollicis. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
+  \item Rectus abdominis recovers earlier than adductor pollicis. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
+  \item Laryngeal adductors recover earlier than adductor pollicis. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
+  \item Orbicularis oculi recovers earlier than adductor pollicis. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
+  \item Thumb monitoring can overestimate block at diaphragm/upper airway muscles during recovery. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
 \end{itemize}
 
-\textbf{Situations where monitoring can mislead}
+\textbf{Misleading sites}
 \begin{itemize}
   \item Atrophied muscle may appear relatively resistant due to receptor proliferation. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
-  \item Limbs affected by hemiplegia/nerve injury may appear relatively resistant due to receptor proliferation. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
-  \item Using such an extremity for monitoring can lead to \textbf{overdosing}. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
+  \item Hemiplegic/denervated limb may appear relatively resistant due to receptor proliferation. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
+  \item Monitoring such a limb can lead to overdosing. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
 \end{itemize}
 
 \subsection*{A2) Quantitative neuromuscular monitoring methods (Non-Peck)}
 \begin{itemize}
-  \item Tactile/visual assessment is convenient but \textbf{inaccurate} for small residual blocks. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
-  \item \textbf{Mechanomyography (MMG)} measures force of contraction against a preload. \textit{(Source: Fundamentals of Anaesthesia, 4th ed.)}
-  \item MMG is accurate but awkward to set up and maintain. \textit{(Source: Fundamentals of Anaesthesia, 4th ed.)}
-  \item \textbf{Acceleromyography (AMG)} measures acceleration of a moving digit (typically the thumb) with a piezoelectric sensor. \textit{(Source: Fundamentals of Anaesthesia, 4th ed.)}
-  \item AMG is more objective than tactile assessment but is sensitive to joint position. \textit{(Source: Fundamentals of Anaesthesia, 4th ed.)}
-  \item \textbf{Electromyography (EMG)} records evoked compound muscle action potentials. \textit{(Source: Fundamentals of Anaesthesia, 4th ed.)}
-  \item EMG avoids joint/transducer mechanics but electrode geometry/position can alter readings. \textit{(Source: Fundamentals of Anaesthesia, 4th ed.)}
+  \item Tactile/visual assessment is inaccurate for small residual blocks. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
+  \item MMG measures force against a preload. \textit{(Source: Fundamentals of Anaesthesia, 4th ed.)}
+  \item MMG is accurate but awkward to set up/maintain. \textit{(Source: Fundamentals of Anaesthesia, 4th ed.)}
+  \item AMG measures acceleration of a moving digit (thumb) using a sensor. \textit{(Source: Fundamentals of Anaesthesia, 4th ed.)}
+  \item AMG is sensitive to joint position. \textit{(Source: Fundamentals of Anaesthesia, 4th ed.)}
+  \item EMG records evoked CMAPs. \textit{(Source: Fundamentals of Anaesthesia, 4th ed.)}
+  \item EMG depends on electrode geometry/position. \textit{(Source: Fundamentals of Anaesthesia, 4th ed.)}
 \end{itemize}
 
-\subsection*{A3) Reversal and extubation thresholds emphasised elsewhere (Non-Peck)}
+\subsection*{A3) Reversal/extubation thresholds emphasised elsewhere (Non-Peck)}
 \begin{itemize}
-  \item One referenced threshold for adequacy of reversal/extubation is \textbf{TOFR $>$ 0.90}. \textit{(Source: Cross \& Plunkett, 2008)}
-  \item One referenced approach suggests \textbf{$\geq$3 twitches} should be present before administering an anticholinesterase reversal agent. \textit{(Source: Cross \& Plunkett, 2008)}
-  \item Clinical indicators of adequate recovery include \textbf{sustained head lift ($\geq$5 s)}. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
-  \item Clinical indicators of adequate recovery include the ability to generate an inspiratory pressure of \textbf{at least $-25$ cmH$_2$O}. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
-  \item Clinical indicators of adequate recovery include a \textbf{forceful hand grip}. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
-  \item Local muscle hypothermia can reduce twitch tension (reported as about \textbf{6\% per $^\circ$C}). \textit{(Source: Morgan \& Mikhail, 5th ed.)}
-  \item Reduced twitch tension with hypothermia can confound monitoring. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
+  \item Suggested adequacy threshold: TOFR $>$ 0.90. \textit{(Source: Cross \& Plunkett, 2008)}
+  \item Suggested: $\geq$3 twitches before anticholinesterase reversal. \textit{(Source: Cross \& Plunkett, 2008)}
+  \item Head lift $\geq$5 s as clinical indicator. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
+  \item Inspiratory pressure at least $-25$ cmH$_2$O as indicator. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
+  \item Forceful hand grip as indicator. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
+  \item Twitch tension falls with local hypothermia ($\sim$6\% per $^\circ$C). \textit{(Source: Morgan \& Mikhail, 5th ed.)}
 \end{itemize}
 
 \subsection*{A4) Additional suxamethonium points in other texts (Non-Peck)}
 \begin{itemize}
-  \item Fasciculations are commonly described with suxamethonium. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
-  \item Repeated dosing or infusion may progress from \textbf{Phase I} to \textbf{Phase II} features. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
-  \item Some sources describe an increase in \textbf{intracranial pressure (ICP)} with suxamethonium. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
-  \item One text describes increased intragastric pressure with a \textbf{decrease} in lower oesophageal sphincter pressure. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
-  \item This conflicts with the Peck-based statement earlier in this canvas that lower oesophageal sphincter tone increases simultaneously such that reflux risk is not increased. \textit{(Source: Primary FRCA in a Box, 2nd ed.; Peck \& Harris 5th ed., Ch 12)}
-  \item Another source notes that although suxamethonium transiently increases IOP, there is \textbf{no evidence} of worsened outcomes in open-globe injuries. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
-  \item The same source notes pretreatment with an NDMR does not reliably prevent the IOP rise. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
-  \item Transient masseter tone increase can occur after suxamethonium. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
-  \item Marked masseter rigidity preventing laryngoscopy is abnormal and can be a warning sign of malignant hyperthermia. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
+  \item Fasciculations commonly described. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
+  \item Repeated dosing/infusion may progress to Phase II features. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
+  \item Some sources describe increased ICP with suxamethonium. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
+  \item One text describes increased intragastric pressure with decreased LOS pressure. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
+  \item This conflicts with the Peck-based LOS statement earlier. \textit{(Source: Primary FRCA in a Box, 2nd ed.; Peck \& Harris 5th ed., Ch 12)}
+  \item No evidence of worsened outcomes in open-globe injuries despite IOP rise. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
+  \item NDMR pretreatment does not reliably prevent the IOP rise. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
+  \item Transient masseter tone increase can occur. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
+  \item Marked masseter rigidity may warn of MH. \textit{(Source: Morgan \& Mikhail, 5th ed.)}
 \end{itemize}
 
 \subsection*{A5) Receptor upregulation timing after denervation/burns (Non-Peck)}
 \begin{itemize}
-  \item One text emphasises that receptor upregulation takes time after denervation-type injury. \textit{(Source: Fundamentals of Anaesthesia, 4th ed.)}
-  \item The same text suggests suxamethonium is best avoided after \textbf{48--72 hours} in these settings. \textit{(Source: Fundamentals of Anaesthesia, 4th ed.)}
-  \item This differs from the Peck-based timing in this canvas for burns (risk from $\sim$24 hours). \textit{(Source: Fundamentals of Anaesthesia, 4th ed.; Peck \& Harris 5th ed., Ch 12)}
-  \item Treat this as a potential \textbf{exam-trap discrepancy} across references. \textit{(Source: Fundamentals of Anaesthesia, 4th ed.; Peck \& Harris 5th ed., Ch 12)}
+  \item Receptor upregulation takes time after denervation-type injury. \textit{(Source: Fundamentals of Anaesthesia, 4th ed.)}
+  \item Suggested avoidance after 48--72 hours in these settings. \textit{(Source: Fundamentals of Anaesthesia, 4th ed.)}
+  \item Differs from Peck-based burn timing (risk from $\sim$24 h). \textit{(Source: Fundamentals of Anaesthesia, 4th ed.; Peck \& Harris 5th ed., Ch 12)}
 \end{itemize}
 
 \subsection*{A6) Additional sugammadex points from another revision text (Non-Peck)}
 \begin{itemize}
-  \item One summary text quotes typical reversal times by depth of block. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
-  \item With \textbf{2 mg\,kg$^{-1}$} when T2 reappears, reversal time is quoted as $\sim$\textbf{2 minutes}. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
-  \item With \textbf{4 mg\,kg$^{-1}$} for deep block (1--2 PTC), reversal time is quoted as $\sim$\textbf{3 minutes}. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
-  \item With \textbf{16 mg\,kg$^{-1}$} for rescue reversal, reversal time is quoted as $\sim$\textbf{1.5 minutes}. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
-  \item A delay of \textbf{24 hours} is suggested before using rocuronium or vecuronium again after rescue reversal. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
-  \item Bitter/metallic taste is listed as a possible adverse effect. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
-  \item Bronchospasm is listed as a possible adverse effect. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
+  \item Quoted reversal times by depth. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
+  \item 2 mg\,kg$^{-1}$ at T2: $\sim$2 min. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
+  \item 4 mg\,kg$^{-1}$ deep block (1--2 PTC): $\sim$3 min. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
+  \item 16 mg\,kg$^{-1}$ rescue: $\sim$1.5 min. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
+  \item Suggested 24 h delay before re-using rocuronium/vecuronium after rescue reversal. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
+  \item Bitter/metallic taste listed. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
+  \item Bronchospasm listed. \textit{(Source: Primary FRCA in a Box, 2nd ed.)}
 \end{itemize}
 
 \end{document}
