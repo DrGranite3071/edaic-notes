@@ -52,12 +52,17 @@ jobs:
           root_file: chapters/Local_Anaesthetics.tex
           texlive_version: 2024
 
-      - name: Compile Local_Anaesthetics chapter
+      - name: Compile Cardiac_Physiology chapter
         uses: xu-cheng/latex-action@v4
         with:
           root_file: chapters/Cardiac_Phisiology.tex
           texlive_version: 2024
-          
+
+      - name: Compile Muscle_relaxants+reversal chapter
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: chapters/Muscle_relaxants+reversal.tex
+          texlive_version: 2024
 
       # ---- Collect PDFs into docs/ ----
       - name: Prepare docs folder
@@ -85,6 +90,7 @@ jobs:
           copy_pdf "NSAIDs"
           copy_pdf "Local_Anaesthetics"
           copy_pdf "Cardiac_Phisiology"
+          copy_pdf "Muscle_relaxants+reversal"
 
 
           # Use the prettier landing page from the repo
