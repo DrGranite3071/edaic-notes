@@ -1,0 +1,644 @@
+\documentclass[11pt,a4paper]{article}
+
+% ---------- Core packages ----------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % pdfLaTeX
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+
+% ---------- Layout / lists ----------
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\usepackage{enumitem}
+
+% ---------- PDF / links ----------
+\usepackage[hidelinks]{hyperref}
+
+% Keep headings unnumbered (so titles like "1. ..." don't get double-numbered)
+\setcounter{secnumdepth}{-1}
+
+\title{Anti-arrhythmics}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\noindent\emph{Peck \& Harris —} \textbf{Pharmacology for Anaesthesia and Intensive Care}, \textbf{Chapter 15}
+
+\tableofcontents
+
+\bigskip\noindent\rule{\linewidth}{0.4pt}\bigskip
+
+\section{At a glance}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Most SVTs} are treated by targeting the \textbf{AV node} (adenosine, verapamil, \(\beta\)-blockers, digoxin).
+\item \textbf{Ventricular arrhythmias} often require membrane-active drugs (e.g.\ lidocaine, amiodarone) and careful attention to \textbf{pro-arrhythmia}.
+\item The \textbf{Vaughan–Williams} system is useful for exams, but many agents have \textbf{mixed actions}.
+\end{itemize}
+
+\bigskip\noindent\rule{\linewidth}{0.4pt}\bigskip
+
+\section{1. Electrophysiology needed for anti-arrhythmic pharmacology}
+
+\subsection{1.1 Cardiac action potentials (high-yield)}
+
+\textbf{Fast-response tissues} (atria, ventricles, His–Purkinje)
+\begin{itemize}[leftmargin=*]
+\item \textbf{Phase 0}: fast \textbf{\(\mathrm{Na^+}\)} influx (upstroke \(\rightarrow\) conduction)
+\item \textbf{Phase 3}: \textbf{\(\mathrm{K^+}\)} efflux (repolarisation)
+\item \textbf{Phase 4}: resting membrane potential
+\end{itemize}
+
+\textbf{Slow-response tissues} (SA/AV node)
+\begin{itemize}[leftmargin=*]
+\item \textbf{Phase 0}: mainly \textbf{\(\mathrm{Ca^{2+}}\)} entry (slower upstroke \(\rightarrow\) slower conduction)
+\item \textbf{Phase 4}: spontaneous depolarisation (pacemaker activity)
+\end{itemize}
+
+\subsection{1.2 Mechanisms of tachyarrhythmias}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Enhanced automaticity}
+\item \textbf{Triggered activity} (after-depolarisations)
+\item \textbf{Re-entry} (key exam framework)
+  \begin{itemize}[leftmargin=*]
+  \item Requires: a \textbf{circuit}, \textbf{unidirectional block}, and \textbf{sufficiently slow conduction} so refractory tissue can recover and be re-excited.
+  \end{itemize}
+\end{itemize}
+
+\subsection{1.3 Two classic re-entry examples}
+\begin{itemize}[leftmargin=*]
+\item \textbf{AV nodal re-entrant tachycardia (AVNRT)}
+  \begin{itemize}[leftmargin=*]
+  \item Re-entry within/around the AV node involving \textbf{fast} and \textbf{slow} pathways.
+  \end{itemize}
+\item \textbf{Wolff–Parkinson–White (WPW)}
+  \begin{itemize}[leftmargin=*]
+  \item Re-entry involving an \textbf{accessory pathway} (bundle of Kent) in addition to the AV node.
+  \end{itemize}
+\end{itemize}
+
+\subsection{1.4 Bradyarrhythmias (chapter frame)}
+\begin{itemize}[leftmargin=*]
+\item Typically due to \textbf{failure of impulse generation} (SA node) or \textbf{failure of conduction} (e.g.\ AV block).
+\item Management may include \textbf{atropine}, \textbf{\(\beta\)-adrenergic stimulation}, and/or \textbf{pacing} (details beyond atropine/\(\beta\)-stimulation are not the focus here).
+\end{itemize}
+
+\bigskip\noindent\rule{\linewidth}{0.4pt}\bigskip
+
+\section{2. Classification systems (and why they’re imperfect)}
+
+\subsection{2.1 Vaughan–Williams classification (exam scaffold)}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Class I: \(\mathrm{Na^+}\) channel blockers}
+  \begin{itemize}[leftmargin=*]
+  \item \textbf{Ia}: quinidine, procainamide, disopyramide
+  \item \textbf{Ib}: lidocaine, mexiletine
+  \item \textbf{Ic}: flecainide, propafenone
+  \end{itemize}
+\item \textbf{Class II: \(\beta\)-blockers}
+\item \textbf{Class III: \(\mathrm{K^+}\) channel blockers / repolarisation prolongers}
+  \begin{itemize}[leftmargin=*]
+  \item e.g.\ sotalol; amiodarone is often grouped here but has broader activity
+  \end{itemize}
+\item \textbf{Class IV: \(\mathrm{Ca^{2+}}\) channel blockers}
+  \begin{itemize}[leftmargin=*]
+  \item verapamil (diltiazem listed but not expanded in this chapter)
+  \end{itemize}
+\item \textbf{Unclassified / other} (important in anaesthesia/ICU practice)
+  \begin{itemize}[leftmargin=*]
+  \item digoxin, adenosine, ivabradine
+  \end{itemize}
+\end{itemize}
+
+\subsection{2.2 Limitations (common exam trap)}
+\begin{itemize}[leftmargin=*]
+\item Many agents have \textbf{mixed actions} (e.g.\ amiodarone; sotalol has \(\beta\)-blockade plus class I/III features).
+\item Vaughan–Williams does \textbf{not} include all clinically relevant drugs (e.g.\ adenosine, digoxin, ivabradine).
+\end{itemize}
+
+\bigskip\noindent\rule{\linewidth}{0.4pt}\bigskip
+
+\section{3. Clinical use: supraventricular tachyarrhythmias (SVT)}
+
+\subsection{3.1 Digoxin}
+
+\textbf{Presentation}
+\begin{itemize}[leftmargin=*]
+\item Tablets, elixir, and IV preparation.
+\end{itemize}
+
+\textbf{Uses (SVT focus)}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Rate control} by slowing AV nodal conduction (classically in atrial fibrillation/flutter where AV nodal slowing is required).
+\end{itemize}
+
+\textbf{Mechanism of action (two components)}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Direct (inotropy):} inhibits \textbf{\(\mathrm{Na^+}/\mathrm{K^+}\)-ATPase} \(\rightarrow\) \(\uparrow\) intracellular \(\mathrm{Na^+}\) \(\rightarrow\) \(\downarrow\) \(\mathrm{Na^+}/\mathrm{Ca^{2+}}\) exchange \(\rightarrow\) \(\uparrow\) intracellular \(\mathrm{Ca^{2+}}\).
+\item \textbf{Indirect (anti-arrhythmic):} \(\uparrow\) \textbf{vagal tone} \(\rightarrow\) slows AV nodal conduction and increases AV nodal refractoriness.
+\end{itemize}
+
+\textbf{Adverse effects / toxicity (high-yield)}
+\begin{itemize}[leftmargin=*]
+\item Toxicity is more likely with \textbf{electrolyte disturbances} and renal impairment.
+\item \textbf{ECG changes} (can occur without clinical toxicity): PR prolongation, ST-segment “scooping”, T-wave changes.
+\item Toxicity may present with:
+  \begin{itemize}[leftmargin=*]
+  \item \textbf{GI} upset
+  \item \textbf{Visual} symptoms
+  \item \textbf{Arrhythmias} (including ventricular ectopy and AV block)
+  \end{itemize}
+\end{itemize}
+
+\textbf{Drug interactions (effect on plasma levels)}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Increase digoxin plasma levels:} amiodarone, captopril, erythromycin, carbenoxolone.
+  \begin{itemize}[leftmargin=*]
+  \item \textbf{\(\mathrm{Ca^{2+}}\)} channel antagonists: \textbf{verapamil increases} levels; \textbf{nifedipine} and \textbf{diltiazem} may have \textbf{no effect} or a \textbf{small rise}.
+  \end{itemize}
+\item \textbf{Reduce digoxin plasma levels:} antacids, cholestyramine, phenytoin, metoclopramide.
+\end{itemize}
+
+\textbf{Management principles for digoxin toxicity}
+\begin{itemize}[leftmargin=*]
+\item Stop digoxin; correct contributing factors (notably \textbf{\(\mathrm{K^+}\)} and \textbf{\(\mathrm{Mg^{2+}}\)} disturbances).
+\item Activated charcoal may reduce absorption if appropriate.
+\item \textbf{Digoxin-specific antibody fragments (Fab)} for severe toxicity.
+\end{itemize}
+
+\textbf{Kinetics}
+\begin{itemize}[leftmargin=*]
+\item Incomplete oral bioavailability.
+\item Large volume of distribution (extensive tissue binding).
+\item Elimination mainly \textbf{renal}; half-life prolonged in renal impairment.
+\end{itemize}
+
+\textbf{Common exam pitfalls}
+\begin{itemize}[leftmargin=*]
+\item ECG changes \textbf{do not} equal definite toxicity.
+\item Toxicity risk increases with \textbf{hypokalaemia}.
+\end{itemize}
+
+\bigskip\noindent\rule{\linewidth}{0.4pt}\bigskip
+
+\subsection{3.2 Adenosine}
+
+\textbf{Presentation}
+\begin{itemize}[leftmargin=*]
+\item IV preparation for rapid bolus.
+\end{itemize}
+
+\textbf{Uses}
+\begin{itemize}[leftmargin=*]
+\item Acute termination/diagnosis of \textbf{re-entrant SVT} involving the AV node.
+\end{itemize}
+
+\textbf{Mechanism of action}
+\begin{itemize}[leftmargin=*]
+\item Activates \textbf{\(\mathrm{A_1}\)} receptors \(\rightarrow\) \(\uparrow\) \(\mathrm{K^+}\) efflux and \(\downarrow\) \(\mathrm{Ca^{2+}}\) entry in AV nodal tissue \(\rightarrow\) \textbf{hyperpolarisation} and \textbf{transient AV nodal block}.
+\end{itemize}
+
+\textbf{Adverse effects}
+\begin{itemize}[leftmargin=*]
+\item Very common but brief: flushing, chest tightness, dyspnoea, sense of impending doom.
+\item May precipitate bronchospasm (caution in reactive airway disease).
+\item Effects enhanced by \textbf{dipyridamole} and antagonised by \textbf{methylxanthines} (especially \textbf{aminophylline}).
+\end{itemize}
+
+\textbf{Kinetics (key point)}
+\begin{itemize}[leftmargin=*]
+\item Extremely short half-life (seconds) due to rapid uptake/metabolism.
+\end{itemize}
+
+\textbf{Exam pitfall}
+\begin{itemize}[leftmargin=*]
+\item Must be given as a \textbf{rapid bolus} with immediate flush.
+\end{itemize}
+
+\bigskip\noindent\rule{\linewidth}{0.4pt}\bigskip
+
+\subsection{3.3 Verapamil (non-dihydropyridine \(\mathrm{Ca^{2+}}\) channel blocker)}
+
+\textbf{Presentation}
+\begin{itemize}[leftmargin=*]
+\item Oral preparations (including modified-release) and IV formulation.
+\end{itemize}
+
+\textbf{Uses}
+\begin{itemize}[leftmargin=*]
+\item SVT involving AV nodal conduction; may be used for rate control in atrial fibrillation/flutter.
+\end{itemize}
+
+\textbf{Mechanism of action}
+\begin{itemize}[leftmargin=*]
+\item Blocks L-type \(\mathrm{Ca^{2+}}\) channels (particularly relevant in AV nodal tissue) \(\rightarrow\) slows AV conduction and increases AV nodal refractory period.
+\item Also has negative inotropic and vasodilator effects.
+\end{itemize}
+
+\textbf{Adverse effects}
+\begin{itemize}[leftmargin=*]
+\item Hypotension, bradycardia, heart block.
+\item Constipation is a notable non-cardiac adverse effect.
+\end{itemize}
+
+\textbf{Interactions / cautions (exam-relevant)}
+\begin{itemize}[leftmargin=*]
+\item Additive AV nodal depression with \textbf{\(\beta\)-blockers}.
+\item Can increase digoxin levels and/or enhance digoxin effects.
+\end{itemize}
+
+\textbf{Kinetics}
+\begin{itemize}[leftmargin=*]
+\item Marked first-pass metabolism; hepatic clearance is important.
+\end{itemize}
+
+\bigskip\noindent\rule{\linewidth}{0.4pt}\bigskip
+
+\subsection{3.4 \(\beta\)-blockers (SVT)}
+
+\textbf{Core use}
+\begin{itemize}[leftmargin=*]
+\item Reduce sympathetic drive; useful in SVT prophylaxis and rate control.
+\end{itemize}
+
+\subsubsection{Esmolol (the “anaesthesia-friendly” \(\beta\)-blocker)}
+
+\textbf{Presentation}
+\begin{itemize}[leftmargin=*]
+\item IV formulation.
+\end{itemize}
+
+\textbf{Uses}
+\begin{itemize}[leftmargin=*]
+\item Short-term control of tachycardia and SVT where rapid titration is required.
+\end{itemize}
+
+\textbf{Mechanism}
+\begin{itemize}[leftmargin=*]
+\item \(\beta_1\)-selective antagonist (dose-dependent selectivity).
+\end{itemize}
+
+\textbf{Adverse effects}
+\begin{itemize}[leftmargin=*]
+\item Bradycardia, hypotension, heart block; bronchospasm at higher doses/less selectivity.
+\end{itemize}
+
+\textbf{Kinetics (key point)}
+\begin{itemize}[leftmargin=*]
+\item Rapid metabolism by \textbf{red blood cell esterases} \(\rightarrow\) very short half-life.
+\end{itemize}
+
+\bigskip\noindent\rule{\linewidth}{0.4pt}\bigskip
+
+\subsection{3.5 Quinidine (Class Ia)}
+
+\textbf{Why it’s less used}
+\begin{itemize}[leftmargin=*]
+\item Use has declined due to adverse effects, but it remains examinable.
+\end{itemize}
+
+\textbf{Uses}
+\begin{itemize}[leftmargin=*]
+\item SVT (including atrial fibrillation/flutter) and ventricular ectopy.
+\end{itemize}
+
+\textbf{Mechanism of action}
+\begin{itemize}[leftmargin=*]
+\item Blocks fast \(\mathrm{Na^+}\) channels \(\rightarrow\) slows phase 0 upstroke.
+\item Raises threshold potential; prolongs refractory period.
+\item Has vagolytic effects (can increase AV conduction if not controlled).
+\end{itemize}
+
+\textbf{Adverse effects (high-yield)}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Cardiac:} pro-arrhythmia; PR/QRS/QT prolongation; risk of ventricular arrhythmias. Hypotension via \(\alpha\)-blockade and myocardial depression.
+\item \textbf{Non-cardiac:} cinchonism (tinnitus, blurred vision, impaired hearing, headache, confusion).
+\end{itemize}
+
+\textbf{Important clinical warning}
+\begin{itemize}[leftmargin=*]
+\item In atrial fibrillation/flutter, \textbf{pretreat} with an AV nodal slowing agent (\(\beta\)-blocker, \(\mathrm{Ca^{2+}}\) antagonist, or digoxin) to avoid dangerously rapid ventricular response.
+\end{itemize}
+
+\textbf{Kinetics}
+\begin{itemize}[leftmargin=*]
+\item Well absorbed orally; high protein binding; hepatic metabolism with urinary excretion of metabolites; half-life in hours.
+\end{itemize}
+
+\bigskip\noindent\rule{\linewidth}{0.4pt}\bigskip
+
+\section{4. Clinical use: ventricular tachyarrhythmias (VT/VF context)}
+
+\subsection{4.1 Lidocaine (Class Ib)}
+
+\textbf{Presentation}
+\begin{itemize}[leftmargin=*]
+\item IV 1\% or 2\% solution.
+\end{itemize}
+
+\textbf{Uses}
+\begin{itemize}[leftmargin=*]
+\item Sustained ventricular tachyarrhythmias, particularly associated with \textbf{ischaemia}.
+\end{itemize}
+
+\textbf{Mechanism of action}
+\begin{itemize}[leftmargin=*]
+\item Blocks inactivated \(\mathrm{Na^+}\) channels \(\rightarrow\) reduces phase 0 upstroke in affected tissue.
+\item Shortens phase 3 repolarisation \(\rightarrow\) decreases action potential duration and refractory period.
+\end{itemize}
+
+\textbf{Adverse effects}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Cardiac:} AV block, hypotension (notably at higher plasma levels).
+\item \textbf{CNS:} circumoral tingling, dizziness, paraesthesia \(\rightarrow\) confusion, coma, seizures with rising levels.
+\end{itemize}
+
+\textbf{Kinetics}
+\begin{itemize}[leftmargin=*]
+\item IV only for arrhythmias.
+\item Hepatic metabolism; clearance reduced in \textbf{cardiac failure} (reduced hepatic blood flow) and liver disease.
+\item Short elimination half-life (\(\approx\) 90 minutes).
+\end{itemize}
+
+\bigskip\noindent\rule{\linewidth}{0.4pt}\bigskip
+
+\subsection{4.2 Mexiletine (Class Ib)}
+
+\textbf{Concept}
+\begin{itemize}[leftmargin=*]
+\item Lidocaine analogue with similar ventricular effects.
+\end{itemize}
+
+\textbf{Presentation}
+\begin{itemize}[leftmargin=*]
+\item IV solution; oral modified-release also available.
+\end{itemize}
+
+\textbf{Uses}
+\begin{itemize}[leftmargin=*]
+\item Similar to lidocaine, including arrhythmias associated with ischaemia or digoxin.
+\end{itemize}
+
+\textbf{Mechanism}
+\begin{itemize}[leftmargin=*]
+\item \(\mathrm{Na^+}\) channel blockade; shortens action potential duration/refractory period.
+\end{itemize}
+
+\textbf{Adverse effects}
+\begin{itemize}[leftmargin=*]
+\item Low therapeutic ratio; adverse effects are common.
+\item \textbf{Cardiac:} can precipitate bradycardia and tachyarrhythmias.
+\item \textbf{Non-cardiac:} frequent GI intolerance; neurological symptoms (confusion, diplopia, seizures, tremor, ataxia); rash/jaundice reported.
+\end{itemize}
+
+\textbf{Kinetics}
+\begin{itemize}[leftmargin=*]
+\item High oral bioavailability (\(\sim\)90\%); minimal first-pass metabolism.
+\item Hepatic metabolism; some renal excretion unchanged.
+\end{itemize}
+
+\bigskip\noindent\rule{\linewidth}{0.4pt}\bigskip
+
+\subsection{4.3 Amiodarone (multi-class actions; often grouped as Class III)}
+
+\textbf{Presentation}
+\begin{itemize}[leftmargin=*]
+\item Oral tablets; IV ampoules (dilute in 5\% dextrose before administration).
+\end{itemize}
+
+\textbf{Uses}
+\begin{itemize}[leftmargin=*]
+\item SVT, VT, and WPW.
+\end{itemize}
+
+\textbf{Mechanism of action}
+\begin{itemize}[leftmargin=*]
+\item Prolongs repolarisation via \(\mathrm{K^+}\) channel blockade (\(\uparrow\) action potential duration and refractory period).
+\item Also exhibits additional class I/II/IV-type effects (mixed channel/receptor actions).
+\end{itemize}
+
+\textbf{Adverse effects (high-yield and very testable)}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Pulmonary:} pneumonitis/fibrosis/pleuritis; important risk and can be fatal.
+\item \textbf{Thyroid:} hyper- or hypothyroidism; inhibits peripheral conversion of \(\mathrm{T_4}\) \(\rightarrow\) \(\mathrm{T_3}\).
+\item \textbf{Hepatic:} hepatitis/cirrhosis/jaundice (long-term monitoring relevant).
+\item \textbf{Cardiac:} bradycardia/hypotension with rapid high-dose IV; QT prolongation but relatively low pro-arrhythmic potential.
+\item \textbf{Ophthalmic:} corneal microdeposits (visual haloes/blur), usually reversible.
+\item \textbf{Dermatological:} photosensitivity; slate-grey skin discolouration (face) with long-term use.
+\item \textbf{Interactions:} increases effects/levels of other highly protein-bound drugs (notably warfarin, phenytoin; digoxin levels may rise). Additive AV nodal slowing with \(\beta\)-blockers/verapamil. Avoid with other QT-prolonging drugs.
+\item \textbf{IV irritation:} central vein recommended.
+\end{itemize}
+
+\textbf{Kinetics (key point = very long half-life)}
+\begin{itemize}[leftmargin=*]
+\item Oral absorption variable; highly protein-bound; very large Vd with accumulation in muscle/fat.
+\item Elimination half-life can be \textbf{weeks to months}.
+\item Hepatic metabolism to an active metabolite; excretion via biliary tract/skin/lacrimal glands.
+\end{itemize}
+
+\bigskip\noindent\rule{\linewidth}{0.4pt}\bigskip
+
+\subsection{4.4 Flecainide (Class Ic)}
+
+\textbf{Presentation / dosing (as described in the chapter)}
+\begin{itemize}[leftmargin=*]
+\item Oral and IV formulations; oral dosing in divided doses; IV loading followed by infusion can be used.
+\end{itemize}
+
+\textbf{Uses}
+\begin{itemize}[leftmargin=*]
+\item Powerful activity against atrial and ventricular tachyarrhythmias, including WPW.
+\end{itemize}
+
+\textbf{Mechanism}
+\begin{itemize}[leftmargin=*]
+\item Blocks fast \(\mathrm{Na^+}\) flux and prolongs phase 0 (marked effects in conducting pathways).
+\item No significant effect on action potential duration or refractory period.
+\end{itemize}
+
+\textbf{Adverse effects}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Cardiac:} may worsen conduction disease; caution in SA/AV disease and bundle branch block. Can paradoxically increase ventricular rate in AF/flutter. Associated with increased mortality when used to suppress ventricular ectopy after MI. Negative inotropy; raises pacing threshold.
+\item \textbf{Non-cardiac:} dizziness, paraesthesia, headache.
+\end{itemize}
+
+\textbf{Kinetics}
+\begin{itemize}[leftmargin=*]
+\item High oral bioavailability; moderate protein binding; large Vd.
+\item Hepatic metabolism to active metabolites; renal excretion of metabolites and unchanged drug.
+\end{itemize}
+
+\bigskip\noindent\rule{\linewidth}{0.4pt}\bigskip
+
+\subsection{4.5 Procainamide (Class Ia)}
+
+\textbf{Uses}
+\begin{itemize}[leftmargin=*]
+\item SVT and ventricular tachyarrhythmias; can terminate VT.
+\end{itemize}
+
+\textbf{Mechanism}
+\begin{itemize}[leftmargin=*]
+\item Similar electrophysiological effects to quinidine (\(\mathrm{Na^+}\) channel blockade; \(\uparrow\) threshold; \(\uparrow\) refractory period) but less vagolytic.
+\end{itemize}
+
+\textbf{Adverse effects}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Cardiac:} hypotension/vasodilatation and reduced cardiac output (especially IV); heart block; may increase ventricular response in SVT; QT prolongation and torsades de pointes.
+\item \textbf{Non-cardiac:} drug-induced lupus (notably in slow acetylators); GI upset, fever, rash.
+\end{itemize}
+
+\textbf{Kinetics}
+\begin{itemize}[leftmargin=*]
+\item Well absorbed orally.
+\item Short half-life \(\rightarrow\) frequent dosing or slow-release formulations.
+\item Hepatic metabolism including acetylation to active metabolite (genetic polymorphism: slow vs fast acetylators).
+\end{itemize}
+
+\bigskip\noindent\rule{\linewidth}{0.4pt}\bigskip
+
+\subsection{4.6 Disopyramide (Class Ia)}
+
+\textbf{Presentation / dosing (as described in the chapter)}
+\begin{itemize}[leftmargin=*]
+\item Oral tablets (including SR) and IV solution.
+\end{itemize}
+
+\textbf{Uses}
+\begin{itemize}[leftmargin=*]
+\item Second-line for SVT and ventricular tachyarrhythmias.
+\item In AF/flutter, control ventricular rate first (\(\beta\)-blocker or verapamil).
+\end{itemize}
+
+\textbf{Mechanism}
+\begin{itemize}[leftmargin=*]
+\item \(\mathrm{Na^+}\) channel blockade (phase 0 slowing) with prolongation of action potential and refractory period.
+\item Also has \textbf{anticholinergic} effects.
+\end{itemize}
+
+\textbf{Adverse effects}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Cardiac:} QT prolongation and torsades risk; negative inotropy may worsen heart failure.
+\item \textbf{Non-cardiac:} anticholinergic effects (blurred vision, dry mouth, urinary retention).
+\end{itemize}
+
+\textbf{Kinetics}
+\begin{itemize}[leftmargin=*]
+\item Good oral absorption.
+\item Predominantly \textbf{renal excretion unchanged}; half-life increases in renal or cardiac failure.
+\end{itemize}
+
+\bigskip\noindent\rule{\linewidth}{0.4pt}\bigskip
+
+\subsection{4.7 Propafenone (Class Ic-like; similar to flecainide)}
+
+\textbf{Presentation}
+\begin{itemize}[leftmargin=*]
+\item Oral tablets (IV use described in some settings).
+\end{itemize}
+
+\textbf{Uses}
+\begin{itemize}[leftmargin=*]
+\item Second-line for resistant SVT (including AF/flutter) and for ventricular tachyarrhythmias.
+\end{itemize}
+
+\textbf{Mechanism}
+\begin{itemize}[leftmargin=*]
+\item Blocks fast \(\mathrm{Na^+}\) influx \(\rightarrow\) prolongs phase 0.
+\item Prolongs action potential and refractory period particularly in conducting tissue.
+\item At higher doses: some \textbf{\(\beta\)-blocking} properties.
+\end{itemize}
+
+\textbf{Adverse effects}
+\begin{itemize}[leftmargin=*]
+\item Generally well tolerated.
+\item \textbf{Cardiac:} caution in heart failure (\(\beta\)-blocking effect).
+\item \textbf{Other:} neuro and GI effects at higher doses; may worsen myasthenia gravis; can precipitate asthma (\(\beta\)-blockade).
+\item Increases plasma levels of digoxin and warfarin.
+\end{itemize}
+
+\textbf{Kinetics}
+\begin{itemize}[leftmargin=*]
+\item Near-complete absorption.
+\item Oral bioavailability increases disproportionately as first-pass enzymes saturate.
+\item Very high protein binding; extensive hepatic metabolism with genetic polymorphism.
+\end{itemize}
+
+\bigskip\noindent\rule{\linewidth}{0.4pt}\bigskip
+
+\subsection{4.8 Sotalol (\(\beta\)-blocker with class I/III anti-arrhythmic activity)}
+
+\textbf{Presentation}
+\begin{itemize}[leftmargin=*]
+\item Oral tablets; IV solution; racemate with differing isomer contributions.
+\end{itemize}
+
+\textbf{Uses}
+\begin{itemize}[leftmargin=*]
+\item Ventricular tachyarrhythmias.
+\item Prophylaxis of paroxysmal SVT.
+\end{itemize}
+
+\textbf{Mechanism}
+\begin{itemize}[leftmargin=*]
+\item \(\beta\)-blockade plus repolarisation prolongation (class III) \(\rightarrow\) can prolong QT.
+\end{itemize}
+
+\textbf{Adverse effects (key exam focus)}
+\begin{itemize}[leftmargin=*]
+\item \(\beta\)-blocker adverse effects (bradycardia, hypotension, bronchospasm).
+\item QT prolongation \(\rightarrow\) torsades de pointes risk.
+\end{itemize}
+
+\textbf{Kinetics}
+\begin{itemize}[leftmargin=*]
+\item Predominantly renal elimination (dose adjustment follows from this).
+\end{itemize}
+
+\bigskip\noindent\rule{\linewidth}{0.4pt}\bigskip
+
+\section{5. Other / special-case anti-arrhythmics in this chapter}
+
+\subsection{5.1 Phenytoin}
+\begin{itemize}[leftmargin=*]
+\item Mentioned as an anti-arrhythmic agent (Class Ib-type activity), particularly in the context of \textbf{digoxin-induced arrhythmias}.
+\item Detailed dosing/kinetics for anti-arrhythmic use are not fully specified in this chapter.
+\end{itemize}
+
+\subsection{5.2 Ivabradine}
+
+\textbf{Uses}
+\begin{itemize}[leftmargin=*]
+\item Slows heart rate by acting on the sinoatrial node.
+\end{itemize}
+
+\textbf{Mechanism}
+\begin{itemize}[leftmargin=*]
+\item Selective inhibition of the \textbf{\(I_f\)} (“funny”) current in the SA node \(\rightarrow\) reduces the slope of phase 4 depolarisation \(\rightarrow\) lowers heart rate.
+\end{itemize}
+
+\textbf{Adverse effects}
+\begin{itemize}[leftmargin=*]
+\item Bradycardia.
+\item Visual phenomena (phosphenes).
+\end{itemize}
+
+\textbf{Kinetics}
+\begin{itemize}[leftmargin=*]
+\item Oral administration; hepatic metabolism (CYP3A4) is relevant; half-life in the order of hours.
+\end{itemize}
+
+\bigskip\noindent\rule{\linewidth}{0.4pt}\bigskip
+
+\section{6. Pattern recognition and common exam traps (chapter-aligned)}
+\begin{itemize}[leftmargin=*]
+\item \textbf{SVT choice hinges on AV nodal involvement:} adenosine/verapamil/\(\beta\)-blockers/digoxin target AV nodal conduction.
+\item \textbf{WPW:} think re-entry via an accessory pathway; avoid strategies that risk preferential conduction via the accessory pathway (management nuances beyond listed drug uses are not expanded here).
+\item \textbf{Quinidine in AF/flutter:} slow AV nodal conduction first.
+\item \textbf{Lidocaine:} hepatic blood flow matters; clearance falls in cardiac failure.
+\item \textbf{Amiodarone:} multi-organ adverse effects + \textbf{very long half-life} + high interaction burden.
+\item \textbf{Class Ia and class III agents:} QT prolongation \(\rightarrow\) torsades risk.
+\end{itemize}
+
+\end{document}
