@@ -76,6 +76,13 @@ jobs:
           root_file: chapters/Adreno_Antagonists.tex
           texlive_version: 2024
 
+    
+      - name: Compile Anti-Arrythmics chapter
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: chapters/Anti-Arrhythmics.tex
+          texlive_version: 2024
+
       # ---- Collect PDFs into docs/ ----
       - name: Prepare docs folder
         run: |
@@ -105,6 +112,7 @@ jobs:
           copy_pdf "Muscle_relaxants+reversal"
           copy_pdf "Sympathomimetics"
           copy_pdf "Adreno_Antagonists"
+          copy-pdf "Anti-Arrhythmics"
 
           # Use the prettier landing page from the repo
           cp landing.html docs/index.html
