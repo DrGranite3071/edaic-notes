@@ -112,7 +112,7 @@ jobs:
           copy_pdf "Muscle_relaxants+reversal"
           copy_pdf "Sympathomimetics"
           copy_pdf "Adreno_Antagonists"
-          copy-pdf "Anti-Arrhythmics"
+          copy_pdf "Anti-Arrhythmics"
 
           # Use the prettier landing page from the repo
           cp landing.html docs/index.html
