@@ -82,6 +82,12 @@ jobs:
         with:
           root_file: chapters/Anti-Arrhythmics.tex
           texlive_version: 2024
+     
+      - name: Compile Respiratory_physiology chapter
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: chapters/Respiratory_physiology.tex
+          texlive_version: 2024
 
       # ---- Collect PDFs into docs/ ----
       - name: Prepare docs folder
@@ -113,6 +119,7 @@ jobs:
           copy_pdf "Sympathomimetics"
           copy_pdf "Adreno_Antagonists"
           copy_pdf "Anti-Arrhythmics"
+          copy_pdf "Respiratory_physiology"
 
           # Use the prettier landing page from the repo
           cp landing.html docs/index.html
