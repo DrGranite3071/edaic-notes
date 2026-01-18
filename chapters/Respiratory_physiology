@@ -1,0 +1,276 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- pdfLaTeX / TeX Live 2024 safe preamble ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+
+\title{Respiratory System Study Notes\\Chapters 15--16 (Structured rewrite)}
+\author{}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\noindent\textit{Source: Kam \& Power --- Principles of Physiology for the Anaesthetist, Chapters 15--16.}
+
+\tableofcontents
+\newpage
+
+% =========================================================
+\section{Chapter 15 --- Functions of the Respiratory System}
+
+\subsection{Big picture}
+
+\subsubsection{Primary function}
+\begin{itemize}[leftmargin=*,nosep]
+  \item \textbf{Gas exchange}: transfer of O$_2$ into blood and CO$_2$ out of blood across the alveolar--capillary interface.
+\end{itemize}
+
+\subsubsection{Non-respiratory functions of the lung}
+\begin{itemize}[leftmargin=*,nosep]
+  \item \textbf{Blood filter}: traps small clots and detached cells, limiting systemic embolization.
+  \item \textbf{Blood reservoir (high capacitance)}
+  \begin{itemize}[leftmargin=*,nosep]
+    \item \textasciitilde16\% of total blood volume in the \textbf{supine} position.
+    \item \textasciitilde9\% of total blood volume in the \textbf{erect} position.
+    \item Can redistribute blood to vital organs in \textbf{hypovolaemic shock}.
+  \end{itemize}
+  \item \textbf{Metabolism / handling of bioactive substances}
+  \begin{itemize}[leftmargin=*,nosep]
+    \item Converts \textbf{angiotensin I $\rightarrow$ angiotensin II}.
+    \item Synthesis and breakdown of \textbf{bradykinin}.
+    \item Storage/release of \textbf{serotonin} and \textbf{histamine}.
+    \item Synthesis of peptides (e.g.\ \textbf{substance P}), \textbf{prostaglandins}, \textbf{surfactants}, \textbf{immunoglobulins}.
+    \item Inactivation of \textbf{adrenaline} and \textbf{noradrenaline}.
+    \item Presence of \textbf{cytochrome P-450 isoenzymes}.
+  \end{itemize}
+  \item \textbf{Acid--base regulation}: ventilation changes arterial $P_{\mathrm{CO_2}}$.
+  \item \textbf{Phonation}: CNS control of respiratory muscles generates airflow through vocal cords.
+  \item \textbf{Pulmonary defence}
+  \begin{itemize}[leftmargin=*,nosep]
+    \item Secretion of \textbf{IgA} (innate immunity).
+    \item Removal of airborne particles by \textbf{phagocytosis} and \textbf{mucociliary action}.
+    \item \textbf{Lymphoid tissue with T lymphocytes} provides first-line defence against the external environment.
+  \end{itemize}
+\end{itemize}
+
+\paragraph{Exam pitfalls}
+\begin{itemize}[leftmargin=*,nosep]
+  \item ``Lungs only do gas exchange'' is false: know key \textbf{non-respiratory} roles (filter/reservoir/metabolic/defence).
+\end{itemize}
+
+\subsection{Functional anatomy: airway tree, respiratory zone, alveolar--capillary unit}
+
+\subsubsection{Conducting airways vs respiratory zone}
+
+\paragraph{Conducting airways}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Function: \textbf{bulk flow} to/from respiratory zone + \textbf{warm, humidify, filter} inspired air.
+  \item Anatomical extent: \textbf{trachea (generation 1)} $\rightarrow$ \textbf{terminal bronchioles (generation 16)}.
+  \item Conducting zone volume \textasciitilde \textbf{150 mL}.
+  \item \textbf{Cartilage disappears from the 11th generation}; beyond this, airway diameter is mainly determined by \textbf{lung volume}.
+  \item Airway wall \textbf{smooth muscle}: dilates with \textbf{sympathetic} stimulation; constricts with \textbf{parasympathetic} stimulation.
+\end{itemize}
+
+\paragraph{Respiratory zone}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Begins at \textbf{respiratory bronchioles (generations 17--19)} (first airways with alveoli in their walls).
+  \item Continues through \textbf{alveolar ducts (generations 20--22)} to \textbf{alveolar sacs (generation 23)}.
+  \item Respiratory zone volume \textasciitilde \textbf{3000 mL}.
+  \item Gas exchange occurs by \textbf{diffusion} (not bulk flow).
+\end{itemize}
+
+\subsubsection{Pulmonary lobule and alveolar stability}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Parenchyma is an interconnected network of alveolar walls and interstitial tissues.
+  \item \textbf{Alveolar interdependence}: a collapsing region tends to be pulled open by surrounding stretched tissue.
+  \item With \textbf{surfactant} and \textbf{collateral ventilation via pores of Kohn} $\rightarrow$ helps prevent alveolar collapse.
+  \item \textbf{Pulmonary lobule}: airways and alveoli distal to a single terminal bronchiole.
+\end{itemize}
+
+\subsubsection{Alveolar--capillary unit: key numbers and structure}
+\begin{itemize}[leftmargin=*,nosep]
+  \item \textbf{Alveoli}
+  \begin{itemize}[leftmargin=*,nosep]
+    \item \textbf{200--600 million} (average \textasciitilde\textbf{300 million}).
+    \item Mean diameter at \textbf{FRC}: \textbf{0.2 mm}.
+    \item \textbf{Polyhedral} (not spherical) because septae are flat.
+    \item \textbf{Type I} cells: flat squamous epithelium (major gas-exchanging surface).
+    \item \textbf{Type II} cells: cuboidal, produce \textbf{surfactant}.
+  \end{itemize}
+  \item \textbf{Pulmonary capillaries}
+  \begin{itemize}[leftmargin=*,nosep]
+    \item Diameter \textasciitilde\textbf{10 $\mu$m}.
+    \item Endothelial thickness \textasciitilde\textbf{0.1 $\mu$m}.
+    \item RBC transit through capillary network (and 2--3 alveoli): \textasciitilde\textbf{0.75 s}.
+  \end{itemize}
+  \item \textbf{Diffusion barrier thickness} (alveolar gas $\rightarrow$ capillary blood): \textasciitilde\textbf{0.3 $\mu$m} (RBC diameter \textasciitilde\textbf{7 $\mu$m}).
+  \item \textbf{Surface area}: \textasciitilde\textbf{50--100 m$^2$}.
+\end{itemize}
+
+\paragraph{Exam pitfalls}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Conducting zone (bulk flow; \textasciitilde150 mL) vs respiratory zone (diffusion; \textasciitilde3000 mL).
+  \item Type I (exchange) vs Type II (surfactant).
+  \item Generation 11 (cartilage disappears) vs generation 16 (end of conducting zone).
+\end{itemize}
+
+\subsection{Muscles of ventilation}
+
+\subsubsection{Mechanics overview}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Thorax separated from abdomen by the \textbf{diaphragm}.
+  \item Diaphragm contraction increases vertical chest dimension by pushing abdominal contents down.
+  \item Ribs move laterally/anteriorly to increase thoracic cross-sectional area.
+  \item \textbf{Inspiration}: active. \quad \textbf{Expiration}: passive during quiet breathing; becomes active when ventilation increases.
+\end{itemize}
+
+\subsubsection{Inspiratory muscles}
+\begin{itemize}[leftmargin=*,nosep]
+  \item \textbf{Diaphragm}
+  \begin{itemize}[leftmargin=*,nosep]
+    \item Innervation: \textbf{phrenic nerve (C3--5)}.
+    \item Descent: \textbf{1--2 cm} in quiet breathing; up to \textbf{10 cm} in forced inspiration.
+  \end{itemize}
+  \item \textbf{External intercostals}: fibres slope down and anteriorly; ribs move \textbf{upwards and forwards}.
+  \item \textbf{Scalenes}: active even during quiet breathing; elevate ribcage.
+  \item \textbf{Sternocleidomastoid}: recruited when breathing increases; elevates ribcage.
+\end{itemize}
+
+\subsubsection{Expiratory muscles}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Quiet expiration is \textbf{passive}.
+  \item Active expiration occurs with increased ventilation (exercise, speech, coughing/sneezing) and in pathology (e.g.\ COPD).
+  \item Main expiratory muscles: \textbf{abdominal wall} (rectus abdominis, internal/external obliques, transversalis) and \textbf{internal intercostals}.
+\end{itemize}
+
+\paragraph{Exam pitfalls}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Quiet expiration is passive; \textbf{forced} expiration recruits abdominal wall + internal intercostals.
+\end{itemize}
+
+\subsection{Lung--chest wall equilibrium and pressure definitions}
+
+\subsubsection{Pleural arrangement}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Lungs covered by \textbf{visceral pleura}; chest wall lined by \textbf{parietal pleura}.
+  \item Between them is a potential \textbf{intrapleural space}.
+  \item Diaphragm separates lungs from abdominal contents.
+\end{itemize}
+
+\subsubsection{Resting equilibrium (end of normal expiration)}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Elastic forces balance:
+  \begin{itemize}[leftmargin=*,nosep]
+    \item Lung tends to collapse inward.
+    \item Chest wall tends to expand outward (plus contribution from diaphragmatic tone).
+  \end{itemize}
+  \item This produces a \textbf{negative intrapleural pressure}.
+\end{itemize}
+
+\subsubsection{Transpulmonary pressure}
+\begin{itemize}[leftmargin=*,nosep]
+  \item \textbf{Transpulmonary pressure} $=$ alveolar pressure $-$ intrapleural pressure.
+  \item Distending (transmural) pressure across alveoli.
+  \item At end of normal expiration, forces balance at \textbf{FRC}.
+\end{itemize}
+
+\paragraph{Exam pitfalls}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Transpulmonary pressure is a \textbf{difference}, not the same as intrapleural pressure.
+\end{itemize}
+
+\subsection{Events during a normal tidal breath (Table 15.1)}
+
+\subsubsection{Summary table (spontaneous breathing)}
+\begin{table}[h!]
+\centering
+\begin{tabularx}{\textwidth}{@{}lXX@{}}
+\toprule
+\textbf{Step} & \textbf{Inspiration (active)} & \textbf{Expiration (passive, quiet breathing)}\\
+\midrule
+Neural drive & Inspiratory centre activated $\rightarrow$ impulses to inspiratory muscles & Inspiratory centre activity ceases\\
+Muscle activity & Diaphragm contracts ($\pm$ external intercostals) & Inspiratory muscles relax\\
+Thoracic volume & Increases & Decreases toward resting level\\
+Intrapleural pressure & Becomes \textbf{more negative} & Becomes \textbf{less negative} (returns toward baseline)\\
+Transpulmonary pressure & Increases $\rightarrow$ alveoli distend; elastic recoil increases & Decreases as elastic recoil empties lungs\\
+Alveolar pressure (vs atmosphere) & Falls slightly below 0 $\rightarrow$ airflow \textbf{into} alveoli & Rises slightly above 0 $\rightarrow$ airflow \textbf{out}\\
+End of phase & Flow stops when alveolar pressure returns to 0 & Flow stops when alveolar pressure returns to 0\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsubsection{Key takeaways (MCQ-friendly)}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Flow occurs only when alveolar pressure $\neq$ atmospheric pressure.
+  \item End-inspiration and end-expiration: alveolar pressure $=$ atmospheric (no flow).
+  \item The pressure that keeps alveoli open is \textbf{transpulmonary pressure} (alveolar $-$ intrapleural).
+\end{itemize}
+
+\subsection{Pressures, flow, and volume during the breathing cycle}
+
+\subsubsection{At rest (end expiration)}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Alveolar pressure = mouth pressure = 0 (relative to atmosphere).
+  \item Intrapleural pressure \textasciitilde $-5$ cmH$_2$O.
+  \item Lung volume = FRC.
+  \item No flow.
+\end{itemize}
+
+\subsubsection{Inspiration}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Inspiratory muscle activity expands chest wall $\rightarrow$ intrapleural pressure falls.
+  \item Alveolar pressure falls to \textasciitilde $-1$ cmH$_2$O $\rightarrow$ airflow into lungs.
+  \item End-inspiration:
+  \begin{itemize}[leftmargin=*,nosep]
+    \item Intrapleural pressure \textasciitilde $-8$ cmH$_2$O.
+    \item Alveolar pressure returns to 0 (no flow).
+    \item Lung volume increases by \textasciitilde 500 mL (tidal volume).
+  \end{itemize}
+\end{itemize}
+
+\subsubsection{Expiration}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Inspiratory drive ceases $\rightarrow$ system returns toward resting equilibrium.
+  \item Intrapleural pressure becomes less negative.
+  \item Alveolar pressure becomes \textasciitilde $+1$ cmH$_2$O $\rightarrow$ airflow out.
+  \item End-expiration:
+  \begin{itemize}[leftmargin=*,nosep]
+    \item Intrapleural pressure returns to \textasciitilde $-5$ cmH$_2$O.
+    \item Alveolar pressure returns to 0; flow stops; volume returns to FRC.
+  \end{itemize}
+  \item Quiet expiration is passive (elastic recoil); can become active with expiratory muscle recruitment.
+\end{itemize}
+
+\paragraph{Exam pitfalls}
+\begin{itemize}[leftmargin=*,nosep]
+  \item In spontaneous breathing, alveolar pressure is 0 at end-inspiration and end-expiration; flow is driven by small swings (e.g.\ to $-1$ and $+1$ cmH$_2$O).
+\end{itemize}
+
+\subsection{Pressure waveforms during intermittent positive pressure ventilation (IPPV)}
+\begin{itemize}[leftmargin=*,nosep]
+  \item During \textbf{inspiration} in IPPV:
+  \begin{itemize}[leftmargin=*,nosep]
+    \item Alveolar pressure rises from baseline to positive values.
+    \item Intrapleural pressure rises from \textasciitilde $-5$ cmH$_2$O to about $+2$ to $+3$ cmH$_2$O at end inspiration.
+  \end{itemize}
+  \item During \textbf{expiration}: intrapleural pressure returns to \textasciitilde $-5$ cmH$_2$O.
+\end{itemize}
+
+\paragraph{Exam pitfalls}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Spontaneous inspiration: intrapleural pressure becomes \emph{more negative}.
+  \item IPPV inspiration: intrapleural pressure becomes \emph{less negative and may become positive}.
+\end{itemize}
+
+
+\end{document}
