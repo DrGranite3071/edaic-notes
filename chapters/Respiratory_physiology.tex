@@ -274,7 +274,7 @@ End of phase & Flow stops when alveolar pressure returns to 0 & Flow stops when 
 
 % =========================================================
 
-\section{Mechanical Properties of the Lungs (Kam \& Power, Ch.16)}
+\section{Chapter 16 --- Mechanical Properties of the Lungs}
 \textit{Primary source: Kam \& Power — \emph{Principles of Physiology for the Anaesthetist}, Chapter 16.}
 
 \subsection{What this chapter is about}
@@ -549,6 +549,631 @@ FEV$_1$/FVC as obstruction index; FEF$_{25\text{--}75\%}$ (MMEF) described as re
   \item High-frequency jet ventilation can generate intrinsic PEEP at high frequencies; delivered tidal volume and FiO$_2$ may be uncertain due to entrainment.
 \end{itemize}
 \textit{Sources:} \emph{Essentials of Equipment in Anaesthesia} (Al-Shaikh \& Stacey, 2023), Ch.13 (CPAP complications) and Ch.8 (HF jet ventilation: entrainment/intrinsic PEEP); \emph{Morgan \& Mikhail} (5th ed), Ch.57 (PEEP/CPAP adverse nonpulmonary effects incl. reduced cardiac output).
+
+% Fragment for \input{} / \include{} (no preamble)
+
+% =========================================================
+
+\section{Chapter 17 -- Gas Exchange in the Lungs }
+
+\subsection{What ``gas exchange'' means (exam framing)}
+Gas exchange is the \textbf{net transfer} of \textbf{O$_2$} from alveoli to blood and \textbf{CO$_2$} from blood to alveoli.
+
+\paragraph{Determinants of arterial blood gases}
+\begin{itemize}
+  \item \textbf{Input gas}: inspired partial pressures (humidification, barometric pressure).
+  \item \textbf{Bulk flow}: alveolar ventilation and pulmonary blood flow.
+  \item \textbf{Matching}: ventilation--perfusion distribution \((\dot V_A/\dot Q)\).
+  \item \textbf{Membrane transfer}: diffusion across the blood--gas barrier.
+  \item \textbf{Mixing}: venous admixture/shunt.
+\end{itemize}
+
+\paragraph{Practical organisation of problems}
+\begin{itemize}
+  \item \textbf{Hypoventilation} (global \(\downarrow \dot V_A\)) \(\rightarrow\) \(\uparrow\)PaCO$_2$, \(\downarrow\)PAO$_2$.
+  \item \textbf{V/Q inequality} \(\rightarrow\) impaired O$_2$ transfer; CO$_2$ often buffered by ventilation.
+  \item \textbf{Shunt / venous admixture} \(\rightarrow\) lower arterial O$_2$.
+  \item \textbf{Diffusion limitation} \(\rightarrow\) widened A--a difference and impaired transfer.
+\end{itemize}
+
+\subsection{Partial pressures along the circulation (anchor values)}
+Typical partial pressures (breathing air):
+\begin{itemize}
+  \item \textbf{Inspired (dry):} PIO$_2$ \(\approx\) 160 mmHg (21.3 kPa), PICO$_2$ \(\approx\) 0.
+  \item \textbf{Alveolar gas:} PO$_2$ \(\approx\) 105 mmHg (14 kPa), PCO$_2$ \(\approx\) 40 mmHg (5.3 kPa).
+  \item \textbf{Arterial blood:} PaO$_2$ \(\approx\) 100 mmHg (13.3 kPa), PaCO$_2$ \(\approx\) 40 mmHg (5.3 kPa).
+  \item \textbf{Mixed venous blood:} PvO$_2$ \(\approx\) 40 mmHg (5.3 kPa), PvCO$_2$ \(\approx\) 46 mmHg (6.1 kPa).
+\end{itemize}
+
+\subsection{Alveolar ventilation and dead space}
+\subsubsection{Definitions}
+Minute alveolar ventilation:
+\[
+\dot V_A = f\,(V_T - V_D)
+\]
+Dead space = the ``wasted'' portion of tidal volume not contributing to exchange.
+
+\subsubsection{Types of dead space}
+\begin{itemize}
+  \item \textbf{Anatomical dead space}: conducting airways.
+  \item \textbf{Alveolar dead space}: ventilated alveoli with no perfusion.
+  \item \textbf{Physiological dead space}: anatomical + alveolar dead space.
+\end{itemize}
+
+\subsubsection{CO$_2$ as a marker of ventilation}
+With stable metabolism, alveolar CO$_2$ is inversely related to \(\dot V_A\).
+Clinically, PaCO$_2$ tracks PACO$_2$ closely and is a practical index of alveolar ventilation when CO$_2$ production is stable.
+
+\subsubsection{Measuring dead space (core equations)}
+\begin{itemize}
+  \item \textbf{Anatomical dead space}: Fowler method.
+  \item \textbf{Physiological dead space}: Bohr equation.
+\end{itemize}
+\[
+\frac{V_D}{V_T} = \frac{P_{a\mathrm{CO}_2} - P_{\bar E\mathrm{CO}_2}}{P_{a\mathrm{CO}_2}}
+\]
+where \(P_{\bar E\mathrm{CO}_2}\) is mixed expired CO$_2$ partial pressure.
+
+\subsection{Oxygen in alveolar gas and the alveolar air equation}
+\subsubsection{Why calculate ``ideal'' PAO$_2$?}
+Ideal alveolar gas cannot be sampled directly: end-expired gas may include dead-space contributions, and shunt/VQ mismatch affects arterial PO$_2$ more than arterial PCO$_2$.
+
+\subsubsection{Alveolar air equation}
+Assumption used: ideal alveolar PCO$_2$ \(\approx\) PACO$_2$ \(\approx\) PaCO$_2$.
+\[
+R = \frac{\dot V_{\mathrm{CO}_2}}{\dot V_{\mathrm{O}_2}} \approx 0.8
+\]
+Conceptual form:
+\[
+P_{A\mathrm{O}_2} = P_{I\mathrm{O}_2} - \frac{P_{a\mathrm{CO}_2}}{R}
+\]
+Humidification:
+\[
+P_{I\mathrm{O}_2} = F_{I\mathrm{O}_2}\,(P_B - P_{H_2O})
+\]
+
+\subsection{Ventilation--perfusion (V/Q) inequality}
+\subsubsection{Definitions and extremes}
+Whole lung average in normal lungs: \(\dot V_A/\dot Q \approx 0.8\).
+\begin{itemize}
+  \item High \(\dot V_A/\dot Q\): \(\uparrow\) PO$_2$, \(\downarrow\) PCO$_2$ (dead-space effect if perfusion low).
+  \item Low \(\dot V_A/\dot Q\): \(\downarrow\) PO$_2$, \(\uparrow\) PCO$_2$ (venous admixture effect).
+  \item \textbf{Dead space}: \(\dot V_A/\dot Q \to \infty\).
+  \item \textbf{Shunt}: \(\dot V_A/\dot Q \to 0\).
+\end{itemize}
+
+\subsubsection{Gravity and regional V/Q}
+Perfusion falls more than ventilation towards the apex \(\Rightarrow\) \(\dot V_A/\dot Q\) higher at the top and lower at the bottom.
+Representative apex values: \(\dot V_A/\dot Q \sim 3.3\), PO$_2 \sim 130\) mmHg, PCO$_2 \sim 28\) mmHg.
+
+\subsubsection{Assessing V/Q mismatch}
+\begin{itemize}
+  \item Qualitative: compare PaO$_2$ with calculated ideal PAO$_2$; reminder that ABGs, imaging and nuclear methods can support diagnosis.
+  \item Quantitative: shunt estimation (shunt equation, iso-shunt concepts), dead space (Bohr), and MIGET (research).
+\end{itemize}
+
+\subsection{Venous admixture (physiological shunt)}
+\subsubsection{Normal sources}
+\begin{itemize}
+  \item Bronchial venous drainage into pulmonary veins: \(<1\%\) of cardiac output.
+  \item Thebesian veins into the left heart: \(\sim 0.3\%\) of cardiac output.
+\end{itemize}
+
+\subsubsection{Shunt equation (oxygen content form)}
+\[
+\frac{\dot Q_S}{\dot Q_T} = \frac{C'_{c\mathrm{O}_2} - C_{a\mathrm{O}_2}}{C'_{c\mathrm{O}_2} - C_{v\mathrm{O}_2}}
+\]
+where \(C'_{c\mathrm{O}_2}\) is end-capillary O$_2$ content (derived from ideal PAO$_2$ and the dissociation curve). Assumption: shunted blood has the same O$_2$ content as mixed venous blood.
+
+\subsection{Oxygen cascade}
+O$_2$ moves down a sequence of partial pressure gradients from atmosphere to mitochondria.
+Key steps: humidification in the trachea (\(P_{H_2O}\) at \(37^\circ\)C \(\approx 47\) mmHg), alveolar setting of PAO$_2$, small further fall to PaO$_2$ due to shunt/VQ mismatch/diffusion effects, then tissue extraction to low mitochondrial PO$_2$.
+
+\paragraph{Factors that shift the cascade}
+Inspired O$_2$ concentration; barometric pressure; alveolar ventilation; O$_2$ consumption; scatter of \(\dot V_A/\dot Q\); venous admixture; blood flow; haemoglobin concentration.
+
+\subsection{Diffusion across the alveolar--capillary barrier}
+\subsubsection{Fick's law (conceptual)}
+Transfer \(\propto\) area \(\times\) partial pressure difference \(\times\) diffusion constant, and \(\propto 1/\)thickness.
+
+\subsubsection{Why CO$_2$ diffuses easily}
+CO$_2$ has a diffusion constant \(\sim 20\times\) that of O$_2$ (greater solubility), so despite a small gradient it transfers efficiently.
+
+\subsubsection{Perfusion-limited transfer (normal)}
+At rest, equilibration of blood with alveolar gases occurs rapidly (\(\sim 0.25\) s, about one-third of capillary transit time) \(\Rightarrow\) O$_2$ and CO$_2$ transfer are typically perfusion-limited.
+
+\subsubsection{Diffusing capacity (DLCO)}
+DLCO assesses diffusion properties:
+\begin{itemize}
+  \item Normal DLCO \(\sim 25\) mL/min/mmHg at rest; increases up to \(\sim 3\times\) during exercise (capillary recruitment/dilation).
+  \item Decreases in emphysema (\(\downarrow\) surface area), fibrosis and pulmonary oedema (\(\uparrow\) thickness).
+\end{itemize}
+
+\subsection{High-yield consolidation (what to be able to do)}
+\begin{itemize}
+  \item Define anatomical vs alveolar vs physiological dead space.
+  \item Use \(\dot V_A = f(V_T - V_D)\) and interpret effects on PaCO$_2$.
+  \item Recall Bohr equation for \(V_D/V_T\) and the shunt equation for \(\dot Q_S/\dot Q_T\).
+  \item Use the alveolar air equation conceptually to estimate ideal PAO$_2$.
+  \item Explain V/Q inequality and see dead space/shunt as extremes of \(\dot V_A/\dot Q\).
+  \item Describe the oxygen cascade and what lowers PaO$_2$ between atmosphere and mitochondria.
+  \item Explain why CO$_2$ is rarely diffusion-limited; state what DLCO measures and how it changes in disease/exercise.
+\end{itemize}
+
+\subsection{Additions highlighted in other core texts (complements)}
+\subsubsection{Absolute vs relative shunt and response to oxygen}
+\begin{itemize}
+  \item \textbf{Absolute shunt}: anatomic shunt + lung units with \(\dot V_A/\dot Q = 0\).
+  \item \textbf{Relative shunt}: low \(\dot V_A/\dot Q\) units.
+\end{itemize}
+Hypoxaemia from low \(\dot V_A/\dot Q\) is usually partially correctable with increased FiO$_2$; hypoxaemia from true shunt corrects poorly.
+
+\subsubsection{Three-compartment model}
+Dead space compartment (\(\dot V_A/\dot Q \to \infty\)), normal exchange compartment, and shunt compartment (\(\dot V_A/\dot Q = 0\)); helpful for viva-style explanations.
+
+\subsubsection{Effects of anaesthesia on gas exchange (checklist)}
+Hypoventilation; increased dead space; increased intrapulmonary shunting; increased scatter of \(\dot V_A/\dot Q\) ratios.
+
+\subsubsection{Closing capacity, FRC, atelectasis risk and PEEP}
+If closing capacity approaches/exceeds FRC, dependent airway closure during tidal breathing promotes atelectasis, low V/Q and shunt; PEEP may help by maintaining lung volume and reducing airway closure. Obesity is a common applied example (reduced FRC/compliance, increased V/Q mismatch).
+
+\subsubsection{Oxygen dissociation curve (ODC) framing}
+ODC/P50 links PaO$_2$ to SaO$_2$ and oxygen content; classic modifiers include CO$_2$/H$^+$ (Bohr), temperature, 2,3-DPG, and dyshemoglobins (CO, methaemoglobin) that reduce effective oxygen carriage.
+
+\subsubsection{Practical dead space points}
+Some texts emphasise the Bohr derivation, the practical assumption PACO$_2 \approx\) PaCO$_2$, and that anatomical dead space varies with head/neck position, intubation, and flow pattern.
+
+\subsubsection{West zones / Starling resistor}
+West zones and Starling resistor concepts are used to explain regional perfusion and how this may vary with pulmonary arterial/alveolar pressures; reminder linkage to altitude physiology is often used as an integrative example.
+
+\subsubsection{High altitude as a gas-exchange ``stress test''}
+Lower inspired PO$_2$ drives acute hyperventilation; chronic responses include increased 2,3-DPG and polycythaemia; hypoxic pulmonary vasoconstriction raises pulmonary arterial pressures and may strain the RV over time.
+
+\subsection*{Sources used for the additions}
+\begin{itemize}
+  \item Kam \& Power, \emph{Principles of Physiology for the Anaesthetist}, Ch 17 (Gas exchange in the lungs).
+  \item Morgan \& Mikhail, \emph{Clinical Anesthesiology} (5th ed.), Ch 23 (Respiratory physiology \& anesthesia): shunt vs V/Q response to FiO$_2$, three-compartment model, effects of anesthesia.
+  \item \emph{Fundamentals of Anaesthesia} (4th ed.), Ch 17: Fowler/Bohr details, anatomical dead space variability, West zones/Starling resistor, altitude physiology.
+  \item \emph{Primary FRCA in a Box} (2nd ed.): CC vs FRC/PEEP and obesity respiratory physiology; ODC/P50 and dyshemoglobins.
+  \item \emph{1,000 Practice MTF} (Physiology answers): high-altitude responses (HPV and chronic RV effects).
+\end{itemize}
+
+% =========================================================
+
+\section{Chapter 18 -- Carriage of Oxygen in Blood}
+
+\subsection{Haemoglobin: the carrier}
+\begin{itemize}
+  \item Erythrocyte Hb content: \(\sim 200\text{--}300\) million Hb molecules per red cell.
+  \item Hb structure (conceptual): 4 subunits, each with a haem (protoporphyrin ring + central iron in ferrous state, Fe\(^{2+}\)) \(\rightarrow\) binds up to 4 O\(_2\) molecules per Hb molecule.
+\end{itemize}
+
+\paragraph{Key point}
+Only \emph{dissolved} O\(_2\) contributes to blood \(P\mathrm{O}_2\). Hb-bound O\(_2\) increases O\(_2\) \emph{content} substantially but does not directly raise \(P\mathrm{O}_2\).
+
+\subsection{Oxygen in blood: dissolved vs haemoglobin-bound}
+
+\subsubsection{Dissolved oxygen}
+\begin{itemize}
+  \item Dissolved O\(_2\) is directly proportional to \(P\mathrm{O}_2\).
+  \item Solubility coefficient (37\(^\circ\)C): \(0.003~\mathrm{mL~O_2}/100~\mathrm{mL~blood/mmHg}\).
+  \item At \(P\mathrm{a}O_2 \sim 100~\mathrm{mmHg}\) (\(13.3~\mathrm{kPa}\)): dissolved O\(_2 \approx 0.3~\mathrm{mL~O_2}/100~\mathrm{mL~blood}\).
+\end{itemize}
+
+\subsubsection{Oxygen carriage by haemoglobin}
+\begin{itemize}
+  \item At normal atmospheric pressure, about 98\% of blood O\(_2\) is carried by Hb.
+  \item O\(_2\) combining capacity (fully saturated Hb):
+  \begin{itemize}
+    \item Adult blood: \(1.306~\mathrm{mL~O_2/g~Hb}\)
+    \item Fetal blood: \(1.312~\mathrm{mL~O_2/g~Hb}\)
+  \end{itemize}
+  \item Increasing \(P\mathrm{O}_2\) increases Hb saturation (SaO\(_2\)) in a sigmoid pattern due to sequential binding across 4 subunits.
+\end{itemize}
+
+\paragraph{Definition}
+Oxygen capacity of blood: the maximum amount of O\(_2\) that can be carried by Hb.
+
+\subsection{Oxygen--haemoglobin dissociation curve (ODC)}
+
+\subsubsection{Shape and physiological meaning}
+\begin{itemize}
+  \item Plot: \(P\mathrm{O}_2\) vs \% Hb saturation (and optionally O\(_2\) content).
+  \item Steep portion: \(P\mathrm{O}_2 \sim 10\text{--}60~\mathrm{mmHg}\) (\(1.3\text{--}8~\mathrm{kPa}\)) \(\rightarrow\) small \(P\mathrm{O}_2\) changes cause large saturation changes.
+  \item At \(P\mathrm{O}_2 \sim 60~\mathrm{mmHg}\) (\(8~\mathrm{kPa}\)), saturation is \(\sim 90\%\).
+  \item Plateau portion: provides buffering such that modest falls in alveolar/arterial \(P\mathrm{O}_2\) produce only modest falls in SaO\(_2\).
+\end{itemize}
+
+\subsubsection{Typical arterial and mixed venous points}
+\begin{itemize}
+  \item Arterial (normal): \(P\mathrm{O}_2 \sim 100~\mathrm{mmHg}\) (\(13.3~\mathrm{kPa}\)); SaO\(_2 \sim 100\%\); O\(_2\) content \(\sim 20~\mathrm{mL}/100~\mathrm{mL}\) (Hb-bound).
+  \item Normal tissue extraction: \(\sim 5~\mathrm{mL~O_2}/100~\mathrm{mL~blood}\) removed during capillary transit.
+  \item Mixed venous (normal): \(P\mathrm{O}_2 \sim 40~\mathrm{mmHg}\) (\(5.3~\mathrm{kPa}\)); SvO\(_2 \sim 75\%\); O\(_2\) content \(\sim 15~\mathrm{mL}/100~\mathrm{mL}\) (Hb-bound).
+\end{itemize}
+
+\subsubsection{\texorpdfstring{\(P_{50}\)}{P50}}
+\begin{itemize}
+  \item \(P_{50}\): \(P\mathrm{O}_2\) at which Hb is 50\% saturated.
+  \item Normal: \(\sim 26~\mathrm{mmHg}\) (\(\approx 3.5~\mathrm{kPa}\)).
+  \item Use: compact descriptor of left/right shift of the ODC.
+\end{itemize}
+
+\subsection{Shifts of the ODC and the Bohr effect}
+
+\subsubsection{Factors shifting the curve}
+\begin{itemize}
+  \item Right shift (decreased affinity, increased unloading): increased \(P\mathrm{CO}_2\), increased \([\mathrm{H}^+]\), increased temperature, increased 2,3-DPG.
+  \item Left shift (increased affinity, reduced unloading): decreased \(P\mathrm{CO}_2\), decreased \([\mathrm{H}^+]\), decreased temperature, decreased 2,3-DPG, HbF.
+\end{itemize}
+
+\subsubsection{Bohr effect (mechanism and purpose)}
+\begin{itemize}
+  \item When \(P\mathrm{CO}_2\), \([\mathrm{H}^+]\), and temperature rise (e.g.\ working muscle), Hb affinity for O\(_2\) falls \(\rightarrow\) right shift \(\rightarrow\) O\(_2\) released more easily.
+  \item In pulmonary capillaries, \(P\mathrm{CO}_2\) and \([\mathrm{H}^+]\) fall \(\rightarrow\) affinity rises \(\rightarrow\) facilitates O\(_2\) uptake.
+  \item Mechanistic notes: \(\mathrm{H}^+\) binds to \(\alpha\)-amino and imidazole groups on Hb; CO\(_2\) binds to N-terminal amino groups \(\rightarrow\) reduced O\(_2\) affinity.
+\end{itemize}
+
+\subsubsection{2,3-DPG (2,3-diphosphoglycerate)}
+\begin{itemize}
+  \item Binds to \(\beta\) chains of one tetramer of deoxyHb \(\rightarrow\) conformational change \(\rightarrow\) reduced O\(_2\) affinity \(\rightarrow\) right shift.
+  \item Produced via a side shunt from glycolysis; present in large amounts in erythrocytes.
+  \item Increases with anaemia and high altitude exposure.
+\end{itemize}
+
+\subsubsection{Venous point concept}
+\begin{itemize}
+  \item If \(5~\mathrm{mL~O_2}/100~\mathrm{mL}\) is removed from arterial blood, the resulting \(P\mathrm{O}_2\) (normally \(\sim 40~\mathrm{mmHg}\)) represents the driving gradient for O\(_2\) movement into tissues.
+  \item Right shift increases the venous-point \(P\mathrm{O}_2\); left shift reduces it.
+\end{itemize}
+
+\subsection{Oxygen content, delivery and consumption}
+
+\subsubsection{Oxygen delivery (\(D\!O_2\)) / oxygen flux}
+\begin{itemize}
+  \item Oxygen delivery per minute depends on arterial oxygen content (\(C\mathrm{a}O_2\)) and cardiac output (CO).
+  \item Typical resting values: \(C\mathrm{a}O_2 \approx 20~\mathrm{mL~O_2}/100~\mathrm{mL}\), CO \(\approx 5~\mathrm{L/min}\) \(\Rightarrow D\!O_2 \approx 1000~\mathrm{mL~O_2/min}\).
+  \item Tissue oxygen usage (\(\dot V\!O_2\)): \(\sim 250~\mathrm{mL/min}\).
+\end{itemize}
+
+\subsubsection{Expanded delivery equation (including dissolved O\(_2\))}
+\[
+D\!O_2 =
+\Bigl[\bigl(\mathrm{Hb}\times 1.306\times \mathrm{SaO_2}/100\bigr) + \bigl(0.003\times P\mathrm{a}O_2\bigr)\Bigr]\times \mathrm{CO}\times 10
+\]
+\noindent where Hb is in \(\mathrm{g}/100~\mathrm{mL}\), \(P\mathrm{a}O_2\) in \(\mathrm{mmHg}\), CO in \(\mathrm{L/min}\), and \(C\mathrm{a}O_2\) in \(\mathrm{mL~O_2}/100~\mathrm{mL}\). The dissolved O\(_2\) term is small but included for completeness.
+
+\subsubsection{Determinants of \(C\mathrm{a}O_2\) and \(\dot V\!O_2\)}
+\begin{itemize}
+  \item \(C\mathrm{a}O_2\): influenced by \(F\mathrm{i}O_2\), alveolar ventilation, \(V/Q\) mismatch, Hb concentration, and ODC position (left/right shift).
+  \item \(\dot V\!O_2\): influenced by metabolic rate; increases with exercise/surgical stress and decreases with sleep/anaesthesia.
+\end{itemize}
+
+\subsubsection{Supply dependence}
+As cardiac output decreases, \(\dot V\!O_2\) can become supply dependent and may fall with CO.
+
+\subsection{Mixed venous oxygen content/saturation (SvO\(_2\))}
+
+\subsubsection{Determinants}
+Mixed venous oxygen content (\(C\mathrm{v}O_2\)) is determined by \(C\mathrm{a}O_2\), \(\dot V\!O_2\), and flow (CO).
+
+\subsubsection{Estimating SvO\(_2\)}
+If \(C\mathrm{v}O_2\) is known, SvO\(_2\) can be derived using Hb concentration and the ODC (the text notes Hb O\(_2\) binding capacity values around \(\sim 1.31\text{--}1.34~\mathrm{mL/g}\)).
+
+\subsubsection{Factors affecting SvO\(_2\)}
+\paragraph{High SvO\(_2\)}
+\begin{itemize}
+  \item Increased O\(_2\) delivery: increased inspired O\(_2\) concentration
+  \item Decreased O\(_2\) demand: hypothermia
+  \item Other: histotoxic hypoxia (e.g.\ cyanide poisoning); sepsis (altered regional blood flow/distribution)
+\end{itemize}
+
+\paragraph{Low SvO\(_2\)}
+\begin{itemize}
+  \item Decreased O\(_2\) delivery: decreased Hb concentration; decreased arterial O\(_2\) saturation; decreased CO (e.g.\ hypovolaemia)
+  \item Increased O\(_2\) demand: pain, shivering, hyperthermia, seizures
+\end{itemize}
+
+\subsection{Exam-focused pitfalls}
+\begin{itemize}
+  \item \(P\mathrm{O}_2\) is set by dissolved O\(_2\), not Hb-bound O\(_2\).
+  \item Plateau vs steep portion: plateau buffers SaO\(_2\); steep portion supports efficient unloading.
+  \item Right shift: improved unloading but reduced affinity; left shift: improved loading but impaired unloading.
+  \item \(P_{50}\) as a single-number descriptor: increased \(P_{50}\) = right shift; decreased \(P_{50}\) = left shift.
+  \item SvO\(_2\) reflects delivery, demand, and distribution (e.g.\ sepsis), not just ``oxygenation''.
+\end{itemize}
+
+\paragraph{Source}
+\textit{Kam \& Power — Principles of Physiology for the Anaesthetist, Chapter 18 (Carriage of oxygen in blood).}
+
+\section{Additional high-yield points emphasised in other core texts (not explicit in Kam \& Power Ch.\ 18)}
+
+\subsection{Mechanistic basis of cooperativity (T \(\leftrightarrow\) R transition; Adair concept)}
+\begin{itemize}
+  \item Hb exists in tense (T) and relaxed (R) conformations; O\(_2\) binding promotes the R state, increasing affinity at remaining sites (positive cooperativity).
+  \item Some texts explicitly name the Adair equation as the descriptive model for stepwise O\(_2\) binding.
+\end{itemize}
+\textit{Sources: Principles of Physiology for the Anaesthetist (2021), Hb structure/function and cooperativity; Ganong’s Review of Medical Physiology, ODC and T--R interconversion; Cross \& Plunkett (2008), Oxygen delivery and transport.}
+
+\subsection{Dyshemoglobins and abnormal Hb: effects on O\(_2\) carriage and the ODC}
+\begin{itemize}
+  \item Carbon monoxide (CO): reduces O\(_2\)-binding capacity (high-affinity Hb binding); classically alters the ODC (often taught as a left shift of remaining sites).
+  \item Methaemoglobin (Fe\(^{3+}\)): cannot bind O\(_2\); reduces total O\(_2\)-carrying capacity; some texts state left shift and impaired O\(_2\) release.
+  \item Haemoglobin variants (e.g.\ HbS): different O\(_2\)-saturation characteristics; clinical consequences often considered in low \(P\mathrm{O}_2\)/low pH states.
+\end{itemize}
+\textit{Sources: Primary FRCA in a Box (2019), respiration/ODC notes and Hb variants; Morgan \& Mikhail (5th ed.), respiratory physiology/monitoring; Cross \& Plunkett (2008), oxygen delivery and transport.}
+
+\subsection{Hüfner constant: why different numbers appear across books}
+\begin{itemize}
+  \item Distinction between a theoretical maximum O\(_2\) binding per gram Hb (often \(\sim 1.39~\mathrm{mL~O_2/g~Hb}\)) and a lower practical/clinical constant (often \(\sim 1.31~\mathrm{mL~O_2/g~Hb}\)).
+\end{itemize}
+\textit{Sources: Morgan \& Mikhail (5th ed.), respiratory physiology; Cross \& Plunkett (2008), oxygen delivery/transport.}
+
+\subsection{Anaemia and polycythaemia: capacity vs saturation vs \(P\mathrm{O}_2\)}
+\begin{itemize}
+  \item Anaemia: decreases O\(_2\)-carrying capacity/content without independently altering \(P_{50}\).
+  \item Polycythaemia: increases O\(_2\)-carrying capacity/content without altering \(P_{50}\).
+\end{itemize}
+\textit{Source: Primary FRCA in a Box (2019), respiration/ODC notes.}
+
+\subsection{O\(_2\) extraction ratio and the Fick principle}
+\begin{itemize}
+  \item Fick relationship: \(\dot V\!O_2 = \mathrm{CO}\times (C\mathrm{a}O_2 - C\mathrm{v}O_2)\).
+  \item Normal extraction fraction often expressed as \(\sim 25\%\) at rest: \((C\mathrm{a}O_2 - C\mathrm{v}O_2)/C\mathrm{a}O_2\).
+\end{itemize}
+\textit{Sources: Morgan \& Mikhail (5th ed.), respiratory physiology; Principles of Physiology for the Anaesthetist (2021), cardiopulmonary physiology; 1,000 Practice MTF MCQs for the Primary and Final FRCA (2019), physiology answers (Fick/CO calculations).}
+
+\subsection{Critical \(D\!O_2\) framing of supply dependence}
+\begin{itemize}
+  \item Some exam texts define a critical oxygen delivery below which \(\dot V\!O_2\) becomes supply dependent, giving an approximate threshold around \(300~\mathrm{mL/min}\).
+\end{itemize}
+\textit{Source: Cross \& Plunkett (2008), oxygen delivery and transport.}
+
+\subsection{Oxygen stores and preoxygenation (apnoea time concept)}
+\begin{itemize}
+  \item Emphasis on body O\(_2\) stores, especially O\(_2\) reservoir in FRC; increasing \(F\mathrm{i}O_2\) enlarges this store and delays hypoxaemia during apnoea.
+\end{itemize}
+\textit{Sources: Morgan \& Mikhail (5th ed.), respiratory physiology (FRC O\(_2\) store/preoxygenation); Primary FRCA in a Box (2019), oxygen stores/transport overview.}
+
+\subsection{Monitoring linkage: pulse oximetry limitations in abnormal Hb states}
+\begin{itemize}
+  \item COHb: two-wavelength pulse oximeters may display falsely high SpO\(_2\).
+  \item MetHb: displayed saturation tends toward \(\sim 85\%\) (can appear falsely low or high depending on true saturation).
+  \item Averaging/response time and probe/site effects can introduce delays/artefacts.
+\end{itemize}
+\textit{Sources: Morgan \& Mikhail (5th ed.), monitoring; Al-Shaikh \& Stacey (2023), pulse oximetry limitations/averaging; Primary FRCA in a Box (2019), monitoring artefacts and dyshemoglobins.}
+
+\subsection{CO\(_2\) carriage interaction: the Haldane effect}
+\begin{itemize}
+  \item Deoxygenated Hb carries more CO\(_2\) than oxygenated Hb (Haldane effect), linking O\(_2\) unloading to CO\(_2\) uptake in tissues and the reverse in lungs.
+\end{itemize}
+\textit{Sources: Morgan \& Mikhail (5th ed.), CO\(_2\) transport; Primary FRCA in a Box (2019), CO\(_2\) transport; Fundamentals of Anaesthesia (4th ed.), pregnancy physiology (Haldane/double Haldane effect).}
+
+% =========================================================
+% Fragment mode (for \input{} / \include{}). No preamble.
+
+\section{Chapter 19 -- Carbon Dioxide Carriage in Blood}
+\textit{Primary source: Kam \& Power, Chapter 19 (Carbon Dioxide Carriage in Blood).}
+
+\subsection{Big picture}
+\begin{itemize}
+  \item \(\mathrm{CO_2}\) is carried in blood in three forms:
+  \begin{enumerate}
+    \item Dissolved in physical solution
+    \item As bicarbonate (\(\mathrm{HCO_3^-}\)) (via carbonic acid)
+    \item As carbamino compounds (bound to proteins, mainly haemoglobin)
+  \end{enumerate}
+  \item Venous blood contains more total \(\mathrm{CO_2}\) than arterial blood (systemic uptake from tissues).
+  \item Lower \(\mathrm{O_2}\) content increases \(\mathrm{CO_2}\) carriage capacity (Haldane effect).
+\end{itemize}
+
+\subsection{Quantitative split (arterial vs transfer across tissues)}
+\subsubsection{Arterial blood (typical proportions)}
+\begin{itemize}
+  \item \(\sim 90\%\) as bicarbonate
+  \item \(\sim 5\%\) dissolved
+  \item \(\sim 5\%\) as carbamino compounds
+\end{itemize}
+
+\subsubsection{Of the \(\mathrm{CO_2}\) transferred from tissues and eliminated in the lung}
+\begin{itemize}
+  \item \(\sim 60\%\) transferred as bicarbonate
+  \item \(\sim 30\%\) transferred as carbamino compounds
+  \item \(\sim 10\%\) transferred as dissolved \(\mathrm{CO_2}\)
+\end{itemize}
+
+\subsection{The three forms in more detail}
+\subsubsection{Dissolved \(\mathrm{CO_2}\)}
+\begin{itemize}
+  \item \(\mathrm{CO_2}\) is more soluble than \(\mathrm{O_2}\).
+  \item Dissolved \(\mathrm{CO_2}\) accounts for \(\sim 10\%\) of the \(\mathrm{CO_2}\) evolved in the lungs.
+  \item Solubility in plasma at \(37^\circ\mathrm{C}\): \(0.231~\mathrm{mmol\,L^{-1}\,kPa^{-1}}\) (or \(0.0308~\mathrm{mmol\,L^{-1}\,mmHg^{-1}}\)).
+\end{itemize}
+
+\subsubsection{Bicarbonate / carbonic acid}
+\begin{itemize}
+  \item Conceptual sequence:
+  \[
+    \mathrm{CO_2 + H_2O \rightleftharpoons H_2CO_3 \rightleftharpoons HCO_3^- + H^+}
+  \]
+  \item Hydration is slow but catalysed by carbonic anhydrase.
+  \item Carbonic anhydrase is present in erythrocytes and endothelium; not present in plasma.
+\end{itemize}
+
+\subsubsection{Carbamino compounds}
+\begin{itemize}
+  \item \(\mathrm{CO_2}\) combines with amino groups in proteins to form carbamates.
+  \item In blood this is mainly with haemoglobin.
+\end{itemize}
+
+\subsection{Haldane effect}
+\subsubsection{Definition}
+Deoxygenated haemoglobin carries more \(\mathrm{CO_2}\) than oxygenated haemoglobin.
+
+\subsubsection{Mechanisms described}
+\begin{itemize}
+  \item Oxygenation of haemoglobin reduces its capacity to carry \(\mathrm{CO_2}\) as carbamino compounds (via changes in ionization of nitrogen groups).
+  \item Deoxyhaemoglobin is more basic and buffers \(\mathrm{H^+}\) produced during bicarbonate formation.
+\end{itemize}
+
+\subsubsection{Consequences}
+\begin{itemize}
+  \item Venous (deoxygenated) blood takes up and transports more \(\mathrm{CO_2}\) than oxygenated arterial blood.
+  \item Carbamino compounds account for \(\sim 1/3\) of the arteriovenous difference in \(\mathrm{CO_2}\) carried.
+\end{itemize}
+
+\subsection{\(\mathrm{CO_2}\) dissociation curve (content vs \(P_{\mathrm{CO_2}}\))}
+\begin{itemize}
+  \item Relationship between \(\mathrm{CO_2}\) content and \(P_{\mathrm{CO_2}}\) is more linear than the oxygen dissociation curve.
+  \item Different curves occur at different oxygen saturations (Haldane effect).
+\end{itemize}
+\paragraph{Physiological reference points}
+\begin{itemize}
+  \item Arterial: \(P_{\mathrm{CO_2}} \approx 40~\mathrm{mmHg}~(5.3~\mathrm{kPa})\), \(\mathrm{O_2}\) saturation \(\approx 100\%\).
+  \item Mixed venous: \(P_{\mathrm{CO_2}} \approx 46~\mathrm{mmHg}~(6.1~\mathrm{kPa})\), \(\mathrm{O_2}\) saturation \(\approx 75\%\).
+\end{itemize}
+
+\subsection{Systemic capillaries: \(\mathrm{CO_2}\) transfer into blood}
+\subsubsection{Driving gradient}
+\(\mathrm{CO_2}\) is produced in mitochondria and diffuses cell \(\rightarrow\) interstitial fluid \(\rightarrow\) capillary \(\rightarrow\) plasma \(\rightarrow\) erythrocyte.
+
+\subsubsection{What happens to \(\mathrm{CO_2}\) in blood}
+\begin{itemize}
+  \item Some dissolves in plasma and erythrocyte.
+  \item Most becomes carbamino compounds and/or bicarbonate (carbonic anhydrase-dependent within RBC).
+\end{itemize}
+
+\subsubsection{Coupling to \(\mathrm{O_2}\) unloading}
+\begin{itemize}
+  \item As \(\mathrm{O_2}\) leaves the RBC, haemoglobin becomes deoxygenated (\(\mathrm{HHb}\)).
+  \item \(\mathrm{HHb}\) buffers \(\mathrm{H^+}\) and promotes bicarbonate and carbaminohaemoglobin formation.
+\end{itemize}
+
+\subsubsection{Chloride shift (Hamburger effect)}
+\begin{itemize}
+  \item \(\mathrm{HCO_3^-}\) diffuses out of RBC into plasma; \(\mathrm{H^+}\) is buffered inside RBC.
+  \item To maintain electroneutrality, \(\mathrm{Cl^-}\) diffuses into the RBC; water also enters.
+\end{itemize}
+
+\subsection{Pulmonary capillaries: \(\mathrm{CO_2}\) transfer out of blood}
+\subsubsection{Driving gradient}
+Venous \(P_{\mathrm{CO_2}} \approx 46~\mathrm{mmHg}~(6.1~\mathrm{kPa})\) exceeds alveolar \(P_{\mathrm{CO_2}} \approx 40~\mathrm{mmHg}~(5.3~\mathrm{kPa})\); \(\mathrm{CO_2}\) diffuses from blood to alveolus.
+
+\subsubsection{Coupling to \(\mathrm{O_2}\) uptake}
+In pulmonary capillaries, \(\mathrm{O_2}\) diffuses into RBC and oxygenation facilitates \(\mathrm{CO_2}\) unloading (Haldane effect).
+
+\subsubsection{Determinant of alveolar \(P_{\mathrm{CO_2}}\)}
+Alveolar \(P_{\mathrm{CO_2}}\) depends on balance between \(\mathrm{CO_2}\) delivery/output and alveolar ventilation. Fractional alveolar \(\mathrm{CO_2}\) concentration is described as:
+\[
+  \frac{\text{rate of } \mathrm{CO_2}\ \text{output (normally }200~\mathrm{mL\,min^{-1}}\text{)}}{\text{minute alveolar ventilation}}
+\]
+
+\subsubsection{End-capillary equilibration}
+End pulmonary capillary blood \(P_{\mathrm{CO_2}}\) is very close to alveolar gas \(P_{\mathrm{CO_2}}\).
+
+\subsection{FRCA/EDAIC traps (aligned to chapter)}
+\begin{itemize}
+  \item Haldane (effect of \(\mathrm{O_2}\) on \(\mathrm{CO_2}\) carriage) vs Bohr (effect of \(\mathrm{CO_2/H^+}\) on \(\mathrm{O_2}\) affinity).
+  \item \(\mathrm{CO_2}\) content--\(P_{\mathrm{CO_2}}\) is more linear than the \(\mathrm{O_2}\) dissociation curve.
+  \item Carbonic anhydrase location: RBCs and endothelium, not plasma.
+  \item Chloride shift direction in systemic capillaries: \(\mathrm{HCO_3^-}\) out, \(\mathrm{Cl^-}\) in (water follows).
+\end{itemize}
+
+\section{Additions / extensions from other core texts (not explicit in Kam \& Power Ch 19)}
+\subsection{Chloride shift: transporter, speed, and osmotic consequence}
+\begin{itemize}
+  \item Mechanism via RBC anion exchanger (AE1 / Band 3): \(\mathrm{HCO_3^-}\) leaves RBC in exchange for \(\mathrm{Cl^-}\).
+  \item Time course: essentially complete within \(\sim 1~\mathrm{s}\).
+  \item Osmotic effect: \(\mathrm{CO_2}\) addition increases osmotically active particles; water enters RBC \(\rightarrow\) swelling.
+  \item Venous haematocrit described as \(\sim 3\%\) greater than arterial (RBC swelling plus small fluid handling effects).
+\end{itemize}
+\textit{Source: Ganong’s Review of Medical Physiology, section/chapter on transport of \(\mathrm{O_2}\) and \(\mathrm{CO_2}\) in blood.}
+
+\subsection{Haemoglobin buffering: what groups buffer \(\mathrm{H^+}\)}
+\begin{itemize}
+  \item \(\mathrm{H^+}\) generated during \(\mathrm{CO_2}\) hydration is buffered mainly by haemoglobin, especially imidazole groups on histidine residues.
+\end{itemize}
+\textit{Source: Primary FRCA in a Box, Respiration: carbon dioxide stores/transport section.}
+
+\subsection{A--V \(\mathrm{CO_2}\) differences and respiratory quotient linkage}
+\begin{itemize}
+  \item A--V \(P_{\mathrm{CO_2}}\) difference: \(\sim 0.7~\mathrm{kPa}\) (about \(6~\mathrm{mmHg}\)).
+  \item Linked statement: corresponds to \(\sim 4~\mathrm{mL~CO_2}\) per \(100~\mathrm{mL}\) blood (noted to depend on respiratory quotient, \(RQ\)).
+  \item \(RQ = \frac{\mathrm{CO_2\ produced}}{\mathrm{O_2\ consumed}}\) (steady state).
+\end{itemize}
+\textit{Source: Primary FRCA in a Box, Respiration: carbon dioxide stores/transport section.}
+
+\subsection{Plasma vs whole-blood framing and plasma hydration point}
+\begin{itemize}
+  \item Distinguish reported \(\mathrm{CO_2}\) content in plasma vs whole blood.
+  \item In plasma, less than \(1\%\) of dissolved \(\mathrm{CO_2}\) undergoes hydration (contrast with rapid RBC/endothelial catalysis).
+\end{itemize}
+\textit{Source: Morgan \& Mikhail’s Clinical Anesthesiology, respiratory physiology section on \(\mathrm{CO_2}\) transport and tables.}
+
+\subsection{Lung-side linkage equation (oxygenation driving \(\mathrm{CO_2}\) unloading)}
+\[
+  \mathrm{O_2 + HCO_3^- + HbH^+ \rightarrow H_2O + CO_2 + HbO_2}
+\]
+\textit{Source: Morgan \& Mikhail’s Clinical Anesthesiology, respiratory physiology section on haemoglobin buffering and \(\mathrm{CO_2}\) transport.}
+
+\subsection{Carbonic anhydrase inhibition (pharmacological hook)}
+\begin{itemize}
+  \item Acetazolamide (carbonic anhydrase inhibitor) described as impairing \(\mathrm{CO_2}\) transport between tissues and alveoli.
+\end{itemize}
+\textit{Source: Morgan \& Mikhail’s Clinical Anesthesiology, respiratory physiology section (bicarbonate/\(\mathrm{CO_2}\) transport discussion).}
+
+\subsection{CO\(_2\) dissociation curves: diagram technique}
+\begin{itemize}
+  \item Include a dissolved \(\mathrm{CO_2}\) line through the origin.
+  \item Deoxygenated curve lies above oxygenated curve (Haldane effect).
+  \item Vertical gap between dissolved line and total \(\mathrm{CO_2}\) curve represents bicarbonate carriage.
+\end{itemize}
+\textit{Source: Cross \& Plunkett, Physics, Pharmacology and Physiology for Anaesthetists: section on carriage of \(\mathrm{CO_2}\) and dissociation curves.}
+
+\subsection{Pregnancy/placenta: double Haldane effect}
+\begin{itemize}
+  \item Placental \(\mathrm{CO_2}\) transfer enhanced by maternal deoxygenation (increased maternal \(\mathrm{CO_2}\) uptake) and fetal oxygenation (increased fetal \(\mathrm{CO_2}\) release): ``double Haldane effect''.
+  \item Quantitative statement given: may account for \(\sim 46\%\) of transplacental \(\mathrm{CO_2}\) transfer.
+\end{itemize}
+\textit{Source: Fundamentals of Anaesthesia, physiology of pregnancy section on placental gas transfer/\(\mathrm{CO_2}\).}
+
+\subsection{Placental \(\mathrm{CO_2}\): diffusibility and forms}
+\begin{itemize}
+  \item Placenta described as highly permeable to \(\mathrm{CO_2}\); \(\mathrm{CO_2}\) stated to be \(\sim 20\times\) more diffusible than \(\mathrm{O_2}\).
+  \item Approximate forms in fetal/maternal blood: dissolved \(\sim 8\%\), bicarbonate \(\sim 62\%\), carbaminohaemoglobin \(\sim 30\%\), with very small amounts as carbonic acid/carbonate.
+  \item Dissolved \(\mathrm{CO_2}\) is the form that crosses; bicarbonate acts as a reservoir via equilibrium.
+\end{itemize}
+\textit{Source: Fundamentals of Anaesthesia, physiology of pregnancy section on \(\mathrm{CO_2}\) and placental transfer.}
+
+\subsection{CO\(_2\) measurement: electrode (blood gas analyser)}
+\begin{itemize}
+  \item Severinghaus-type electrode: \(\mathrm{CO_2}\) diffuses across a CO\(_2\)-permeable membrane into a bicarbonate film; pH change reflects \(\mathrm{CO_2}\).
+  \item Quantitative statement: \(\sim 0.01\) pH units per \(0.1~\mathrm{kPa}\) change in \(\mathrm{CO_2}\).
+  \item Response time limited by diffusion; one source states \(2\)--\(3\) minutes.
+\end{itemize}
+\textit{Sources: Fundamentals of Anaesthesia (CO\(_2\) measurement section); Essentials of Equipment in Anaesthesia, Critical Care and Perioperative Medicine (blood gas analyser electrodes/response time).}
+
+\subsection{End-tidal CO\(_2\) (capnography): principle and waveform cues}
+\begin{itemize}
+  \item Infrared absorption principle: \(\mathrm{CO_2}\) absorbs IR (noted around \(4.3~\mu\mathrm{m}\)); absorption proportional to \(\mathrm{CO_2}\) partial pressure.
+  \item Rebreathing: baseline fails to return to zero during inspiration.
+  \item Obstructive disease: sloping alveolar plateau compared with normal.
+\end{itemize}
+\textit{Source: Essentials of Equipment in Anaesthesia, Critical Care and Perioperative Medicine (CO\(_2\) analysers/capnography section).}
+
+\subsection{Central chemoreceptors: why \(\mathrm{CO_2}\) changes CSF pH}
+\begin{itemize}
+  \item Central chemoreceptors respond to CSF pH.
+  \item Plasma \(\mathrm{H^+}\) does not cross the blood--brain barrier, whereas \(\mathrm{CO_2}\) diffuses readily and alters CSF pH via hydration.
+\end{itemize}
+\textit{Source: 1,000 Practice MTF (physiology: control of ventilation/chemoreceptors content).}
+
+\subsection{Additional quantitative statements on carbamino binding / Haldane}
+\begin{itemize}
+  \item Deoxyhaemoglobin described as having \(\sim 3.5\times\) greater affinity for \(\mathrm{CO_2}\) than oxyhaemoglobin.
+  \item Within physiological ranges, \(P_{\mathrm{CO_2}}\) stated to have little effect on the fraction of \(\mathrm{CO_2}\) carried as carbaminohaemoglobin.
+  \item Plasma tables: carbamino \(\mathrm{CO_2}\) in plasma described as negligible (carbamino carriage is primarily haemoglobin-based).
+\end{itemize}
+\textit{Source: Morgan \& Mikhail’s Clinical Anesthesiology, respiratory physiology section on \(\mathrm{CO_2}\) transport (text + tables).}
 
 
 \end{document}
