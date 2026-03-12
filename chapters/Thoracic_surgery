@@ -1,0 +1,559 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % pdfLaTeX
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+% Headings already include manual numbering (e.g. "1. ..."), so disable LaTeX numbering:
+\setcounter{secnumdepth}{-1}
+
+\title{Oxford Handbook of Anaesthesia (3e, 2011)\\Chapter 15: Thoracic surgery\\Structured study notes}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Source:} Keith Allman \& Iain Wilson (eds.) --- \emph{Oxford Handbook of Anaesthesia} (3rd ed., 2011), Chapter 15 ``Thoracic surgery''.
+
+\tableofcontents
+
+\section{1. General principles}
+
+\subsection{1.1 What thoracic anaesthesia demands}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Ability to control ventilation of \textbf{each lung independently}.
+  \item Skilled management of the \textbf{shared airway/lung} with the surgeon.
+  \item Clear understanding of the planned surgery.
+  \item \textbf{Communication} between surgeon and anaesthetist is essential.
+\end{itemize}
+
+\subsection{1.2 Typical patient profile and implications}
+Thoracic surgical patients are commonly \textbf{older} and \textbf{less fit} than other surgical populations. Associated problems often include long-term smoking, bronchial carcinoma, pleural effusion, empyema, oesophageal obstruction, cachexia \(\rightarrow\) reduced \textbf{cardiorespiratory reserve}.
+
+\subsection{1.3 General considerations}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Discuss the procedure and potential problems with the surgeon.
+  \item Optimise lung function before elective surgery:
+  \begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item Smoking cessation.
+    \item Pre-op physiotherapy + incentive spirometry.
+    \item Optimise bronchodilators; consider a course of oral steroids.
+  \end{itemize}
+  \item Position: most procedures use \textbf{lateral decubitus}, table ``broken'' to separate ribs.
+  \item Avoid postoperative mechanical ventilation if possible:
+  \begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item Stresses pulmonary suture lines.
+    \item Increases air leaks + risk of chest infection.
+  \end{itemize}
+  \item Minimise postoperative respiratory dysfunction: good analgesia + physiotherapy.
+  \item Postoperative oxygen therapy commonly prescribed to compensate for increased V/Q mismatch:
+  \begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item After pulmonary surgery: warmed humidified \(40\%\) \(\mathrm{O_2}\) by facemask recommended.
+    \item Nasal cannulae (e.g. 3 L/min) better tolerated and satisfactory for most other patients.
+  \end{itemize}
+\end{itemize}
+
+\subsection{1.4 Preoperative assessment (emphasis on lung resection)}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Standard assessment with particular emphasis on \textbf{cardiorespiratory reserve}.
+  \item Review latest CXR and CT for:
+  \begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item Airway obstruction.
+    \item Tracheal/carinal distortion or compression (impacts DLT placement).
+    \item Tumour relations: fissures/chest wall/major vessels (surgical implications).
+  \end{itemize}
+  \item Patients with significant cardiac disease are high risk.
+\end{itemize}
+
+\subsubsection{1.4.1 Lung resection: practical risk stratification}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Clinically fit, good exercise tolerance, normal spirometry \(\rightarrow\) generally acceptable.
+  \item Major medical problems + minimal exercise capacity + grossly impaired PFTs \(\rightarrow\) high risk; consider alternatives.
+  \item Reduced exercise capacity (e.g. dyspnoea climbing 2 flights of stairs) + abnormal spirometry \(\pm\) co-morbidity \(\rightarrow\) careful evaluation.
+\end{itemize}
+
+\subsubsection{1.4.2 PFTs: interpretation}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Spirometry reflects ``bellows'' function.
+  \item Diffusion capacity (e.g. DLCO/transfer factor) reflects ability to transfer \(\mathrm{O_2}\) to the circulation.
+  \item Diffuse alveolar disease may show \textbf{severely impaired gas transfer} with relatively normal spirometry.
+\end{itemize}
+
+\subsubsection{1.4.3 Commonly accepted minimum FEV\(_1\) thresholds (\% predicted)}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Pneumonectomy: \(\textgreater 55\%\)
+  \item Lobectomy: \(\textgreater 40\%\)
+  \item Wedge resection: \(\textgreater 35\%\)
+\end{itemize}
+
+\section{2. Analgesia}
+
+\subsection{2.1 Why it matters}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Thoracotomy incisions are \textbf{extremely painful}.
+  \item Poor pain control increases stress response and impairs mobilisation/respiration \(\rightarrow\) more respiratory complications.
+  \item Chronic post-thoracic surgery pain syndrome occurs in \textbf{25--60\%}.
+\end{itemize}
+
+\subsection{2.2 Recommended analgesic strategy (multimodal)}
+Combine:
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Paracetamol.
+  \item NSAIDs.
+  \item Regional block.
+  \item Intraoperative opioids.
+  \item Regular or PCA postoperative analgesia.
+\end{itemize}
+
+\subsection{2.3 Procedure-linked options}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Thoracoscopic procedures:
+  \begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item Intercostal nerve blocks or percutaneous paravertebral block.
+    \item Oral or PCA opioid post-op.
+  \end{itemize}
+  \item Thoracotomy / thoracoabdominal incisions:
+  \begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item Unless contraindicated: \textbf{continuous thoracic epidural} OR \textbf{continuous paravertebral} analgesia.
+    \item Epidural and paravertebral have \textbf{equivalent} analgesic efficacy and similar effects on stress response/respiratory function.
+    \item Paravertebral tends to have fewer adverse events: hypotension, urinary retention, PONV.
+  \end{itemize}
+\end{itemize}
+
+\subsection{2.4 Practical points}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Match block level to incision: usually \textbf{T5/6 or T6/7}.
+  \item Thoracic epidural: establish cautiously with small incremental boluses (e.g. 3--4 mL of 0.25\% bupivacaine) to avoid severe hypotension from extensive sympathetic block.
+  \item Paravertebral:
+  \begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item Example percutaneous injection: 0.5\% bupivacaine (0.3 mL/kg).
+    \item Continuous post-op infusion via surgically placed catheter may be used (concentration stepped down after first 24 h).
+  \end{itemize}
+\end{itemize}
+
+\section{3. Isolation of the lungs}
+
+\subsection{3.1 Key messages}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Independent ventilation is not always straightforward.
+  \item OLV has complications and should be used when benefits outweigh risks.
+\end{itemize}
+
+\subsection{3.2 Advantages}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Protects dependent lung from blood/secretions.
+  \item Allows independent control of ventilation.
+  \item Improves surgical access and reduces lung trauma.
+\end{itemize}
+
+\subsection{3.3 Disadvantages}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Creates a shunt \(\rightarrow\) usually hypoxia.
+  \item Acute lung injury occurs in a small proportion.
+  \item Increased technical + physiological challenge.
+\end{itemize}
+
+\subsection{3.4 Indications for separation/isolation}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Prevent contamination in infection, massive pulmonary haemorrhage, or bronchoalveolar lavage.
+  \item Control ventilation distribution in massive air leaks or severe unilateral disease (e.g. giant bullae, lung cysts).
+  \item Surgical access is a relative indication: if OLV is difficult, discuss with surgeon---retraction may suffice.
+\end{itemize}
+
+\subsection{3.5 Techniques}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Double lumen tubes (DLTs): commonest and most versatile.
+  \item Bronchial blockers (e.g. Univent, Arndt): useful in experienced hands; especially difficult airway/distorted anatomy/tracheostomy.
+  \item DLTs and bronchial blockers are clinically equivalent for provision of OLV.
+  \item Single lumen endobronchial tubes are rarely used.
+\end{itemize}
+
+\subsection{3.6 DLTs: selection and placement essentials}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Disposable PVC DLTs widely used.
+  \item Right- vs left-sided DLTs:
+  \begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item Right-sided tubes have a portal to ventilate the right upper lobe.
+    \item Common practice: choose \textbf{left-sided} unless proximal left lobar resection/pneumonectomy or abnormal left bronchial anatomy likely.
+  \end{itemize}
+  \item Size terminology: Charri\`ere (Ch) = external circumference in mm.
+  \item DLT lumens are smaller than standard ETTs; bronchoscopy requires a narrow scope (\(\textless 4\) mm), ideally with self-contained light.
+\end{itemize}
+
+\subsubsection{3.6.1 Placement technique highlights}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item After tip past cords: partially withdraw stylet and rotate tube to correct orientation.
+  \item Use the largest DLT that passes easily through the glottis.
+  \item Patient height determines insertion depth; avoid advancing too far.
+\end{itemize}
+
+\subsubsection{3.6.2 Confirmation of position}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Confirm lung isolation required for surgery.
+  \item Confirm ability to ventilate the non-operative lung: clamp operative limb at Y-connector and open sealing cap to allow deflation.
+  \item Observe unilateral chest expansion and correlate with pathology and pre-op exam/radiology.
+\end{itemize}
+
+\section{4. Management of one lung ventilation (OLV)}
+
+\subsection{4.1 Principle}
+OLV inevitably creates a shunt through the non-ventilated lung. Main goal: \textbf{minimise the effects of shunt}.
+
+\subsection{4.2 Initiating OLV (stepwise)}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Before OLV: increase \(\mathrm{FiO_2}\), reduce tidal volume to a protective range, and note resulting airway pressures.
+  \item Start OLV:
+  \begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item Clamp Y-connection to operative (non-dependent) lung.
+    \item Open sealing cap on that lumen to allow gas escape.
+    \item Expect airway pressure rise by \(\sim 30\)---\(40\%\) if OLV achieved (may not if operative lung already non-functioning pre-op).
+  \end{itemize}
+\end{itemize}
+
+\subsection{4.3 If airway pressures are excessive or rise abruptly}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Exclude mechanical causes (kinked connector, clamp misplacement).
+  \item Exclude DLT malposition/obstruction (ventilating a lobe not lung, sputum plugs, lumen against airway wall).
+  \item Adjust tidal volume/ventilation profile to limit Paw (protective strategy).
+  \item Monitor SpO\(_2\) and ETCO\(_2\) closely; increase RR if needed to maintain minute ventilation.
+  \item Confirm with surgeon: lung collapse (may be slow in obstructive disease); mediastinum not ``sunk'' into dependent hemithorax.
+\end{itemize}
+
+\subsection{4.4 Failure to achieve OLV}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Re-check DLT position and cuff inflation.
+  \item Confirm which lumen is clamped and which lung is ventilated.
+  \item Bronchoscopic reassessment is often required.
+\end{itemize}
+
+\subsection{4.5 Management of hypoxia during OLV (escalation)}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Confirm tube position and suction both lumens.
+  \item Increase \(\mathrm{FiO_2}\).
+  \item Optimise ventilation of dependent lung.
+  \item Apply CPAP/\(\mathrm{O_2}\) to operative lung when feasible (balance against surgical requirements).
+  \item Consider recruitment manoeuvres and PEEP strategies (tailored).
+  \item If severe hypoxaemia persists \(\rightarrow\) return to two-lung ventilation as required.
+\end{itemize}
+
+\section{5. Rigid bronchoscopy and stent insertion}
+
+\subsection{5.1 Preoperative}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Check for airway obstruction (stridor, tracheal tumour on CT, foreign body).
+  \item Often suitable as day case.
+  \item Warn about postoperative coughing, haemoptysis, and suxamethonium myalgia.
+  \item Often combined with mediastinoscopy.
+  \item Airway unprotected: if aspiration risk, reduce gastric volume/acidity (e.g. PPI/H\(_2\) blocker regimen described in source).
+\end{itemize}
+
+\subsection{5.2 Perioperative}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Full preoxygenation.
+  \item Confirm surgeon present before induction.
+  \item Induction support as described (e.g. benzodiazepine + short-acting opioid).
+  \item Optional small ``taming'' dose of non-depolarising relaxant to reduce suxamethonium pains.
+  \item Workflow described: induce in anaesthetic room, transfer with facemask, give suxamethonium just prior.
+  \item If potential obstruction: inhalational induction in theatre with sevoflurane in \(\mathrm{O_2}\) until airway secure.
+  \item Coordinate ventilation with surgical activity.
+  \item Monitor for recovery of muscle tone; suction upper airway and confirm adequate power before scope removal.
+\end{itemize}
+
+\subsection{5.3 Postoperative}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Turn patient biopsied side down to reduce spillage to normal lung.
+  \item Sit fully upright as soon as awake.
+  \item Blood clot can cause severe obstruction \(\rightarrow\) be prepared for immediate airway intervention and repeat bronchoscopy.
+\end{itemize}
+
+\subsection{5.4 Special considerations}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Very stimulating \(\rightarrow\) marked hypertensive response.
+  \item Need profound relaxation + obtund CV responses \textbf{with rapid return} of laryngeal reflexes and spontaneous respiration.
+  \item Topical LA to cords may be used, but will not prevent carinal reflexes and may impair postoperative cough.
+\end{itemize}
+
+\section{6. Superior/cervical mediastinoscopy}
+
+\subsection{6.1 Preoperative}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Suitable as day case in appropriate patients.
+  \item Check for SVC obstruction and tracheal deviation/compression from mediastinal masses.
+  \item Often preceded by rigid bronchoscopy (``Bronch \& Med'').
+\end{itemize}
+
+\subsection{6.2 Perioperative}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Tape eyes; check connectors (head obscured by drapes).
+  \item Boluses of IV opioid for analgesia.
+  \item Insert a large-bore cannula in a lower limb vein after induction (bleeding/SVC issues).
+  \item Watch for surgical tracheal compression: monitor tidal volume and airway pressures.
+  \item Monitor BP in left arm; pulse oximeter on right hand.
+\end{itemize}
+
+\subsection{6.3 Postoperative}
+Simple analgesia (e.g. paracetamol + NSAID).
+
+\subsection{6.4 Special considerations}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Risk of massive haemorrhage from great vessels (higher with SVC obstruction) \(\rightarrow\) may require immediate sternotomy.
+  \item Mediastinoscope may compress brachiocephalic artery \(\rightarrow\) reduced right arm/carotid flow \(\rightarrow\) cerebral ischaemia risk; right-hand oximeter helps detect perfusion compromise.
+  \item Mediastinotomy can cause pneumothorax.
+\end{itemize}
+
+\section{7. Lung surgery: wedge resection, lobectomy, pneumonectomy}
+
+\subsection{7.1 Preoperative}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Commonest indication: cancer; others include benign tumours, bronchiectasis, TB.
+  \item Assess cardiorespiratory reserve and estimate post-resection lung function.
+  \item Assess airway for DLT placement.
+  \item Plan postoperative analgesia.
+\end{itemize}
+
+\subsection{7.2 Perioperative}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Select appropriate DLT; confirm isolation after intubation.
+  \item Prefer left-sided tube unless proximal left lobectomy/pneumonectomy or abnormal left bronchial anatomy.
+  \item IV access (non-dependent arm) + arterial line (often better in dependent arm).
+  \item CVP unreliable in lateral open chest; central lines not routine (may be needed for access/monitoring). Oesophageal Doppler typically unhelpful.
+  \item OLV facilitates surgery and prevents soiling.
+  \item Airway pressure/volume loop display is a useful adjunct.
+  \item Surgical manipulation can reduce CO/BP and cause arrhythmias.
+  \item Suction collapsed lung prior to reinflation.
+  \item Bronchial suture line leak test under saline with manual inflation to high pressure (as described).
+  \item Fluids: titrate to losses; avoid excessive replacement, particularly pneumonectomy.
+  \item Regional catheter analgesia (epidural/paravertebral); cautious incremental dosing if established pre-op.
+\end{itemize}
+
+\subsection{7.3 Postoperative}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Aim to extubate awake and sitting.
+  \item Supplementary oxygen (humidified preferable; nasal cannulae more likely to remain in place on ward).
+  \item Ensure good analgesia.
+  \item CXR usually required in recovery.
+\end{itemize}
+
+\subsection{7.4 Special considerations}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Non-metastatic manifestations of bronchial carcinoma may occur (e.g. paraneoplastic/neuromuscular syndromes).
+  \item Pneumonectomy: notable perioperative risks including acute lung injury; consider risk factors and protective strategies.
+  \item Arrhythmias (especially AF) are common post-pneumonectomy; prophylaxis strategies may be used according to local practice.
+\end{itemize}
+
+\section{8. Thoracoscopy / VATS procedures}
+
+\subsection{8.1 Preoperative}
+Similar assessment to thoracotomy; generally less invasive with less postoperative deterioration in lung function. Discuss analgesia plan (regional/PCA) where appropriate.
+
+\subsection{8.2 Perioperative}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Consider arterial line in high-risk/compromised patients.
+  \item Upper arm IV; radial arterial line usually in dependent arm.
+  \item Intra-op opioid boluses.
+  \item Commence OLV (left DLT) before trocar insertion; need good lung collapse.
+  \item Intercostal or paravertebral blocks; paravertebral catheter can be placed thoracoscopically for more extensive procedures.
+\end{itemize}
+
+\subsection{8.3 Postoperative}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Extubate, sit up, start supplementary oxygen before transfer.
+  \item CXR in recovery to confirm full re-expansion.
+  \item Balanced analgesia; PCA morphine may be required for more painful procedures.
+  \item Encourage early mobilisation.
+\end{itemize}
+
+\subsection{8.4 Special considerations}
+Always possible conversion to open thoracotomy. Epidural not usually necessary; consider if bilateral.
+
+\section{9. Lung volume reduction surgery (LVRS) and bullectomy}
+
+\subsection{9.1 Concept}
+Surgical treatment for selected severe emphysema; aims to reduce total lung volume by resecting most diseased areas \(\rightarrow\) improve function. Patient group often very high risk for GA.
+
+\subsection{9.2 Preoperative}
+Intensive assessment, careful selection, optimisation. Cardiac assessment may include coronary angiography + right heart catheterisation. Steroid supplementation often required. Requires adequate thoracic experience and understanding of pathophysiology.
+
+\subsection{9.3 Perioperative}
+Approach may be sternotomy/thoracotomy/VATS. Consider protective ventilation strategies.
+
+\subsection{9.4 Postoperative}
+HDU/ICU often required; extubate ASAP. Accept higher PaCO\(_2\) within target range and adjust \(\mathrm{FiO_2}\) to maintain acceptable saturation. Watch for air leaks; limit drain suction. Requires excellent analgesia, skilled physiotherapy, pulmonary rehabilitation.
+
+\subsection{9.5 Special considerations}
+Commonest complication: prolonged air leak. Notable mortality in reported series. LVRS benefits particular emphysema phenotypes (as described in source). Isolated congenital bulla/cyst patients may be fitter but still need careful intra-op management.
+
+\section{10. Drainage of empyema and decortication}
+
+\subsection{10.1 Preoperative}
+Intrapleural infection often secondary to pneumonia, drains, or chest surgery. Patients may be debilitated/septic. Respiratory function may be compromised by pneumonia or previous resection. Check for bronchopleural fistula.
+
+\subsection{10.2 Perioperative}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Empyema may be drained by rib resection and large-bore drain; thoracoscopy may break loculations/adhesions.
+  \item Decortication requires ``thoracotomy'' anaesthetic with epidural analgesia (paravertebral often not possible due to loss of pleura).
+  \item Decortication can cause significant haemorrhage.
+  \item Consider arterial line/CVP monitoring for all but the fittest.
+\end{itemize}
+
+\subsection{10.3 Postoperative}
+Balanced analgesia; HDU care recommended for debilitated patients.
+
+\subsection{10.4 Special considerations}
+Surgical principle: remove infected tissue/pleural ``peel'', re-expand lung, obliterate space. Air leaks common after visceral pleura decortication; lobectomy may be required for massive leaks/severe parenchymal damage.
+
+\section{11. Repair of bronchopleural fistula (BPF)}
+
+\subsection{11.1 Preoperative}
+Features: productive cough, haemoptysis, fever, dyspnoea, subcutaneous emphysema, falling fluid level in post-pneumonectomy space on CXR. Severity proportional to fistula size; large fistulae may need urgent support. Often debilitated with infection and reduced reserve. Review prior anaesthetic charts and airway anatomy. Ensure oxygen, functioning chest drain, IV antibiotics, fluids.
+
+\subsection{11.2 Perioperative: core principles}
+Protect the good lung from contamination and control ventilation distribution. Failure to isolate lungs after induction carries grave risk. Small/moderate fistulae: bronchoscopy \(\pm\) tissue glue. Start invasive arterial monitoring before induction.
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Airway strategy described: awake intubation under LA often described as safest.
+  \item Many thoracic anaesthetists use modified RSI and advance DLT under fibreoptic guidance to bronchus contralateral to fistula.
+  \item Risk: fistula may be enlarged by inappropriate DLT placement.
+\end{itemize}
+
+\subsection{11.3 Postoperative}
+Plan HDU/ICU except straightforward cases. Minimise airway pressures; extubate ASAP. Use post-thoracotomy analgesia and monitor renal function if NSAIDs used.
+
+\subsection{11.4 Special considerations}
+Usually post-pneumonectomy/lobectomy; can be secondary to pneumonia, lung abscess, empyema. Anaesthesia challenging; not recommended for occasional thoracic practice.
+
+\subsection{11.5 Tips for controlling a massive air leak (unable to ventilate effectively)}
+If DLT cannot be positioned satisfactorily:
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Intubate with uncut cuffed 6 mm single-lumen tube; fibreoptic into intact main bronchus and railroad tube into bronchus.
+  \item Surgeon passes rigid bronchoscope into intact main bronchus; slide long flexible bougie/airway exchange catheter (jet ventilation possible) then railroad single-lumen tube.
+  \item If all else fails: bronchial blocker (e.g. Arndt) or large Fogarty catheter into fistula via rigid bronchoscope to control leak temporarily.
+\end{itemize}
+
+\section{12. Pleurectomy / pleurodesis}
+
+\subsection{12.1 Preoperative}
+Two typical groups: (1) young/fit with recurrent pneumothoraces (check asthma), (2) older with COPD or recurrent pleural effusions (check reserve). Large unilateral effusions rarely cause orthopnoea if otherwise healthy; orthopnoea suggests additional pathology (e.g. heart failure). Check recent CXR. Pre-op intercostal drain advised if pneumothorax present. Confirm approach and discuss postoperative analgesia/regional technique.
+
+\subsection{12.2 Perioperative}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Keep airway pressures low if pneumothorax history; avoid nitrous oxide.
+  \item Be alert for pneumothorax/tension pneumothorax during IPPV (can occur despite drains and on ``healthy'' side).
+  \item Instillation of irritant: collapse lung (if single-lumen tube, preoxygenate then briefly disconnect).
+  \item End: aim for full lung expansion to appose parietal and visceral pleura.
+\end{itemize}
+
+\subsection{12.3 Postoperative}
+Extubate and sit upright; CXR to confirm full expansion; drain suction often prescribed.
+
+\subsection{12.4 Pain and analgesia notes}
+Pleural inflammation is painful, especially with abrasion. Regular paracetamol. Avoid NSAIDs if they may reduce pleurodesis effectiveness. Thoracic epidural recommended for pleurectomy (especially bilateral); PCA morphine + intercostal blocks as alternative. Paravertebral blocks often unsuitable due to pleural damage.
+
+\subsection{12.5 Special considerations}
+Pleurectomy often for recurrent pneumothorax with stapling of leaking tissue (apical blebs/bullae). Pleurodesis commonly for malignant effusions. Massive effusions: consider partial drainage \(\geq 12\) h pre-op to reduce risk of re-expansion pulmonary oedema from rapid reinflation. Risk of circulatory collapse when turned ``effusion side up'' (mediastinal shift + high intrathoracic pressure reducing venous return/CO): return supine and drain before proceeding.
+
+\section{13. Oesophagectomy}
+
+\subsection{13.1 Preoperative}
+Usually oesophageal cancer; occasionally benign stricture/achalasia. Understand approach (transhiatal; Ivor--Lewis; thoracoabdominal; McKeown 3-stage; minimally invasive combinations). Malnutrition/cachexia common \(\rightarrow\) increased morbidity/mortality; careful cardiorespiratory assessment. Plan for long duration + potential repositioning. Aspiration risk: ranitidine/omeprazole if swallowable. Arrange HDU/ICU depending on protocols/fitness.
+
+\subsection{13.2 Perioperative}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Treat as aspiration risk: RSI with cricoid pressure advised.
+  \item If thoracotomy planned: DLT + OLV to facilitate access and reduce lung trauma.
+  \item Regional technique by approach:
+  \begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item Thoracoabdominal: paravertebral LA infusion + morphine PCA.
+    \item Laparotomy/thoracotomy: mid-thoracic epidural (incremental dosing and post-op infusion).
+  \end{itemize}
+  \item NG tube required (removed for resection, reinserted under surgical guidance after anastomosis).
+  \item Avoid IJV line on side needed for cervical anastomosis.
+  \item Temperature control: core temperature monitoring and active warming (fluid warmer + forced-air warming).
+  \item Fluids: stay ahead; monitor Hb and blood gases; watch metabolic acidosis.
+  \item Intrathoracic mobilisation may provoke arrhythmias and reduced CO with hypotension.
+  \item Change DLT to single-lumen tube before cervical anastomosis (if performed) to improve access.
+\end{itemize}
+
+\subsection{13.3 Postoperative}
+Requires intensive experienced nursing in specialist ward/HDU/ICU. If hypothermic (\(\textless 35.5^\circ\)C) or unstable: ventilate until improved. Aim minimum urine output 1 mL/kg/h. Early enteral feeding via jejunostomy or nasoduodenal tube.
+
+\subsection{13.4 Special considerations}
+High elective perioperative mortality (even in specialist centres). Major complication rate high; deaths often due to systemic sepsis from respiratory complications or anastomotic breakdown. Minimally invasive approaches increasing; beware tension capnothorax if pleura breached during laparoscopic hiatal dissection. Not recommended as occasional practice.
+
+\section{14. Chest injury (thoracic trauma)}
+
+\subsection{14.1 Context}
+Initial diagnosis and management of major thoracic trauma described elsewhere. Here: anaesthetic management for definitive repair (diaphragm, oesophagus, tracheobronchial tree).
+
+\subsection{14.2 General considerations}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Often with major head/abdominal/skeletal injuries \(\rightarrow\) prioritise appropriately (C-spine, laparotomy for bleeding, splintage).
+  \item \(\textless 30\%\) require thoracotomy, but persistent bleeding from drains \(>200\) mL/h indicates urgent surgery.
+  \item Most deaths due to exsanguination \(\rightarrow\) ensure rapid infusion capability (two large-bore IVs).
+  \item Maintain high suspicion for tension pneumothorax during IPPV (drain does not guarantee).
+  \item Massive air leaks suggest significant tracheobronchial injury.
+  \item High risk of multiple organ failure \(\rightarrow\) postoperative ICU care.
+\end{itemize}
+
+\subsection{14.3 Repair of ruptured diaphragm}
+May present chronically or as bowel obstruction \(\rightarrow\) correct fluid/electrolytes. Repair should be prompt but seldom true emergency. Approach: lateral thoracotomy or thoracoabdominal incision. Management as for fundoplication. Avoid nitrous oxide (bowel distension). DLT + OLV facilitate access. NG tube to decompress stomach.
+
+\subsection{14.4 Repair of ruptured oesophagus}
+Diagnosis described elsewhere; surgical emphysema and pleural effusions often present. Other causes include Boerhaave's syndrome, foreign bodies, iatrogenic injury.
+
+\subsection{14.5 Tracheobronchial injury: definitive repair (key anaesthetic points)}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item Priority: \(100\%\) \(\mathrm{O_2}\) and relieve tension pneumothorax (may need two large-bore drains with independent underwater seals).
+  \item If ventilation/oxygenation acceptable: call thoracic help and assess site with fibreoptic bronchoscopy before intubation.
+  \item Principles as for large BPF: adequate PPV may be impossible with single-lumen tube.
+  \item Isolate torn bronchus by fibreoptic-guided intubation of contralateral intact main bronchus with appropriate DLT.
+  \item Alternatively, guide an uncut single-lumen tube past an upper tracheal tear so cuff lies distal to injury.
+  \item Once airway secure: urgent thoracotomy for repair.
+  \item Carinal disruption may require cardiopulmonary bypass for oxygenation during repair.
+  \item Poor management can lead to later stenosis and long-term airway problems.
+\end{itemize}
+
+\section{15. Procedure summaries (quick reference)}
+
+\subsection{15.1 Fibreoptic bronchoscopy}
+Visual inspection of tracheobronchial tree \(\pm\) biopsy/brushings/lavage. Time 5--10 min; pain \(+\); supine; blood loss none. GA rarely used. Single-lumen tube (8--9 mm) with bronchoscopy diaphragm on angle piece; IPPV with relaxant appropriate to duration. Expect high airway pressures while scope in ETT; suction can empty breathing system.
+
+\subsection{15.2 Lung biopsy}
+Diagnostic sampling (localised or diffuse). Time 30--60 min; pain \(+++/++++\). Lateral, VATS or minithoracotomy. Blood loss minor; group \& save (crossmatch if anaemic). DLT + OLV facilitate VATS. Diffuse disease patients may have very poor lung function with risk ventilator dependence and significant mortality.
+
+\subsection{15.3 Oesophagoscopy and dilatation}
+Inspection via rigid/fibreoptic scope \(\pm\) dilatation (bougies or balloon). Core issues: regurgitation/aspiration risk and shared airway.
+
+\subsection{15.4 Rigid bronchoscopy}
+Inspection \(\pm\) biopsy, stents, foreign body removal. Time 5--20 min; pain \(+\); supine with head/neck extended; blood loss usually minimal. Technique note: TIVA; short-acting opioid; intermittent suxamethonium; ventilation via bronchoscope (Venturi/Sanders injector).
+
+\subsection{15.5 Superior/cervical mediastinoscopy}
+Inspect/biopsy superior/anterior mediastinum via suprasternal/anterior intercostal incision. Time 20--30 min; pain \(+\); supine/slightly head-up. Blood loss usually minimal but potential massive haemorrhage.
+
+\subsection{15.6 Lung resection (wedge/lobectomy/pneumonectomy)}
+Time 2--4 h; pain \(+++++\). Lateral, table ``broken''. Blood loss 200--800 mL (can be more). Technique: IPPV via DLT with OLV; regional catheter for analgesia; arterial line for pneumonectomy/less fit.
+
+\subsection{15.7 VATS procedures}
+Time 30--120 min; pain \(++/+++\). Lateral, table ``broken''. Blood loss minimal--200 mL. Technique: IPPV + OLV via left DLT; intercostal/paravertebral blocks \(\pm\) catheter; consider arterial line.
+
+\subsection{15.8 Lung volume reduction surgery / bullectomy}
+Core issues: severe respiratory compromise, air leak risk, postoperative ventilatory strategy.
+
+\subsection{15.9 Empyema drainage / decortication}
+Drainage time 20--40 min; decortication 2--3 h. Pain \(+++/+++++\). Blood loss: drainage minimal; decortication 500--2000 mL (crossmatch often required). Technique: GA; DLT advised for decortication (air leak risk); arterial line/CVP.
+
+\subsection{15.10 Bronchopleural fistula repair}
+Time 2--3 h (thoracotomy). Pain \(++++/+++++\). Keep sitting upright with affected side down until good lung isolated, then lateral. Blood loss 300--800 mL. Technique: fibreoptic-guided endobronchial intubation with DLT (various induction strategies described).
+
+\subsection{15.11 Pleurectomy / pleurodesis}
+Pleurectomy 1--2 h; pleurodesis 20--40 min. Pain \(+++/++++\). Blood loss minimal thoracoscopic; up to \(\sim 500\) mL for thoracotomy. Technique: IPPV, DLT + OLV for open/VATS; single-lumen tube often adequate for talc pleurodesis.
+
+\subsection{15.12 Oesophagectomy}
+Time 3--6 h; pain \(+++++\). Position: supine \(\pm\) lateral for thoracotomy. Blood loss 500--1500 mL (crossmatch often required). Technique: IPPV; DLT useful if thoracotomy; arterial/CVP lines; urinary catheter; thoracic epidural or paravertebral catheter.
+
+\end{document}
