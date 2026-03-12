@@ -88,6 +88,12 @@ jobs:
         with:
           root_file: chapters/Respiratory_physiology.tex
           texlive_version: 2024
+      
+      - name: Compile Thoracic_surgery chapter
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: chapters/Thoracic_surgery.tex
+          texlive_version: 2024
 
       # ---- Collect PDFs into docs/ ----
       - name: Prepare docs folder
@@ -120,6 +126,7 @@ jobs:
           copy_pdf "Adreno_Antagonists"
           copy_pdf "Anti-Arrhythmics"
           copy_pdf "Respiratory_physiology"
+          copy_pdf "Thoracic_surgery"
 
           # Use the prettier landing page from the repo
           cp landing.html docs/index.html
