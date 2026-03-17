@@ -82,6 +82,24 @@ jobs:
         with:
           root_file: chapters/Anti-Arrhythmics.tex
           texlive_version: 2024
+
+      - name: Compile Vasodilatators chapter
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: chapters/Vasodilatators.tex
+          texlive_version: 2024
+
+      - name: Compile CNS_medication chapter
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: chapters/CNS_medication.tex
+          texlive_version: 2024
+
+      - name: Compile Antihypertensives chapter
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: chapters/Antihypertensives.tex
+          texlive_version: 2024
      
       - name: Compile Respiratory_physiology chapter
         uses: xu-cheng/latex-action@v4
@@ -141,6 +159,9 @@ jobs:
           copy_pdf "Thoracic_surgery"
           copy_pdf "Renal_physiology"
           copy_pdf "Acid-base_physiology"
+          copy_pdf "Vasodilatators"
+          copy_pdf "CNS_medication"
+          copy_pdf "Antihypertensives"
 
           # Use the prettier landing page from the repo
           cp landing.html docs/index.html
