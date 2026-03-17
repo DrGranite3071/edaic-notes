@@ -95,6 +95,12 @@ jobs:
           root_file: chapters/Thoracic_surgery.tex
           texlive_version: 2024
 
+      - name: Compile Renal_physiology chapter
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: chapters/Renal_physiology.tex
+          texlive_version: 2024
+
       # ---- Collect PDFs into docs/ ----
       - name: Prepare docs folder
         run: |
@@ -127,6 +133,7 @@ jobs:
           copy_pdf "Anti-Arrhythmics"
           copy_pdf "Respiratory_physiology"
           copy_pdf "Thoracic_surgery"
+          copy_pdf "Renal_physiology
 
           # Use the prettier landing page from the repo
           cp landing.html docs/index.html
