@@ -55,6 +55,14 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
 
+%---------images --------
+\usepackage{graphicx}   % required for images
+\usepackage{float}      % optional, for [H]
+\usepackage{caption}    % optional, better caption control
+\graphicspath{{images/}}
+
+
+
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -141,6 +149,13 @@ Adequate mean arterial pressure (MAP) is essential to:
 \end{itemize}
 
 \subsubsection{Myocardial Blood Supply}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{coronary_circulation.png}
+    \caption{Myocadial Boold Supply.}
+    \label{fig:coronary_circulation}
+\end{figure}
 
 \begin{itemize}
   \item The myocardium has a high metabolic rate and extracts a large fraction of the delivered oxygen at rest; increases in demand must therefore be met mainly by increased coronary flow.
